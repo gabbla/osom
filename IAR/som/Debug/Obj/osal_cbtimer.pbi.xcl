@@ -3,17 +3,9 @@
 -ferror-limit=0
 -fbracket-depth=512
 -I
-C:\Texas Instruments\BLE-CC254x-1.4.2.2\Components\hal\common
--I
 C:\Texas Instruments\BLE-CC254x-1.4.2.2\Components\hal\include
 -I
 C:\Texas Instruments\BLE-CC254x-1.4.2.2\Components\osal\include
--I
-M:\som\IAR\som\target\speedometer\common
--I
-M:\som\IAR\som\target\speedometer\config
--I
-M:\som\IAR\som\target\speedometer\drivers
 -I
 C:\Texas Instruments\BLE-CC254x-1.4.2.2\Components\ble\controller\CC254x\include
 -I
@@ -27,7 +19,29 @@ C:\Texas Instruments\BLE-CC254x-1.4.2.2\Components\ble\ROM
 -I
 C:\Texas Instruments\BLE-CC254x-1.4.2.2\Components\ble\include
 -I
-C:\Texas Instruments\BLE-CC254x-1.4.2.2\Components\osal\common
+C:\Texas Instruments\BLE-CC254x-1.4.2.2\Projects\ble\common\cc2540
+-I
+C:\Texas Instruments\BLE-CC254x-1.4.2.2\Projects\ble\common
+-I
+C:\Texas Instruments\BLE-CC254x-1.4.2.2\Projects\ble\include
+-I
+C:\Texas Instruments\BLE-CC254x-1.4.2.2\Components\services\saddr
+-I
+C:\Texas Instruments\BLE-CC254x-1.4.2.2\Components\hal\target\CC2541ST
+-I
+C:\Texas Instruments\BLE-CC254x-1.4.2.2\Projects\ble\common\npi\npi_np
+-I
+C:\Texas Instruments\BLE-CC254x-1.4.2.2\Projects\ble\Profiles\Roles\CC254x
+-I
+C:\Texas Instruments\BLE-CC254x-1.4.2.2\Projects\ble\Profiles\Roles
+-I
+C:\Texas Instruments\BLE-CC254x-1.4.2.2\Projects\ble\Profiles\DevInfo
+-I
+C:\Texas Instruments\BLE-CC254x-1.4.2.2\Projects\ble\Profiles\Keys\CC254x
+-I
+C:\Texas Instruments\BLE-CC254x-1.4.2.2\Projects\ble\Profiles\Keys
+-I
+C:\Texas Instruments\BLE-CC254x-1.4.2.2\Projects\ble\Profiles\OAD
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\8051\inc
 -I
@@ -35,17 +49,9 @@ C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\8051\lib\dlib
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\8051\inc\clib
 -I
-C:\Texas Instruments\BLE-CC254x-1.4.2.2\Components\hal\common
--I
 C:\Texas Instruments\BLE-CC254x-1.4.2.2\Components\hal\include
 -I
 C:\Texas Instruments\BLE-CC254x-1.4.2.2\Components\osal\include
--I
-M:\som\IAR\som\target\speedometer\common
--I
-M:\som\IAR\som\target\speedometer\config
--I
-M:\som\IAR\som\target\speedometer\drivers
 -I
 C:\Texas Instruments\BLE-CC254x-1.4.2.2\Components\ble\controller\CC254x\include
 -I
@@ -59,7 +65,29 @@ C:\Texas Instruments\BLE-CC254x-1.4.2.2\Components\ble\ROM
 -I
 C:\Texas Instruments\BLE-CC254x-1.4.2.2\Components\ble\include
 -I
-C:\Texas Instruments\BLE-CC254x-1.4.2.2\Components\osal\common
+C:\Texas Instruments\BLE-CC254x-1.4.2.2\Projects\ble\common\cc2540
+-I
+C:\Texas Instruments\BLE-CC254x-1.4.2.2\Projects\ble\common
+-I
+C:\Texas Instruments\BLE-CC254x-1.4.2.2\Projects\ble\include
+-I
+C:\Texas Instruments\BLE-CC254x-1.4.2.2\Components\services\saddr
+-I
+C:\Texas Instruments\BLE-CC254x-1.4.2.2\Components\hal\target\CC2541ST
+-I
+C:\Texas Instruments\BLE-CC254x-1.4.2.2\Projects\ble\common\npi\npi_np
+-I
+C:\Texas Instruments\BLE-CC254x-1.4.2.2\Projects\ble\Profiles\Roles\CC254x
+-I
+C:\Texas Instruments\BLE-CC254x-1.4.2.2\Projects\ble\Profiles\Roles
+-I
+C:\Texas Instruments\BLE-CC254x-1.4.2.2\Projects\ble\Profiles\DevInfo
+-I
+C:\Texas Instruments\BLE-CC254x-1.4.2.2\Projects\ble\Profiles\Keys\CC254x
+-I
+C:\Texas Instruments\BLE-CC254x-1.4.2.2\Projects\ble\Profiles\Keys
+-I
+C:\Texas Instruments\BLE-CC254x-1.4.2.2\Projects\ble\Profiles\OAD
 -D__CHAR_BITS__=8
 -D__CHAR_MAX__=0xff
 -D__CHAR_MIN__=0

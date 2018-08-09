@@ -1,21 +1,47 @@
-"M:\som\IAR\som\target\speedometer\drivers\hal_timer.c"
+"C:\Texas Instruments\BLE-CC254x-1.4.2.2\Components\hal\target\CC2541ST\hal_timer.c"
 -std=c99
 -ferror-limit=0
 -fbracket-depth=512
--I
-C:\Texas Instruments\BLE-CC254x-1.4.2.2\Components\hal\common
 -I
 C:\Texas Instruments\BLE-CC254x-1.4.2.2\Components\hal\include
 -I
 C:\Texas Instruments\BLE-CC254x-1.4.2.2\Components\osal\include
 -I
-M:\som\IAR\som\target\speedometer\common
--I
-M:\som\IAR\som\target\speedometer\config
--I
-M:\som\IAR\som\target\speedometer\drivers
--I
 C:\Texas Instruments\BLE-CC254x-1.4.2.2\Components\ble\controller\CC254x\include
+-I
+C:\Texas Instruments\BLE-CC254x-1.4.2.2\Components\ble\controller\CC254x\phy
+-I
+C:\Texas Instruments\BLE-CC254x-1.4.2.2\Components\ble\hci
+-I
+C:\Texas Instruments\BLE-CC254x-1.4.2.2\Components\ble\host
+-I
+C:\Texas Instruments\BLE-CC254x-1.4.2.2\Components\ble\ROM
+-I
+C:\Texas Instruments\BLE-CC254x-1.4.2.2\Components\ble\include
+-I
+C:\Texas Instruments\BLE-CC254x-1.4.2.2\Projects\ble\common\cc2540
+-I
+C:\Texas Instruments\BLE-CC254x-1.4.2.2\Projects\ble\common
+-I
+C:\Texas Instruments\BLE-CC254x-1.4.2.2\Projects\ble\include
+-I
+C:\Texas Instruments\BLE-CC254x-1.4.2.2\Components\services\saddr
+-I
+C:\Texas Instruments\BLE-CC254x-1.4.2.2\Components\hal\target\CC2541ST
+-I
+C:\Texas Instruments\BLE-CC254x-1.4.2.2\Projects\ble\common\npi\npi_np
+-I
+C:\Texas Instruments\BLE-CC254x-1.4.2.2\Projects\ble\Profiles\Roles\CC254x
+-I
+C:\Texas Instruments\BLE-CC254x-1.4.2.2\Projects\ble\Profiles\Roles
+-I
+C:\Texas Instruments\BLE-CC254x-1.4.2.2\Projects\ble\Profiles\DevInfo
+-I
+C:\Texas Instruments\BLE-CC254x-1.4.2.2\Projects\ble\Profiles\Keys\CC254x
+-I
+C:\Texas Instruments\BLE-CC254x-1.4.2.2\Projects\ble\Profiles\Keys
+-I
+C:\Texas Instruments\BLE-CC254x-1.4.2.2\Projects\ble\Profiles\OAD
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\8051\inc
 -I
@@ -23,19 +49,45 @@ C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\8051\lib\dlib
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\8051\inc\clib
 -I
-C:\Texas Instruments\BLE-CC254x-1.4.2.2\Components\hal\common
--I
 C:\Texas Instruments\BLE-CC254x-1.4.2.2\Components\hal\include
 -I
 C:\Texas Instruments\BLE-CC254x-1.4.2.2\Components\osal\include
 -I
-M:\som\IAR\som\target\speedometer\common
--I
-M:\som\IAR\som\target\speedometer\config
--I
-M:\som\IAR\som\target\speedometer\drivers
--I
 C:\Texas Instruments\BLE-CC254x-1.4.2.2\Components\ble\controller\CC254x\include
+-I
+C:\Texas Instruments\BLE-CC254x-1.4.2.2\Components\ble\controller\CC254x\phy
+-I
+C:\Texas Instruments\BLE-CC254x-1.4.2.2\Components\ble\hci
+-I
+C:\Texas Instruments\BLE-CC254x-1.4.2.2\Components\ble\host
+-I
+C:\Texas Instruments\BLE-CC254x-1.4.2.2\Components\ble\ROM
+-I
+C:\Texas Instruments\BLE-CC254x-1.4.2.2\Components\ble\include
+-I
+C:\Texas Instruments\BLE-CC254x-1.4.2.2\Projects\ble\common\cc2540
+-I
+C:\Texas Instruments\BLE-CC254x-1.4.2.2\Projects\ble\common
+-I
+C:\Texas Instruments\BLE-CC254x-1.4.2.2\Projects\ble\include
+-I
+C:\Texas Instruments\BLE-CC254x-1.4.2.2\Components\services\saddr
+-I
+C:\Texas Instruments\BLE-CC254x-1.4.2.2\Components\hal\target\CC2541ST
+-I
+C:\Texas Instruments\BLE-CC254x-1.4.2.2\Projects\ble\common\npi\npi_np
+-I
+C:\Texas Instruments\BLE-CC254x-1.4.2.2\Projects\ble\Profiles\Roles\CC254x
+-I
+C:\Texas Instruments\BLE-CC254x-1.4.2.2\Projects\ble\Profiles\Roles
+-I
+C:\Texas Instruments\BLE-CC254x-1.4.2.2\Projects\ble\Profiles\DevInfo
+-I
+C:\Texas Instruments\BLE-CC254x-1.4.2.2\Projects\ble\Profiles\Keys\CC254x
+-I
+C:\Texas Instruments\BLE-CC254x-1.4.2.2\Projects\ble\Profiles\Keys
+-I
+C:\Texas Instruments\BLE-CC254x-1.4.2.2\Projects\ble\Profiles\OAD
 -D__CHAR_BITS__=8
 -D__CHAR_MAX__=0xff
 -D__CHAR_MIN__=0
@@ -362,6 +414,30 @@ C:\Texas Instruments\BLE-CC254x-1.4.2.2\Components\ble\controller\CC254x\include
 -D__EDG_ANSIC=1
 -D__EDG_CPP11_IL_EXTENSIONS_SUPPORTED=1
 -Dchip=2541
+-DINT_HEAP_LEN=3072
+-DHALNODEBUG=1
+-DHAL_AES_DMA=TRUE
+-DHAL_DMA=TRUE
+-DOSAL_CBTIMER_NUM_TASKS=1
+-DHOST_CONFIG=PERIPHERAL_CFG+CENTRAL_CFG
+-DCTRL_V41_CONFIG=PING_CFG+SLV_FEAT_EXCHG_CFG+CONN_PARAM_REQ_CFG
+-DBROADCASTER_CFG=0x01
+-DOBSERVER_CFG=0x02
+-DPERIPHERAL_CFG=0x04
+-DCENTRAL_CFG=0x08
+-DADV_NCONN_CFG=0x01
+-DADV_CONN_CFG=0x02
+-DSCAN_CFG=0x04
+-DINIT_CFG=0x08
+-DADV_CFG=ADV_NCONN_CFG+ADV_CONN_CFG
+-DLINK_CFG=ADV_CONN_CFG+INIT_CFG
+-DFULL_CFG=INIT_CFG+SCAN_CFG+ADV_NCONN_CFG+ADV_CONN_CFG
+-DPING_CFG=0x01
+-DSLV_FEAT_EXCHG_CFG=0x02
+-DCONN_PARAM_REQ_CFG=0x04
+-DLOW_DUTY_CYCLE_DIRECTED_CFG=0x08
+-DDTM_625US_TX_CFG=0x10
+-DFRAG_CFG=0x20
 -D__VERSION__="IAR C/C++ Compiler V10.20.1.5333 for 8051"
 -D__CODE_MEMORY_LIST1__()=__CODE_MEM_HELPER1__(__code, 0 )
 -D__CODE_MEMORY_LIST2__(_P1)=__CODE_MEM_HELPER2__(__code, 0 ,  _P1 )
