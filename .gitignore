@@ -1,3 +1,9 @@
+# Ignore IAR builds
 Debug/
-
 Release/
+
+# Ignore Eagle CAD temp files
+# Schematic
+*.s\#[0-9]
+# Libraries
+*.l\#[0-9]
