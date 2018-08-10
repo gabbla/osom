@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--/238785/35282/2.30/28/3/Integrated Circuit/-->
+<!DOCTYPE curve SYSTEM "eagle.dtd">
+<eagle version="7.7.0">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<description>&lt;32-bit Microcontrollers (up to 256 KB Flash and 64 KB SRAM) with Audio and Graphics Interfaces, USB, and Advanced Analog&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
+<packages>
+<package name="SOIC127P1030X265-28N">
+<description>&lt;b&gt;(SO)28-Lead(SOIC)&lt;/b&gt;&lt;br&gt;
+</description>
+<smd name="1" x="-4.675" y="8.255" dx="1.85" dy="0.65" layer="1" rot="R0"/>
+<smd name="2" x="-4.675" y="6.985" dx="1.85" dy="0.65" layer="1" rot="R0"/>
+<smd name="3" x="-4.675" y="5.715" dx="1.85" dy="0.65" layer="1" rot="R0"/>
+<smd name="4" x="-4.675" y="4.445" dx="1.85" dy="0.65" layer="1" rot="R0"/>
+<smd name="5" x="-4.675" y="3.175" dx="1.85" dy="0.65" layer="1" rot="R0"/>
+<smd name="6" x="-4.675" y="1.905" dx="1.85" dy="0.65" layer="1" rot="R0"/>
+<smd name="7" x="-4.675" y="0.635" dx="1.85" dy="0.65" layer="1" rot="R0"/>
+<smd name="8" x="-4.675" y="-0.635" dx="1.85" dy="0.65" layer="1" rot="R0"/>
+<smd name="9" x="-4.675" y="-1.905" dx="1.85" dy="0.65" layer="1" rot="R0"/>
+<smd name="10" x="-4.675" y="-3.175" dx="1.85" dy="0.65" layer="1" rot="R0"/>
+<smd name="11" x="-4.675" y="-4.445" dx="1.85" dy="0.65" layer="1" rot="R0"/>
+<smd name="12" x="-4.675" y="-5.715" dx="1.85" dy="0.65" layer="1" rot="R0"/>
+<smd name="13" x="-4.675" y="-6.985" dx="1.85" dy="0.65" layer="1" rot="R0"/>
+<smd name="14" x="-4.675" y="-8.255" dx="1.85" dy="0.65" layer="1" rot="R0"/>
+<smd name="15" x="4.675" y="-8.255" dx="1.85" dy="0.65" layer="1" rot="R0"/>
+<smd name="16" x="4.675" y="-6.985" dx="1.85" dy="0.65" layer="1" rot="R0"/>
+<smd name="17" x="4.675" y="-5.715" dx="1.85" dy="0.65" layer="1" rot="R0"/>
+<smd name="18" x="4.675" y="-4.445" dx="1.85" dy="0.65" layer="1" rot="R0"/>
+<smd name="19" x="4.675" y="-3.175" dx="1.85" dy="0.65" layer="1" rot="R0"/>
+<smd name="20" x="4.675" y="-1.905" dx="1.85" dy="0.65" layer="1" rot="R0"/>
+<smd name="21" x="4.675" y="-0.635" dx="1.85" dy="0.65" layer="1" rot="R0"/>
+<smd name="22" x="4.675" y="0.635" dx="1.85" dy="0.65" layer="1" rot="R0"/>
+<smd name="23" x="4.675" y="1.905" dx="1.85" dy="0.65" layer="1" rot="R0"/>
+<smd name="24" x="4.675" y="3.175" dx="1.85" dy="0.65" layer="1" rot="R0"/>
+<smd name="25" x="4.675" y="4.445" dx="1.85" dy="0.65" layer="1" rot="R0"/>
+<smd name="26" x="4.675" y="5.715" dx="1.85" dy="0.65" layer="1" rot="R0"/>
+<smd name="27" x="4.675" y="6.985" dx="1.85" dy="0.65" layer="1" rot="R0"/>
+<smd name="28" x="4.675" y="8.255" dx="1.85" dy="0.65" layer="1" rot="R0"/>
+<text x="0" y="0" align="center" size="1.27" layer="25" rot="R0" >&gt;NAME</text>
+<text x="0" y="0" align="center" size="1.27" layer="27" rot="R0" >&gt;VALUE</text>
+<wire x1="-5.85" y1="9.2" x2="5.85" y2="9.2" width="0.05" layer="51"/>
+<wire x1="5.85" y1="9.2" x2="5.85" y2="-9.2" width="0.05" layer="51"/>
+<wire x1="5.85" y1="-9.2" x2="-5.85" y2="-9.2" width="0.05" layer="51"/>
+<wire x1="-5.85" y1="-9.2" x2="-5.85" y2="9.2" width="0.05" layer="51"/>
+<wire x1="-3.75" y1="8.95" x2="3.75" y2="8.95" width="0.1" layer="51"/>
+<wire x1="3.75" y1="8.95" x2="3.75" y2="-8.95" width="0.1" layer="51"/>
+<wire x1="3.75" y1="-8.95" x2="-3.75" y2="-8.95" width="0.1" layer="51"/>
+<wire x1="-3.75" y1="-8.95" x2="-3.75" y2="8.95" width="0.1" layer="51"/>
+<wire x1="-3.75" y1="7.68" x2="-2.48" y2="8.95" width="0.1" layer="51"/>
+<wire x1="-3.4" y1="8.95" x2="3.4" y2="8.95" width="0.2" layer="21"/>
+<wire x1="3.4" y1="8.95" x2="3.4" y2="-8.95" width="0.2" layer="21"/>
+<wire x1="3.4" y1="-8.95" x2="-3.4" y2="-8.95" width="0.2" layer="21"/>
+<wire x1="-3.4" y1="-8.95" x2="-3.4" y2="8.95" width="0.2" layer="21"/>
+<wire x1="-5.6" y1="8.93" x2="-3.75" y2="8.93" width="0.2" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="PIC32MX110F016B-I_SO">
+<wire x1="5.08" y1="2.54" x2="119.38" y2="2.54" width="0.254" layer="94"/>
+<wire x1="119.38" y1="-35.56" x2="119.38" y2="2.54" width="0.254" layer="94"/>
+<wire x1="119.38" y1="-35.56" x2="5.08" y2="-35.56" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-35.56" width="0.254" layer="94"/>
+<text x="120.65" y="7.62" align="center-left" size="1.778" layer="95">&gt;NAME</text>
+<text x="120.65" y="5.08" align="center-left" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="!MCLR" x="0" y="0" length="middle" direction="io" rot="R0"/>
+<pin name="VREF+/CVREF+/AN0/C3INC/RPA0/CTED1/RA0" x="0" y="-2.54" length="middle" direction="in" rot="R0"/>
+<pin name="VREF-/CVREF-/AN1/RPA1/CTED2/RA1" x="0" y="-5.08" length="middle" direction="in" rot="R0"/>
+<pin name="PGED1/AN2/C1IND/C2INB/C3IND/RPB0/RB0" x="0" y="-7.62" length="middle" direction="in" rot="R0"/>
+<pin name="PGEC1/AN3/C1INC/C2INA/RPB1/CTED12/RB1" x="0" y="-10.16" length="middle" direction="in" rot="R0"/>
+<pin name="AN4/C1INB/C2IND/RPB2/SDA2/CTED13/RB2" x="0" y="-12.7" length="middle" direction="in" rot="R0"/>
+<pin name="AN5/C1INA/C2INC/RTCC/RPB3/SCL2/RB3" x="0" y="-15.24" length="middle" direction="in" rot="R0"/>
+<pin name="VSS_1" x="0" y="-17.78" length="middle" direction="pwr" rot="R0"/>
+<pin name="OSC1/CLKI/RPA2/RA2" x="0" y="-20.32" length="middle" direction="in" rot="R0"/>
+<pin name="OSC2/CLKO/RPA3/PMA0/RA3" x="0" y="-22.86" length="middle" direction="out" rot="R0"/>
+<pin name="SOSCI/RPB4/RB4" x="0" y="-25.4" length="middle" direction="io" rot="R0"/>
+<pin name="SOSCO/RPA4/T1CK/CTED9/PMA1/RA4" x="0" y="-27.94" length="middle" direction="io" rot="R0"/>
+<pin name="VDD" x="0" y="-30.48" length="middle" direction="pwr" rot="R0"/>
+<pin name="PGED3/RPB5/PMD7/RB5" x="0" y="-33.02" length="middle" direction="io" rot="R0"/>
+<pin name="AVDD" x="124.46" y="0" length="middle" direction="pwr" rot="R180"/>
+<pin name="AVSS" x="124.46" y="-2.54" length="middle" direction="pwr" rot="R180"/>
+<pin name="AN9/C3INA/RPB15/SCK2/CTED6/PMCS1/RB15" x="124.46" y="-5.08" length="middle" direction="in" rot="R180"/>
+<pin name="CVREFOUT/AN10/C3INB/RPB14/SCK1/CTED5/PMWR/RB14" x="124.46" y="-7.62" length="middle" direction="out" rot="R180"/>
+<pin name="AN11/RPB13/CTPLS/PMRD/RB13" x="124.46" y="-10.16" length="middle" direction="io" rot="R180"/>
+<pin name="AN12/PMD0/RB12" x="124.46" y="-12.7" length="middle" direction="io" rot="R180"/>
+<pin name="PGEC2/TMS/RPB11/PMD1/RB11" x="124.46" y="-15.24" length="middle" direction="io" rot="R180"/>
+<pin name="PGED2/RPB10/CTED11/PMD2/RB10" x="124.46" y="-17.78" length="middle" direction="io" rot="R180"/>
+<pin name="VCAP" x="124.46" y="-20.32" length="middle" direction="io" rot="R180"/>
+<pin name="VSS_2" x="124.46" y="-22.86" length="middle" direction="pwr" rot="R180"/>
+<pin name="TDO/RPB9/SDA1/CTED4/PMD3/RB9" x="124.46" y="-25.4" length="middle" direction="io" rot="R180"/>
+<pin name="TCK/RPB8/SCL1/CTED10/PMD4/RB8" x="124.46" y="-27.94" length="middle" direction="io" rot="R180"/>
+<pin name="TDI/RPB7/CTED3/PMD5/INT0/RB7" x="124.46" y="-30.48" length="middle" direction="in" rot="R180"/>
+<pin name="PGEC3/RPB6/PMD6/RB6" x="124.46" y="-33.02" length="middle" direction="io" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="PIC32MX110F016B-I_SO" prefix="IC">
+<description>&lt;b&gt;32-bit Microcontrollers (up to 256 KB Flash and 64 KB SRAM) with Audio and Graphics Interfaces, USB, and Advanced Analog&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="http://ww1.microchip.com/downloads/en/DeviceDoc/60001168H.pdf"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="PIC32MX110F016B-I_SO" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOIC127P1030X265-28N">
+<connects>
+<connect gate="G$1" pin="!MCLR" pad="1"/>
+<connect gate="G$1" pin="VREF+/CVREF+/AN0/C3INC/RPA0/CTED1/RA0" pad="2"/>
+<connect gate="G$1" pin="VREF-/CVREF-/AN1/RPA1/CTED2/RA1" pad="3"/>
+<connect gate="G$1" pin="PGED1/AN2/C1IND/C2INB/C3IND/RPB0/RB0" pad="4"/>
+<connect gate="G$1" pin="PGEC1/AN3/C1INC/C2INA/RPB1/CTED12/RB1" pad="5"/>
+<connect gate="G$1" pin="AN4/C1INB/C2IND/RPB2/SDA2/CTED13/RB2" pad="6"/>
+<connect gate="G$1" pin="AN5/C1INA/C2INC/RTCC/RPB3/SCL2/RB3" pad="7"/>
+<connect gate="G$1" pin="VSS_1" pad="8"/>
+<connect gate="G$1" pin="OSC1/CLKI/RPA2/RA2" pad="9"/>
+<connect gate="G$1" pin="OSC2/CLKO/RPA3/PMA0/RA3" pad="10"/>
+<connect gate="G$1" pin="SOSCI/RPB4/RB4" pad="11"/>
+<connect gate="G$1" pin="SOSCO/RPA4/T1CK/CTED9/PMA1/RA4" pad="12"/>
+<connect gate="G$1" pin="VDD" pad="13"/>
+<connect gate="G$1" pin="PGED3/RPB5/PMD7/RB5" pad="14"/>
+<connect gate="G$1" pin="PGEC3/RPB6/PMD6/RB6" pad="15"/>
+<connect gate="G$1" pin="TDI/RPB7/CTED3/PMD5/INT0/RB7" pad="16"/>
+<connect gate="G$1" pin="TCK/RPB8/SCL1/CTED10/PMD4/RB8" pad="17"/>
+<connect gate="G$1" pin="TDO/RPB9/SDA1/CTED4/PMD3/RB9" pad="18"/>
+<connect gate="G$1" pin="VSS_2" pad="19"/>
+<connect gate="G$1" pin="VCAP" pad="20"/>
+<connect gate="G$1" pin="PGED2/RPB10/CTED11/PMD2/RB10" pad="21"/>
+<connect gate="G$1" pin="PGEC2/TMS/RPB11/PMD1/RB11" pad="22"/>
+<connect gate="G$1" pin="AN12/PMD0/RB12" pad="23"/>
+<connect gate="G$1" pin="AN11/RPB13/CTPLS/PMRD/RB13" pad="24"/>
+<connect gate="G$1" pin="CVREFOUT/AN10/C3INB/RPB14/SCK1/CTED5/PMWR/RB14" pad="25"/>
+<connect gate="G$1" pin="AN9/C3INA/RPB15/SCK2/CTED6/PMCS1/RB15" pad="26"/>
+<connect gate="G$1" pin="AVSS" pad="27"/>
+<connect gate="G$1" pin="AVDD" pad="28"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="Manufacturer_Name" value="Microchip" constant="no"/>
+<attribute name="Manufacturer_Part_Number" value="PIC32MX110F016B-I/SO" constant="no"/>
+<attribute name="RS_Part_Number" value="" constant="no"/>
+<attribute name="RS_Price/Stock" value="" constant="no"/>
+<attribute name="Allied_Number" value="70452123" constant="no"/>
+<attribute name="Allied_Price/Stock" value="http://www.alliedelec.com/microchip-technology-inc-pic32mx110f016b-i-so/70452123/" constant="no"/>
+<attribute name="Arrow_Part_Number" value="PIC32MX110F016B-I/SO" constant="no"/>
+<attribute name="Arrow_Price/Stock" value="https://www.arrow.com/en/products/pic32mx110f016b-iso/microchip-technology" constant="no"/>
+<attribute name="Description" value="32-bit Microcontrollers (up to 256 KB Flash and 64 KB SRAM) with Audio and Graphics Interfaces, USB, and Advanced Analog" constant="no"/>
+<attribute name="Height" value="2.65mm" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
+</eagle>
