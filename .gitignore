@@ -7,6 +7,7 @@ Release/
 
 # Ignore Eagle CAD temp files
 # Schematic
+*.s##
 *.s\#[0-9]
 # Libraries
 *.l\#[0-9]
