@@ -2,6 +2,9 @@
 Debug/
 Release/
 
+# Ignore PDF
+*.pdf
+
 # Ignore Eagle CAD temp files
 # Schematic
 *.s\#[0-9]
