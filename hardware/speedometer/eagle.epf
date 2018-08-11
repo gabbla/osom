@@ -355,6 +355,8 @@ UsedLibrary="M:/som/hardware/eagle_libs/CC2541RHA.lbr"
 UsedLibrary="M:/som/hardware/eagle_libs/CONUFL001-SMD-T.lbr"
 UsedLibrary="M:/som/hardware/eagle_libs/HM10.lbr"
 UsedLibrary="M:/som/hardware/eagle_libs/LQM21PN2R2MC0D.lbr"
+UsedLibrary="M:/som/hardware/eagle_libs/MCP2200-I_SO.lbr"
+UsedLibrary="M:/som/hardware/eagle_libs/PIC32MX110F016B-I_SO.lbr"
 UsedLibrary="M:/som/hardware/eagle_libs/TPS62237DRYT.lbr"
 UsedLibrary="M:/som/hardware/eagle_libs/nRF24L01P-T.lbr"
 
