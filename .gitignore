@@ -12,4 +12,5 @@ Release/
 # Libraries
 *.l\#[0-9]
 # Board
+*.b##
 *.b\#[0-9]
