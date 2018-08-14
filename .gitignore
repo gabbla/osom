@@ -1,7 +1,3 @@
-# Ignore IAR builds
-Debug/
-Release/
-
 # Ignore PDF
 *.pdf
 
