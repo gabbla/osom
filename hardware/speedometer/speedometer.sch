@@ -28641,7 +28641,7 @@ Source: &lt;a href="https://media.digikey.com/pdf/Data Sheets/C&amp;K/PTS645VJzz
 <part name="GND25" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND22" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND21" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="100n"/>
+<part name="C9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805K" package3d_urn="urn:adsk.eagle:package:23681/2" value="100n"/>
 <part name="+3V39" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="SV2" library="con-lstb" library_urn="urn:adsk.eagle:library:162" deviceset="MA05-2" device="" package3d_urn="urn:adsk.eagle:package:8329/1"/>
 <part name="GND19" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -28688,7 +28688,6 @@ Source: &lt;a href="https://media.digikey.com/pdf/Data Sheets/C&amp;K/PTS645VJzz
 <part name="GND31" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="100n"/>
 <part name="GND33" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R18" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100"/>
 <part name="LED7" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="3MM" package3d_urn="urn:adsk.eagle:package:15797/1"/>
 <part name="R26" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="1k5"/>
 <part name="R28" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="TBD">
@@ -28715,9 +28714,6 @@ Source: &lt;a href="https://media.digikey.com/pdf/Data Sheets/C&amp;K/PTS645VJzz
 </part>
 <part name="TP26" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/1" value="TPB1,27">
 <attribute name="TP_SIGNAL_NAME" value="TP_EN1"/>
-</part>
-<part name="TP24" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/1" value="TPB1,27">
-<attribute name="TP_SIGNAL_NAME" value="TP_!SYSOFF"/>
 </part>
 <part name="TP19" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/1" value="TPB1,27">
 <attribute name="TP_SIGNAL_NAME" value="TP_CC_!RST"/>
@@ -28852,7 +28848,7 @@ Source: &lt;a href="https://media.digikey.com/pdf/Data Sheets/C&amp;K/PTS645VJzz
 <part name="R10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="18k"/>
 <part name="R11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="39k"/>
 <part name="GND16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="4u7"/>
+<part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805K" package3d_urn="urn:adsk.eagle:package:23681/2" value="4u7"/>
 <part name="VDD1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VDD" device=""/>
 <part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="4k7"/>
@@ -28867,9 +28863,6 @@ Source: &lt;a href="https://media.digikey.com/pdf/Data Sheets/C&amp;K/PTS645VJzz
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="TP13" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/1">
 <attribute name="TP_SIGNAL_NAME" value="TP_APP/BL"/>
-</part>
-<part name="TP14" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/1">
-<attribute name="TP_SIGNAL_NAME" value="TP_MCLR"/>
 </part>
 <part name="TP15" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/1">
 <attribute name="TP_SIGNAL_NAME" value="TP_DBG_TX"/>
@@ -29020,6 +29013,10 @@ Source: &lt;a href="https://media.digikey.com/pdf/Data Sheets/C&amp;K/PTS645VJzz
 <part name="GND70" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="S1" library="PTS645VJM61LFS" deviceset="PTS645VJM61LFS" device=""/>
 <part name="R22" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100k"/>
+<part name="GND43" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="TP14" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/1">
+<attribute name="TP_SIGNAL_NAME" value="TP_!MCLR"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -29072,6 +29069,7 @@ Source: &lt;a href="https://media.digikey.com/pdf/Data Sheets/C&amp;K/PTS645VJzz
 <instance part="TP9" gate="G$1" x="203.2" y="63.5"/>
 <instance part="IC2" gate="G$1" x="111.76" y="132.08"/>
 <instance part="GND6" gate="1" x="104.14" y="129.54"/>
+<instance part="TP14" gate="G$1" x="66.04" y="132.08"/>
 </instances>
 <busses>
 <bus name="NRF_SPI:CE,CLK,CS,IRQ,MISO,MOSI">
@@ -29201,6 +29199,9 @@ Source: &lt;a href="https://media.digikey.com/pdf/Data Sheets/C&amp;K/PTS645VJzz
 <wire x1="22.86" y1="165.1" x2="60.96" y2="165.1" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="165.1" x2="60.96" y2="124.46" width="0.1524" layer="91"/>
 <junction x="60.96" y="124.46"/>
+<wire x1="60.96" y1="124.46" x2="66.04" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="TP14" gate="G$1" pin="TP"/>
+<wire x1="66.04" y1="124.46" x2="66.04" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="!MCLR" class="0">
@@ -29527,7 +29528,6 @@ Source: &lt;a href="https://media.digikey.com/pdf/Data Sheets/C&amp;K/PTS645VJzz
 <instance part="C6" gate="G$1" x="68.58" y="76.2"/>
 <instance part="GND12" gate="1" x="68.58" y="20.32"/>
 <instance part="TP13" gate="G$1" x="106.68" y="40.64"/>
-<instance part="TP14" gate="G$1" x="121.92" y="40.64"/>
 <instance part="TP15" gate="G$1" x="162.56" y="66.04"/>
 <instance part="TP18" gate="G$1" x="175.26" y="60.96"/>
 <instance part="TP17" gate="G$1" x="175.26" y="93.98" rot="R270"/>
@@ -29778,10 +29778,7 @@ Source: &lt;a href="https://media.digikey.com/pdf/Data Sheets/C&amp;K/PTS645VJzz
 <wire x1="101.6" y1="86.36" x2="101.6" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="27.94" x2="121.92" y2="27.94" width="0.1524" layer="91"/>
 <label x="124.46" y="27.94" size="1.778" layer="95" xref="yes"/>
-<pinref part="TP14" gate="G$1" pin="TP"/>
 <wire x1="121.92" y1="27.94" x2="124.46" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="38.1" x2="121.92" y2="27.94" width="0.1524" layer="91"/>
-<junction x="121.92" y="27.94"/>
 </segment>
 </net>
 <net name="!APP!/BL" class="0">
@@ -30054,9 +30051,9 @@ provided by the debugger</text>
 <instance part="R16" gate="G$1" x="101.6" y="101.6" rot="R90"/>
 <instance part="+3V311" gate="G$1" x="93.98" y="114.3"/>
 <instance part="+3V312" gate="G$1" x="101.6" y="114.3"/>
-<instance part="R17" gate="G$1" x="165.1" y="104.14"/>
-<instance part="LED5" gate="G$1" x="177.8" y="104.14" rot="R90"/>
-<instance part="GND30" gate="1" x="187.96" y="99.06"/>
+<instance part="R17" gate="G$1" x="182.88" y="83.82"/>
+<instance part="LED5" gate="G$1" x="195.58" y="83.82" rot="R90"/>
+<instance part="GND30" gate="1" x="213.36" y="78.74"/>
 </instances>
 <busses>
 <bus name="IOE_I2C:SCL,SDA">
@@ -30095,9 +30092,9 @@ provided by the debugger</text>
 </segment>
 <segment>
 <pinref part="LED5" gate="G$1" pin="C"/>
-<wire x1="182.88" y1="104.14" x2="187.96" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="83.82" x2="213.36" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="GND30" gate="1" pin="GND"/>
-<wire x1="187.96" y1="104.14" x2="187.96" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="83.82" x2="213.36" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -30147,20 +30144,11 @@ provided by the debugger</text>
 <junction x="93.98" y="91.44"/>
 </segment>
 </net>
-<net name="N$16" class="0">
-<segment>
-<pinref part="IC6" gate="G$1" pin="P0"/>
-<wire x1="137.16" y1="96.52" x2="154.94" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="154.94" y1="96.52" x2="154.94" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="R17" gate="G$1" pin="1"/>
-<wire x1="154.94" y1="104.14" x2="160.02" y2="104.14" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$19" class="0">
 <segment>
 <pinref part="R17" gate="G$1" pin="2"/>
 <pinref part="LED5" gate="G$1" pin="A"/>
-<wire x1="170.18" y1="104.14" x2="175.26" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="83.82" x2="193.04" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="EN1" class="0">
@@ -30202,23 +30190,32 @@ provided by the debugger</text>
 <label x="177.8" y="76.2" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="LASER_LEFT_CTL" class="0">
-<segment>
-<pinref part="IC6" gate="G$1" pin="P3"/>
-<wire x1="137.16" y1="88.9" x2="175.26" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="175.26" y1="88.9" x2="175.26" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="175.26" y1="81.28" x2="177.8" y2="81.28" width="0.1524" layer="91"/>
-<label x="177.8" y="81.28" size="1.778" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="LEFT_STS" class="0">
+<net name="RIGHT_STS" class="0">
 <segment>
 <pinref part="IC6" gate="G$1" pin="P1"/>
 <wire x1="137.16" y1="93.98" x2="190.5" y2="93.98" width="0.1524" layer="91"/>
 <label x="190.5" y="93.98" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="RIGHT_STS" class="0">
+<net name="LASER_LEFT_CTL" class="0">
+<segment>
+<pinref part="IC6" gate="G$1" pin="P0"/>
+<wire x1="137.16" y1="96.52" x2="152.4" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="96.52" x2="152.4" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="99.06" x2="154.94" y2="99.06" width="0.1524" layer="91"/>
+<label x="154.94" y="99.06" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="IC6" gate="G$1" pin="P3"/>
+<wire x1="137.16" y1="88.9" x2="175.26" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="88.9" x2="175.26" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="R17" gate="G$1" pin="1"/>
+<wire x1="175.26" y1="83.82" x2="177.8" y2="83.82" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="LEFT_STS" class="0">
 <segment>
 <pinref part="IC6" gate="G$1" pin="P2"/>
 <wire x1="137.16" y1="91.44" x2="185.42" y2="91.44" width="0.1524" layer="91"/>
@@ -30260,7 +30257,6 @@ DO NOT MOUNT R23</text>
 <instance part="GND31" gate="1" x="55.88" y="66.04"/>
 <instance part="C12" gate="G$1" x="93.98" y="111.76"/>
 <instance part="GND33" gate="1" x="93.98" y="101.6"/>
-<instance part="R18" gate="G$1" x="88.9" y="73.66" rot="R90"/>
 <instance part="LED7" gate="G$1" x="142.24" y="119.38" rot="R270"/>
 <instance part="R26" gate="G$1" x="154.94" y="119.38" rot="R180"/>
 <instance part="R28" gate="G$1" x="167.64" y="66.04" rot="R90">
@@ -30274,13 +30270,13 @@ DO NOT MOUNT R23</text>
 <instance part="TP30" gate="G$1" x="177.8" y="104.14"/>
 <instance part="TP27" gate="G$1" x="134.62" y="40.64" rot="R270"/>
 <instance part="TP26" gate="G$1" x="129.54" y="33.02" rot="R270"/>
-<instance part="TP24" gate="G$1" x="88.9" y="86.36"/>
 <instance part="TP29" gate="G$1" x="177.8" y="121.92"/>
 <instance part="TP31" gate="G$1" x="190.5" y="121.92"/>
 <instance part="TP28" gate="G$1" x="137.16" y="63.5">
 <attribute name="TP_SIGNAL_NAME" x="137.16" y="66.04" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R22" gate="G$1" x="147.32" y="127" rot="R180"/>
+<instance part="GND43" gate="1" x="91.44" y="53.34"/>
 </instances>
 <busses>
 </busses>
@@ -30363,6 +30359,13 @@ DO NOT MOUNT R23</text>
 <wire x1="167.64" y1="60.96" x2="167.64" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="GND39" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="IC7" gate="G$1" pin="SYSOFF"/>
+<wire x1="91.44" y1="81.28" x2="109.22" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="81.28" x2="91.44" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="GND43" gate="1" pin="GND"/>
+<wire x1="91.44" y1="66.04" x2="91.44" y2="55.88" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$7" class="0">
 <segment>
@@ -30440,25 +30443,6 @@ DO NOT MOUNT R23</text>
 <pinref part="TP25" gate="G$1" pin="TP"/>
 <wire x1="93.98" y1="127" x2="93.98" y2="116.84" width="0.1524" layer="91"/>
 <junction x="93.98" y="116.84"/>
-</segment>
-</net>
-<net name="N$11" class="0">
-<segment>
-<pinref part="R18" gate="G$1" pin="2"/>
-<wire x1="88.9" y1="78.74" x2="88.9" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="IC7" gate="G$1" pin="SYSOFF"/>
-<wire x1="88.9" y1="81.28" x2="109.22" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="TP24" gate="G$1" pin="TP"/>
-<wire x1="88.9" y1="83.82" x2="88.9" y2="81.28" width="0.1524" layer="91"/>
-<junction x="88.9" y="81.28"/>
-</segment>
-</net>
-<net name="!SYSOFF" class="0">
-<segment>
-<pinref part="R18" gate="G$1" pin="1"/>
-<wire x1="88.9" y1="68.58" x2="88.9" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="66.04" x2="81.28" y2="66.04" width="0.1524" layer="91"/>
-<label x="81.28" y="66.04" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="!BAT_PGOOD" class="0">
