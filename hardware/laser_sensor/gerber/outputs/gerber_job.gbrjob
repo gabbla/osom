@@ -1,0 +1,13 @@
+G04 Gerber job file.*
+%TF.FileFunction,JobInfo*%
+%TF.GenerationSoftware,Autodesk,EAGLE,9.1.0*%
+%TF.CreationDate,2018-08-15T13:35:39Z*%
+%TF.Part,Single*%
+%MOMM*%
+%TJ.B_Owner,Gabriele Zampieri <zampierigabriele.ist@gmail.com>*%
+%TJ.B_ID,laser_sensor*%
+%TJ.B_LayerNum,2*%
+%TJ.B_Thickness,1.570000*%
+%TJ.B_Size_X,28.575000*%
+%TJ.B_Size_Y,23.495000*%
+M02*
