@@ -80,7 +80,12 @@
 <wire x1="0" y1="23.495" x2="0" y2="0" width="0" layer="20"/>
 <hole x="3.81" y="3.81" drill="2.9972"/>
 <hole x="24.765" y="19.685" drill="2.9972"/>
-<text x="8.255" y="8.255" size="1.778" layer="51">v1.0</text>
+<text x="1.905" y="7.62" size="1.778" layer="25">v0.1-alpha</text>
+<text x="14.605" y="12.7" size="1.778" layer="26" rot="MR0">DO NOT 
+TOUCH
+===&gt;</text>
+<text x="23.495" y="8.89" size="3.175" layer="26" rot="MR0">λ:</text>
+<rectangle x1="8.255" y1="8.89" x2="20.32" y2="12.065" layer="26"/>
 </plain>
 <libraries>
 <library name="rcl" urn="urn:adsk.eagle:library:334">
@@ -2874,11 +2879,14 @@ design rules under a new name.</description>
 <approved hash="4,1,675a975fd1210fc8"/>
 <approved hash="4,1,6c5e39120376d527"/>
 <approved hash="4,1,8c91fc813572f2c0"/>
-<approved hash="4,1,f439831c0ac6fefe"/>
 </errors>
 </board>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)

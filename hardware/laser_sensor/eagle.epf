@@ -367,6 +367,7 @@ UsedLibrary="M:/som/hardware/eagle_libs/TPS62237DRYT.lbr"
 UsedLibrary="M:/som/hardware/eagle_libs/TPS63000DRCT.lbr"
 UsedLibrary="M:/som/hardware/eagle_libs/VLF4012AT-3R3M1R3.lbr"
 UsedLibrary="M:/som/hardware/eagle_libs/nRF24L01P-T.lbr"
+UsedLibrary="M:/som/hardware/eagle_libs/SFH_2270_R.lbr"
 
 [Win_1]
 Type="Control Panel"
