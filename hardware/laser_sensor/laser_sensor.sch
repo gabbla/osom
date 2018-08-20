@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.0">
+<eagle version="9.1.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -22046,6 +22046,7 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <sheets>
 <sheet>
 <plain>
+<text x="246.38" y="5.08" size="2.54" layer="94">v0.1_α</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
