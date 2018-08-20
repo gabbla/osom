@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.0">
+<eagle version="9.1.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -27517,6 +27517,7 @@ Source: &lt;a href="https://www.coilcraft.com/misc/lps3015d.html"&gt; Datasheet 
 <text x="99.06" y="20.32" size="1.778" layer="91">MODE
 1: Application
 0: Bootloader</text>
+<text x="246.38" y="5.08" size="2.54" layer="94">v0.1_α</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -27991,6 +27992,7 @@ Source: &lt;a href="https://www.coilcraft.com/misc/lps3015d.html"&gt; Datasheet 
 <sheet>
 <description>USB to UART bridge</description>
 <plain>
+<text x="246.38" y="5.08" size="2.54" layer="94">v0.1_α</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0"/>
@@ -28317,6 +28319,7 @@ Source: &lt;a href="https://www.coilcraft.com/misc/lps3015d.html"&gt; Datasheet 
 <plain>
 <text x="20.32" y="10.16" size="1.778" layer="91">Short SJ1 to use the +3v3
 provided by the debugger</text>
+<text x="246.38" y="5.08" size="2.54" layer="94">v0.1_α</text>
 </plain>
 <instances>
 <instance part="FRAME3" gate="G$1" x="0" y="0"/>
@@ -28529,6 +28532,7 @@ provided by the debugger</text>
 <description>I/O Expander I2C</description>
 <plain>
 <text x="111.76" y="53.34" size="1.778" layer="91">I2C address: 0100000x</text>
+<text x="246.38" y="5.08" size="2.54" layer="94">v0.1_α</text>
 </plain>
 <instances>
 <instance part="FRAME4" gate="G$1" x="0" y="0"/>
@@ -28724,6 +28728,7 @@ provided by the debugger</text>
 <text x="175.26" y="63.5" size="1.778" layer="91">To disable the chg timer 
 DO NOT MOUNT R23</text>
 <text x="124.46" y="147.32" size="1.778" layer="91">CHG LED exposed to user</text>
+<text x="246.38" y="5.08" size="2.54" layer="94">v0.1_α</text>
 </plain>
 <instances>
 <instance part="FRAME5" gate="G$1" x="0" y="0"/>
@@ -29021,6 +29026,7 @@ DO NOT MOUNT R23</text>
 <plain>
 <text x="132.08" y="63.5" size="1.778" layer="91">TEST NEEDED
 ON R33</text>
+<text x="246.38" y="5.08" size="2.54" layer="94">v0.1_α</text>
 </plain>
 <instances>
 <instance part="FRAME6" gate="G$1" x="0" y="0"/>
@@ -29332,6 +29338,7 @@ ON R33</text>
 <description>I2C EEPROM</description>
 <plain>
 <text x="116.84" y="63.5" size="1.778" layer="91">I2C address: 1010000x</text>
+<text x="246.38" y="5.08" size="2.54" layer="94">v0.1_α</text>
 </plain>
 <instances>
 <instance part="IC10" gate="G$1" x="129.54" y="88.9"/>
@@ -29414,6 +29421,7 @@ ON R33</text>
 <sheet>
 <description>Voltage regulators</description>
 <plain>
+<text x="246.38" y="5.08" size="2.54" layer="94">v0.1_α</text>
 </plain>
 <instances>
 <instance part="FRAME8" gate="G$1" x="0" y="0"/>
@@ -29737,6 +29745,7 @@ ON R33</text>
 CAREFULLY</text>
 <text x="137.16" y="124.46" size="1.778" layer="91">TEST THIS SITUTATION 
 CAREFULLY</text>
+<text x="246.38" y="5.08" size="2.54" layer="94">v0.1_α</text>
 </plain>
 <instances>
 <instance part="FRAME9" gate="G$1" x="0" y="0"/>
