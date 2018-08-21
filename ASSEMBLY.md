@@ -19,7 +19,7 @@ Test Point|Voltage|Source
 --|--|--
 TP25|~5V|USB port (J1)
 TP23|3.4 < V < 4.2|Battery (J2)
-TP31|3.4 < V < 5|BQ74025 (IC7)
+TP31|TP23 < V < TP25|BQ74025 (IC7)
 TP34|3V3|TPS63001 (IC12)
 TP35|5V|TPS63002 (IC13)
 
