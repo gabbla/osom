@@ -1,5 +1,5 @@
-# Ignore PDF
-*.pdf
+# Ignore datasheets
+datasheets
 
 # Ignore Eagle CAD temp files
 # Schematic

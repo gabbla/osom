@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.0">
+<eagle version="9.1.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -9,25 +9,25 @@
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
+<layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
+<layer number="3" name="Route3" color="17" fill="1" visible="no" active="no"/>
+<layer number="4" name="Route4" color="18" fill="1" visible="no" active="no"/>
+<layer number="5" name="Route5" color="19" fill="1" visible="no" active="no"/>
+<layer number="6" name="Route6" color="25" fill="1" visible="no" active="no"/>
+<layer number="7" name="Route7" color="26" fill="1" visible="no" active="no"/>
+<layer number="8" name="Route8" color="27" fill="1" visible="no" active="no"/>
+<layer number="9" name="Route9" color="28" fill="1" visible="no" active="no"/>
+<layer number="10" name="Route10" color="29" fill="1" visible="no" active="no"/>
+<layer number="11" name="Route11" color="30" fill="1" visible="no" active="no"/>
+<layer number="12" name="Route12" color="20" fill="1" visible="no" active="no"/>
+<layer number="13" name="Route13" color="21" fill="1" visible="no" active="no"/>
+<layer number="14" name="Route14" color="22" fill="1" visible="no" active="no"/>
+<layer number="15" name="Route15" color="23" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
+<layer number="20" name="Dimension" color="24" fill="1" visible="no" active="no"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
@@ -2950,15 +2950,6 @@ Metric Code Size 4564</description>
 <text x="-2.8" y="-4.575" size="1.016" layer="27">&gt;VALUE</text>
 <rectangle x1="-2.8" y1="-3.15" x2="-2.2" y2="3.15" layer="51"/>
 <rectangle x1="2.2" y1="-3.15" x2="2.8" y2="3.15" layer="51"/>
-</package>
-<package name="HPC0201" urn="urn:adsk.eagle:footprint:23195/1" library_version="3">
-<description>&lt;b&gt; &lt;/b&gt;&lt;p&gt;
-Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
-<smd name="1" x="-0.18" y="0" dx="0.2" dy="0.35" layer="1"/>
-<smd name="2" x="0.18" y="0" dx="0.2" dy="0.35" layer="1"/>
-<text x="-0.75" y="0.74" size="1.27" layer="25">&gt;NAME</text>
-<text x="-0.785" y="-1.865" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.305" y1="-0.15" x2="0.305" y2="0.15" layer="51"/>
 </package>
 <package name="C0201" urn="urn:adsk.eagle:footprint:23196/1" library_version="3">
 <description>Source: http://www.avxcorp.com/docs/catalogs/cx5r.pdf</description>
@@ -9402,6 +9393,15 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <vertex x="-3.05" y="-2.475"/>
 </polygon>
 </package>
+<package name="HPC0201" urn="urn:adsk.eagle:footprint:25783/1" library_version="5">
+<description>&lt;b&gt; &lt;/b&gt;&lt;p&gt;
+Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
+<smd name="1" x="-0.18" y="0" dx="0.2" dy="0.35" layer="1"/>
+<smd name="2" x="0.18" y="0" dx="0.2" dy="0.35" layer="1"/>
+<text x="-0.75" y="0.74" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.785" y="-1.865" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.305" y1="-0.15" x2="0.305" y2="0.15" layer="51"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="C0402" urn="urn:adsk.eagle:package:23626/1" type="box" library_version="3">
@@ -9903,13 +9903,6 @@ Metric Code Size 4564</description>
 <description>Ceramic Chip Capacitor KEMET 2225 reflow solderMetric Code Size 5664</description>
 <packageinstances>
 <packageinstance name="C2225K"/>
-</packageinstances>
-</package3d>
-<package3d name="HPC0201" urn="urn:adsk.eagle:package:23688/1" type="box" library_version="3">
-<description> 
-Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
-<packageinstances>
-<packageinstance name="HPC0201"/>
 </packageinstances>
 </package3d>
 <package3d name="C0201" urn="urn:adsk.eagle:package:23690/2" type="model" library_version="3">
@@ -11758,6 +11751,13 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <packageinstance name="UD-8X10_NICHICON"/>
 </packageinstances>
 </package3d>
+<package3d name="HPC0201" urn="urn:adsk.eagle:package:26213/1" type="box" library_version="5">
+<description> 
+Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
+<packageinstances>
+<packageinstance name="HPC0201"/>
+</packageinstances>
+</package3d>
 </packages3d>
 <symbols>
 <symbol name="C-EU" urn="urn:adsk.eagle:symbol:23120/1" library_version="3">
@@ -11799,7 +11799,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="C-EU" urn="urn:adsk.eagle:component:23793/42" prefix="C" uservalue="yes" library_version="3">
+<deviceset name="C-EU" urn="urn:adsk.eagle:component:23793/44" prefix="C" uservalue="yes" library_version="5">
 <description>&lt;B&gt;CAPACITOR&lt;/B&gt;, European symbol</description>
 <gates>
 <gate name="G$1" symbol="C-EU" x="0" y="0"/>
@@ -12847,7 +12847,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23688/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:26213/1"/>
 </package3dinstances>
 <technologies>
 <technology name="">
@@ -20260,69 +20260,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </deviceset>
 </devicesets>
 </library>
-<library name="LQM21PN2R2MC0D">
-<description>&lt;Inductor SMD 0805 shielded 2.2uH Murata LQW21P_C0 Series 2200 nH 20% Ferrite Multilayer SMD Inductor, 0805 Case, SRF: 0.05GHz 600mA dc 425m Rdc&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
-<packages>
-<package name="INDC2012X55N">
-<description>&lt;b&gt;0805&lt;/b&gt;&lt;br&gt;
-</description>
-<smd name="1" x="-0.9" y="0" dx="1.45" dy="1.15" layer="1" rot="R90"/>
-<smd name="2" x="0.9" y="0" dx="1.45" dy="1.15" layer="1" rot="R90"/>
-<text x="0" y="-2.54" size="1.27" layer="25" align="center">&gt;NAME</text>
-<text x="0" y="2.54" size="1.27" layer="27" align="center">&gt;VALUE</text>
-<wire x1="-1.725" y1="1" x2="1.725" y2="1" width="0.05" layer="51"/>
-<wire x1="1.725" y1="1" x2="1.725" y2="-1" width="0.05" layer="51"/>
-<wire x1="1.725" y1="-1" x2="-1.725" y2="-1" width="0.05" layer="51"/>
-<wire x1="-1.725" y1="-1" x2="-1.725" y2="1" width="0.05" layer="51"/>
-<wire x1="-1" y1="0.625" x2="1" y2="0.625" width="0.1" layer="51"/>
-<wire x1="1" y1="0.625" x2="1" y2="-0.625" width="0.1" layer="51"/>
-<wire x1="1" y1="-0.625" x2="-1" y2="-0.625" width="0.1" layer="51"/>
-<wire x1="-1" y1="-0.625" x2="-1" y2="0.625" width="0.1" layer="51"/>
-<wire x1="0" y1="0.525" x2="0" y2="-0.525" width="0.2" layer="21"/>
-</package>
-</packages>
-<symbols>
-<symbol name="LQM21PN2R2MC0D">
-<wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.254" layer="94" curve="-175.4"/>
-<wire x1="5.08" y1="0" x2="7.62" y2="0" width="0.254" layer="94" curve="-175.4"/>
-<wire x1="7.62" y1="0" x2="10.16" y2="0" width="0.254" layer="94" curve="-175.4"/>
-<text x="1.27" y="6.35" size="1.778" layer="95" align="center-left">&gt;NAME</text>
-<text x="1.27" y="3.81" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
-<pin name="1" x="0" y="0" visible="pad" length="short"/>
-<pin name="2" x="12.7" y="0" visible="pad" length="short" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="LQM21PN2R2MC0D" prefix="L">
-<description>&lt;b&gt;Inductor SMD 0805 shielded 2.2uH Murata LQW21P_C0 Series 2200 nH 20% Ferrite Multilayer SMD Inductor, 0805 Case, SRF: 0.05GHz 600mA dc 425m Rdc&lt;/b&gt;&lt;p&gt;
-Source: &lt;a href="https://componentsearchengine.com/Datasheets/2/LQM21PN2R2MC0D.pdf"&gt; Datasheet &lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="LQM21PN2R2MC0D" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="INDC2012X55N">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="ARROW_PART_NUMBER" value="LQM21PN2R2MC0D" constant="no"/>
-<attribute name="ARROW_PRICE/STOCK" value="https://www.arrow.com/en/products/lqm21pn2r2mc0d/murata-manufacturing" constant="no"/>
-<attribute name="DESCRIPTION" value="Inductor SMD 0805 shielded 2.2uH Murata LQW21P_C0 Series 2200 nH 20% Ferrite Multilayer SMD Inductor, 0805 Case, SRF: 0.05GHz 600mA dc 425m Rdc" constant="no"/>
-<attribute name="HEIGHT" value="0.55mm" constant="no"/>
-<attribute name="MANUFACTURER_NAME" value="Murata Electronics" constant="no"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="LQM21PN2R2MC0D" constant="no"/>
-<attribute name="RS_PART_NUMBER" value="1674234" constant="no"/>
-<attribute name="RS_PRICE/STOCK" value="http://uk.rs-online.com/web/p/products/1674234" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="nRF24L01P-T">
 <description>&lt;RF Transceiver IC 2.4GHz ISM Band QFN20 Nordic Semiconductor NRF24L01P-T, RF Transceiver 2400MHz to 2483.5MHz 1.9  3.6 V 20-Pin QFN&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
@@ -26698,72 +26635,6 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/tps63000.pdf"&gt; Datasheet
 </deviceset>
 </devicesets>
 </library>
-<library name="VLF4012AT-3R3M1R3">
-<description>&lt;Fixed Inductors 3.3uH 1.3A 4x4x1.2mm&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
-<packages>
-<package name="VLF4012A">
-<description>&lt;b&gt;VLF4012A&lt;/b&gt;&lt;br&gt;
-</description>
-<smd name="1" x="-1.9" y="0" dx="1.3" dy="0.9" layer="1" rot="R90"/>
-<smd name="2" x="1.9" y="0" dx="1.3" dy="0.9" layer="1" rot="R90"/>
-<text x="-0.226" y="0.088" size="1.27" layer="25" align="center">&gt;NAME</text>
-<text x="-0.226" y="0.088" size="1.27" layer="27" align="center">&gt;VALUE</text>
-<wire x1="-1.85" y1="1.75" x2="1.85" y2="1.75" width="0.254" layer="51"/>
-<wire x1="1.85" y1="1.75" x2="1.85" y2="-1.75" width="0.254" layer="51"/>
-<wire x1="1.85" y1="-1.75" x2="-1.85" y2="-1.75" width="0.254" layer="51"/>
-<wire x1="-1.85" y1="-1.75" x2="-1.85" y2="1.75" width="0.254" layer="51"/>
-<wire x1="-1.85" y1="-1.75" x2="1.85" y2="-1.75" width="0.254" layer="21"/>
-<wire x1="1.85" y1="-1.75" x2="1.85" y2="-0.932" width="0.254" layer="21"/>
-<wire x1="-1.85" y1="-1.75" x2="-1.85" y2="-0.818" width="0.254" layer="21"/>
-<wire x1="-1.85" y1="1.75" x2="1.85" y2="1.75" width="0.254" layer="21"/>
-<wire x1="1.85" y1="1.75" x2="1.85" y2="0.924" width="0.254" layer="21"/>
-<wire x1="-1.85" y1="1.75" x2="-1.85" y2="0.938" width="0.254" layer="21"/>
-<circle x="-2.775" y="-0.054" radius="0.086140625" width="0.254" layer="25"/>
-</package>
-</packages>
-<symbols>
-<symbol name="VLF4012AT-3R3M1R3">
-<wire x1="5.08" y1="0" x2="7.62" y2="0" width="0.254" layer="94" curve="-175.4"/>
-<wire x1="7.62" y1="0" x2="10.16" y2="0" width="0.254" layer="94" curve="-175.4"/>
-<wire x1="10.16" y1="0" x2="12.7" y2="0" width="0.254" layer="94" curve="-175.4"/>
-<wire x1="12.7" y1="0" x2="15.24" y2="0" width="0.254" layer="94" curve="-175.4"/>
-<text x="16.51" y="6.35" size="1.778" layer="95" align="center-left">&gt;NAME</text>
-<text x="16.51" y="3.81" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
-<pin name="1" x="0" y="0" visible="pad" length="middle"/>
-<pin name="2" x="20.32" y="0" visible="pad" length="middle" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="VLF4012AT-3R3M1R3" prefix="L">
-<description>&lt;b&gt;Fixed Inductors 3.3uH 1.3A 4x4x1.2mm&lt;/b&gt;&lt;p&gt;
-Source: &lt;a href="http://www.mouser.com/ds/2/400/tdk_e531_vlf-332019.pdf"&gt; Datasheet &lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="VLF4012AT-3R3M1R3" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="VLF4012A">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="ARROW_PART_NUMBER" value="VLF4012AT-3R3M1R3" constant="no"/>
-<attribute name="ARROW_PRICE/STOCK" value="https://www.arrow.com/en/products/vlf4012at-3r3m1r3/tdk" constant="no"/>
-<attribute name="DESCRIPTION" value="Fixed Inductors 3.3uH 1.3A 4x4x1.2mm" constant="no"/>
-<attribute name="HEIGHT" value="mm" constant="no"/>
-<attribute name="MANUFACTURER_NAME" value="TDK" constant="no"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="VLF4012AT-3R3M1R3" constant="no"/>
-<attribute name="RS_PART_NUMBER" value="" constant="no"/>
-<attribute name="RS_PRICE/STOCK" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="MAX16054AZT+T">
 <description>&lt;On Off Controller, Debounce, 15kV ESD MAX16054AZT+T, Voltage Supervisor No Push Button Controller 6-Pin SOT-23&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
@@ -27073,6 +26944,111 @@ Solder type</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="0402_inductor">
+<packages>
+<package name="C0402K" urn="urn:adsk.eagle:footprint:23186/1">
+<description>&lt;b&gt;Ceramic Chip Capacitor KEMET 0204 reflow solder&lt;/b&gt;&lt;p&gt;
+Metric Code Size 1005</description>
+<wire x1="-0.425" y1="0.2" x2="0.425" y2="0.2" width="0.1016" layer="51"/>
+<wire x1="0.425" y1="-0.2" x2="-0.425" y2="-0.2" width="0.1016" layer="51"/>
+<smd name="1" x="-0.6" y="0" dx="0.925" dy="0.74" layer="1"/>
+<smd name="2" x="0.6" y="0" dx="0.925" dy="0.74" layer="1"/>
+<text x="-0.5" y="0.425" size="1.016" layer="25">&gt;NAME</text>
+<text x="-0.5" y="-1.45" size="1.016" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.5" y1="-0.25" x2="-0.225" y2="0.25" layer="51"/>
+<rectangle x1="0.225" y1="-0.25" x2="0.5" y2="0.25" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="INDUCTOR">
+<pin name="P$1" x="0" y="0" visible="pad" length="short"/>
+<pin name="P$2" x="12.7" y="0" visible="pad" length="short" rot="R180"/>
+<wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="5.08" y1="0" x2="7.62" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="7.62" y1="0" x2="10.16" y2="0" width="0.254" layer="94" curve="-180"/>
+<text x="0" y="5.08" size="1.778" layer="95">&gt;NAME</text>
+<text x="0" y="2.54" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="INDUCTOR" prefix="L">
+<gates>
+<gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="C0402K">
+<connects>
+<connect gate="G$1" pin="P$1" pad="1"/>
+<connect gate="G$1" pin="P$2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="LPS3015-222MRB">
+<description>&lt;COILCRAFT - LPS3015-222MRB - INDUCTOR, SHLD, 2.2UH, 20%, 1.1A, SMD&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
+<packages>
+<package name="LPS3015">
+<description>&lt;b&gt;LPS3015&lt;/b&gt;&lt;br&gt;
+</description>
+<smd name="1" x="-1.08" y="0" dx="3.05" dy="1.14" layer="1" rot="R90"/>
+<smd name="2" x="1.08" y="0" dx="3.05" dy="1.14" layer="1" rot="R90"/>
+<text x="-0.385940625" y="0.029859375" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="-0.385940625" y="0.029859375" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-1.475" y1="1.475" x2="1.475" y2="1.475" width="0.254" layer="51"/>
+<wire x1="1.475" y1="1.475" x2="1.475" y2="-1.475" width="0.254" layer="51"/>
+<wire x1="1.475" y1="-1.475" x2="-1.475" y2="-1.475" width="0.254" layer="51"/>
+<wire x1="-1.475" y1="-1.475" x2="-1.475" y2="1.475" width="0.254" layer="51"/>
+<circle x="-2.057" y="0.03" radius="0.057" width="0.254" layer="25"/>
+</package>
+</packages>
+<symbols>
+<symbol name="LPS3015-222MRB">
+<wire x1="5.08" y1="0" x2="7.62" y2="0" width="0.254" layer="94" curve="-175.4"/>
+<wire x1="7.62" y1="0" x2="10.16" y2="0" width="0.254" layer="94" curve="-175.4"/>
+<wire x1="10.16" y1="0" x2="12.7" y2="0" width="0.254" layer="94" curve="-175.4"/>
+<wire x1="12.7" y1="0" x2="15.24" y2="0" width="0.254" layer="94" curve="-175.4"/>
+<text x="16.51" y="6.35" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="16.51" y="3.81" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="1" x="0" y="0" visible="pad" length="middle"/>
+<pin name="2" x="20.32" y="0" visible="pad" length="middle" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="LPS3015-222MRB" prefix="L">
+<description>&lt;b&gt;COILCRAFT - LPS3015-222MRB - INDUCTOR, SHLD, 2.2UH, 20%, 1.1A, SMD&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="https://www.coilcraft.com/misc/lps3015d.html"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="LPS3015-222MRB" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LPS3015">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="ARROW_PART_NUMBER" value="LPS3015-222MRB" constant="no"/>
+<attribute name="ARROW_PRICE/STOCK" value="" constant="no"/>
+<attribute name="DESCRIPTION" value="COILCRAFT - LPS3015-222MRB - INDUCTOR, SHLD, 2.2UH, 20%, 1.1A, SMD" constant="no"/>
+<attribute name="HEIGHT" value="mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="COILCRAFT" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="LPS3015-222MRB" constant="no"/>
+<attribute name="RS_PART_NUMBER" value="" constant="no"/>
+<attribute name="RS_PRICE/STOCK" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -27196,14 +27172,14 @@ Solder type</description>
 </spice>
 </part>
 <part name="GND46" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C17" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805K" package3d_urn="urn:adsk.eagle:package:23681/2" value="33n"/>
-<part name="L2" library="LQM21PN2R2MC0D" deviceset="LQM21PN2R2MC0D" device="" value="3n9"/>
-<part name="L1" library="LQM21PN2R2MC0D" deviceset="LQM21PN2R2MC0D" device="" value="8n2"/>
-<part name="L3" library="LQM21PN2R2MC0D" deviceset="LQM21PN2R2MC0D" device="" value="2n7"/>
-<part name="C18" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805K" package3d_urn="urn:adsk.eagle:package:23681/2" value="2n2"/>
-<part name="C19" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805K" package3d_urn="urn:adsk.eagle:package:23681/2" value="4p7"/>
-<part name="C20" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805K" package3d_urn="urn:adsk.eagle:package:23681/2" value="1p5"/>
-<part name="C21" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805K" package3d_urn="urn:adsk.eagle:package:23681/2" value="1p"/>
+<part name="C17" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402K" package3d_urn="urn:adsk.eagle:package:23679/2" value="33n"/>
+<part name="L2" library="0402_inductor" deviceset="INDUCTOR" device="" value="3n9"/>
+<part name="L1" library="0402_inductor" deviceset="INDUCTOR" device="" value="8n2"/>
+<part name="L3" library="0402_inductor" deviceset="INDUCTOR" device="" value="2n7"/>
+<part name="C18" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402K" package3d_urn="urn:adsk.eagle:package:23679/2" value="2n2"/>
+<part name="C19" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402K" package3d_urn="urn:adsk.eagle:package:23679/2" value="4p7"/>
+<part name="C20" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402K" package3d_urn="urn:adsk.eagle:package:23679/2" value="1p5"/>
+<part name="C21" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402K" package3d_urn="urn:adsk.eagle:package:23679/2" value="1p"/>
 <part name="GND47" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND48" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND49" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -27260,8 +27236,8 @@ Solder type</description>
 <part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2" value="100n"/>
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R2" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="M0805" package3d_urn="urn:adsk.eagle:package:26079/1" value="1k"/>
-<part name="R1" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="M0805" package3d_urn="urn:adsk.eagle:package:26079/1" value="10k"/>
+<part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="1k"/>
+<part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k"/>
 <part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2" value="100n"/>
 <part name="+3V32" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -27305,9 +27281,9 @@ Solder type</description>
 <part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2" value="100n"/>
 <part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="T1" library="transistor-npn" library_urn="urn:adsk.eagle:library:398" deviceset="BC817*" device="SMD" package3d_urn="urn:adsk.eagle:package:28990/2" technology="-16LT1"/>
-<part name="R4" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="M0805" package3d_urn="urn:adsk.eagle:package:26079/1" value="100k"/>
-<part name="R3" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="M0805" package3d_urn="urn:adsk.eagle:package:26079/1" value="10k"/>
-<part name="R5" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="M0805" package3d_urn="urn:adsk.eagle:package:26079/1" value="10k"/>
+<part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100k"/>
+<part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k"/>
+<part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k"/>
 <part name="+3V34" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="TP13" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/1">
@@ -27368,7 +27344,7 @@ Solder type</description>
 <attribute name="TP_SIGNAL_NAME" value="TP_LEFT"/>
 </part>
 <part name="LED4" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="3MM" package3d_urn="urn:adsk.eagle:package:15797/1" value="Blue"/>
-<part name="R14" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:26059/1" value="560"/>
+<part name="R14" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:26059/1" value="620"/>
 <part name="GND26" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="TP22" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/1">
 <attribute name="TP_SIGNAL_NAME" value="TP_BT_KEY"/>
@@ -27423,11 +27399,19 @@ Solder type</description>
 <part name="+3V320" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="GND51" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="IC12" library="TPS63000DRCT" deviceset="TPS63000DRCT" device="" value="TPS63001DRCT"/>
-<part name="L4" library="VLF4012AT-3R3M1R3" deviceset="VLF4012AT-3R3M1R3" device="" value="VLF4012AT-2R2M1R5">
+<part name="L4" library="LPS3015-222MRB" deviceset="LPS3015-222MRB" device="" value="VLF4012AT-2R2M1R5">
 <attribute name="RS_PART_NUMBER" value=" 644-1952"/>
 </part>
 <part name="VCC2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCCINT" device=""/>
-<part name="R36" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100"/>
+<part name="R36" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="RS_PART_NUMBER" value="740-8978"/>
+</part>
 <part name="C23" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2" value="100n"/>
 <part name="GND54" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND57" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -27447,11 +27431,19 @@ Solder type</description>
 <attribute name="TP_SIGNAL_NAME" value="TP_SYS_EN"/>
 </part>
 <part name="IC13" library="TPS63000DRCT" deviceset="TPS63000DRCT" device="" value="TPS63002DRCT"/>
-<part name="L5" library="VLF4012AT-3R3M1R3" deviceset="VLF4012AT-3R3M1R3" device="" value="VLF4012AT-2R2M1R5">
+<part name="L5" library="LPS3015-222MRB" deviceset="LPS3015-222MRB" device="" value="VLF4012AT-2R2M1R5">
 <attribute name="RS_PART_NUMBER" value=" 644-1952"/>
 </part>
 <part name="VCC3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCCINT" device=""/>
-<part name="R37" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="M0805" package3d_urn="urn:adsk.eagle:package:23556/1" value="100"/>
+<part name="R37" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="RS_PART_NUMBER" value="740-8978"/>
+</part>
 <part name="C24" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2" value="100n"/>
 <part name="GND55" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND58" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -27525,6 +27517,7 @@ Solder type</description>
 <text x="99.06" y="20.32" size="1.778" layer="91">MODE
 1: Application
 0: Bootloader</text>
+<text x="246.38" y="5.08" size="2.54" layer="94">v0.1_α</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -27999,6 +27992,7 @@ Solder type</description>
 <sheet>
 <description>USB to UART bridge</description>
 <plain>
+<text x="246.38" y="5.08" size="2.54" layer="94">v0.1_α</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0"/>
@@ -28325,6 +28319,7 @@ Solder type</description>
 <plain>
 <text x="20.32" y="10.16" size="1.778" layer="91">Short SJ1 to use the +3v3
 provided by the debugger</text>
+<text x="246.38" y="5.08" size="2.54" layer="94">v0.1_α</text>
 </plain>
 <instances>
 <instance part="FRAME3" gate="G$1" x="0" y="0"/>
@@ -28537,6 +28532,7 @@ provided by the debugger</text>
 <description>I/O Expander I2C</description>
 <plain>
 <text x="111.76" y="53.34" size="1.778" layer="91">I2C address: 0100000x</text>
+<text x="246.38" y="5.08" size="2.54" layer="94">v0.1_α</text>
 </plain>
 <instances>
 <instance part="FRAME4" gate="G$1" x="0" y="0"/>
@@ -28732,6 +28728,7 @@ provided by the debugger</text>
 <text x="175.26" y="63.5" size="1.778" layer="91">To disable the chg timer 
 DO NOT MOUNT R23</text>
 <text x="124.46" y="147.32" size="1.778" layer="91">CHG LED exposed to user</text>
+<text x="246.38" y="5.08" size="2.54" layer="94">v0.1_α</text>
 </plain>
 <instances>
 <instance part="FRAME5" gate="G$1" x="0" y="0"/>
@@ -29029,6 +29026,7 @@ DO NOT MOUNT R23</text>
 <plain>
 <text x="132.08" y="63.5" size="1.778" layer="91">TEST NEEDED
 ON R33</text>
+<text x="246.38" y="5.08" size="2.54" layer="94">v0.1_α</text>
 </plain>
 <instances>
 <instance part="FRAME6" gate="G$1" x="0" y="0"/>
@@ -29193,9 +29191,9 @@ ON R33</text>
 <net name="N$32" class="0">
 <segment>
 <pinref part="IC8" gate="G$1" pin="ANT2"/>
-<pinref part="L2" gate="G$1" pin="1"/>
+<pinref part="L2" gate="G$1" pin="P$1"/>
 <wire x1="119.38" y1="119.38" x2="152.4" y2="119.38" width="0.1524" layer="91"/>
-<pinref part="L1" gate="G$1" pin="1"/>
+<pinref part="L1" gate="G$1" pin="P$1"/>
 <wire x1="152.4" y1="119.38" x2="154.94" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="116.84" x2="152.4" y2="119.38" width="0.1524" layer="91"/>
 <junction x="152.4" y="119.38"/>
@@ -29203,8 +29201,8 @@ ON R33</text>
 </net>
 <net name="N$33" class="0">
 <segment>
-<pinref part="L1" gate="G$1" pin="2"/>
-<pinref part="L3" gate="G$1" pin="1"/>
+<pinref part="L1" gate="G$1" pin="P$2"/>
+<pinref part="L3" gate="G$1" pin="P$1"/>
 <wire x1="152.4" y1="104.14" x2="152.4" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="101.6" x2="154.94" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="IC8" gate="G$1" pin="ANT1"/>
@@ -29223,7 +29221,7 @@ ON R33</text>
 <wire x1="154.94" y1="99.06" x2="165.1" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="99.06" x2="170.18" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="170.18" y1="99.06" x2="170.18" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="L3" gate="G$1" pin="2"/>
+<pinref part="L3" gate="G$1" pin="P$2"/>
 <wire x1="170.18" y1="101.6" x2="167.64" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="C19" gate="G$1" pin="1"/>
 <wire x1="165.1" y1="96.52" x2="165.1" y2="99.06" width="0.1524" layer="91"/>
@@ -29235,7 +29233,7 @@ ON R33</text>
 </net>
 <net name="N$36" class="0">
 <segment>
-<pinref part="L2" gate="G$1" pin="2"/>
+<pinref part="L2" gate="G$1" pin="P$2"/>
 <wire x1="167.64" y1="119.38" x2="175.26" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="C20" gate="G$1" pin="1"/>
 </segment>
@@ -29340,6 +29338,7 @@ ON R33</text>
 <description>I2C EEPROM</description>
 <plain>
 <text x="116.84" y="63.5" size="1.778" layer="91">I2C address: 1010000x</text>
+<text x="246.38" y="5.08" size="2.54" layer="94">v0.1_α</text>
 </plain>
 <instances>
 <instance part="IC10" gate="G$1" x="129.54" y="88.9"/>
@@ -29422,13 +29421,16 @@ ON R33</text>
 <sheet>
 <description>Voltage regulators</description>
 <plain>
+<text x="246.38" y="5.08" size="2.54" layer="94">v0.1_α</text>
 </plain>
 <instances>
 <instance part="FRAME8" gate="G$1" x="0" y="0"/>
 <instance part="IC12" gate="G$1" x="119.38" y="139.7"/>
 <instance part="L4" gate="G$1" x="119.38" y="165.1"/>
 <instance part="VCC2" gate="G$1" x="63.5" y="160.02"/>
-<instance part="R36" gate="G$1" x="78.74" y="147.32" rot="R90"/>
+<instance part="R36" gate="G$1" x="78.74" y="147.32" rot="R90">
+<attribute name="RS_PART_NUMBER" x="78.74" y="147.32" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
 <instance part="C23" gate="G$1" x="78.74" y="134.62"/>
 <instance part="GND54" gate="1" x="78.74" y="124.46"/>
 <instance part="GND57" gate="1" x="111.76" y="124.46"/>
@@ -29446,7 +29448,9 @@ ON R33</text>
 <instance part="IC13" gate="G$1" x="119.38" y="86.36"/>
 <instance part="L5" gate="G$1" x="119.38" y="111.76"/>
 <instance part="VCC3" gate="G$1" x="63.5" y="106.68"/>
-<instance part="R37" gate="G$1" x="78.74" y="93.98" rot="R90"/>
+<instance part="R37" gate="G$1" x="78.74" y="93.98" rot="R90">
+<attribute name="RS_PART_NUMBER" x="78.74" y="93.98" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
 <instance part="C24" gate="G$1" x="78.74" y="81.28"/>
 <instance part="GND55" gate="1" x="78.74" y="71.12"/>
 <instance part="GND58" gate="1" x="111.76" y="71.12"/>
@@ -29741,6 +29745,7 @@ ON R33</text>
 CAREFULLY</text>
 <text x="137.16" y="124.46" size="1.778" layer="91">TEST THIS SITUTATION 
 CAREFULLY</text>
+<text x="246.38" y="5.08" size="2.54" layer="94">v0.1_α</text>
 </plain>
 <instances>
 <instance part="FRAME9" gate="G$1" x="0" y="0"/>
