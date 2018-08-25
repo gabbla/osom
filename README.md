@@ -1,6 +1,6 @@
 # **Speedometer**
 
-Due to the very un-user friendly TI's SDK for CC2541 (based on IAR only), I decided to change the architecture on board: master ans slave will still have the same HW, where the second will have less components mounted on it.
+Due to the very un-user friendly TI's SDK for CC2541 (based on IAR only), I decided to change the architecture on board: master and slave will still share the same HW, while the second will have less components mounted on it.
 
 ## Architecture
 The new architecture is the following:
@@ -15,7 +15,7 @@ The client is a device with a custom application installed on it. It must be com
 
 The CC2541 (aka NP, aka Network Processor) will run a standard firmware that is in charge of providing a virtual serial port to the PIC.
 
-Master and Slave will exchange messages over a custom protocol.
+Master and Slave will exchange messages over a custom light-weight protocol.
 
 ## PIC's PIN assignment
 
@@ -23,8 +23,8 @@ Master and Slave will exchange messages over a custom protocol.
 
 PIN|I/O|PPS|Function|Note
 --|--|--|--|--|
-6|IN|RPB2|U1RX|PIC <== BLE
-7|OUT|RPB3|U1TX|PIC ==> BLE
+6|IN|RPB2|U1RX|PIC <== NP
+7|OUT|RPB3|U1TX|PIC ==> NP
 
 ### nRF24L01+
 
@@ -42,7 +42,7 @@ PIN|I/O|PPS|Function|Note
 PIN|I/O|PPS|Function|Note
 --|--|--|--|--|
 4|OUT|RPB0|U2TX|PIC ==> PC
-5|IN|RPB1|U2RX| PIC <== PC
+5|IN|RPB1|U2RX|PIC <== PC
 
 _A USB to UART bridge (MCP2200) may be implemented to allow the firmware update and a very basic log through USB._
 
@@ -83,25 +83,21 @@ The LEDs are now connected to the I/O Expander.
 
 **Note**
 1. Master only: an extra LED from CC2541 indicates the BT connection status.
-2. From the battery charger 2 extra LEDs will indicate the battery and charging status.
+2. From the battery charger an extra LED indicates che charging status.
 
 # Features to be evaluated
 
 - [x] Power button
 - [ ] Battery level
-- [ ] Battery status
+- [x] Battery charging status
 - [x] Debug UART
 - [ ] Bootloader
 - [x] UART <=> USB Bridge
-
-# Other stuff
-
-- Keep the HM10 (CC2541 breakout) debug connector
-  - Change the pin header with an IDC socket
+- [ ] Add a control signal to laser connector
 
 ## TODOs
 
 - [x] Test Laser voltage (5V)
 - [ ] Test laser receiver sensibility
-- [ ] Add a control signal to laser connector
 - [ ] Calculate Ilim (Battery charger)
+- [x] Keep the HM10 (CC2541 breakout) debug connector
