@@ -17,7 +17,7 @@ The CC2541 (aka NP, aka Network Processor) will run a standard firmware that is 
 
 Master and Slave will exchange messages over a custom light-weight protocol.
 
-## PIC's PIN assignment
+## PIC PIN assignment
 
 ### Bluetooth (master only)
 
