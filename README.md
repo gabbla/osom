@@ -1,4 +1,4 @@
-# **Speedometer**
+# **Speedometer** **WIP**
 
 Due to the very un-user friendly TI's SDK for CC2541 (based on IAR only), I decided to change the architecture on board: master and slave will still share the same HW, while the second will have less components mounted on it.
 
@@ -16,6 +16,16 @@ The client is a device with a custom application installed on it. It must be com
 The CC2541 (aka NP, aka Network Processor) will run a standard firmware that is in charge of providing a virtual serial port to the PIC.
 
 Master and Slave will exchange messages over a custom light-weight protocol.
+
+## Specifications
+
+- Microcontroller: PIC32MX274F256D @72MHz (TODO verify)
+- Bluetooth (master only): HM10 Bluetooth 4.2 Low Energy
+- Power: 
+	- LiPo 1s Battery, 1200/2000 mAh (not choosen yet)
+	- 5V provided by micro USB, 500 mA MAX
+- Sensor: custom made 650nm modulated laser sensor 
+- Laser source: Red diode laser, 650nm @5mW
 
 ## PIC PIN assignment
 
@@ -44,7 +54,7 @@ PIN|I/O|PPS|Function|Note
 4|OUT|RPB0|U2TX|PIC ==> PC
 5|IN|RPB1|U2RX|PIC <== PC
 
-_A USB to UART bridge (MCP2200) may be implemented to allow the firmware update and a very basic log through USB._
+USB will be available too, with at least a _comunication device class_ (CDC) enumeration. 
 
 ### Sensing
 
@@ -55,49 +65,12 @@ PIN|I/O|PPS|Function|Note
 
 ### Battery Charger
 
-EN1 and EN2 control bit are now connected to the I/O Expander.
-
-### I/O Expander I2C
-
-PIN|I/O|PPS|Function|Note
---|--|--|--|--|
-17|OUT|-|SCL|
-18|I/O|-|SDA|
-
-**Note**: Only output are available on I/O Expander, that's because in this way we don't have to monitor the Interrupt from it. However it's still possible to configure some pin as input, but there is no way other than polling to monitor them since the I/O Expander IRQ pin is disconnected.
-
-BIT|Function
---|--
-0|Left Laser Ctl
-1|Left status
-2|Right status
-3|LED Power
-4|Right Laser Ctl
-5|SYSOFF
-6|EN1
-7|EN2
+New PIC analisys required
 
 ### LEDs
 
-The LEDs are now connected to the I/O Expander.
+Analisys required. 
 
 **Note**
 1. Master only: an extra LED from CC2541 indicates the BT connection status.
 2. From the battery charger an extra LED indicates che charging status.
-
-# Features to be evaluated
-
-- [x] Power button
-- [ ] Battery level
-- [x] Battery charging status
-- [x] Debug UART
-- [ ] Bootloader
-- [x] UART <=> USB Bridge
-- [ ] Add a control signal to laser connector
-
-## TODOs
-
-- [x] Test Laser voltage (5V)
-- [ ] Test laser receiver sensibility
-- [ ] Calculate Ilim (Battery charger)
-- [x] Keep the HM10 (CC2541 breakout) debug connector
