@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -26432,156 +26432,6 @@ Source: &lt;a href="https://media.digikey.com/pdf/Data Sheets/C&amp;K/PTS645VJzz
 </deviceset>
 </devicesets>
 </library>
-<library name="jump-0r-smd" urn="urn:adsk.eagle:library:251">
-<description>Soldering jumper and bridges</description>
-<packages>
-<package name="A0R-JMP" urn="urn:adsk.eagle:footprint:15382/1" library_version="1">
-<description>&lt;b&gt;0R Jumper Variant A&lt;/b&gt;&lt;p&gt;
-chip 0805</description>
-<wire x1="0.635" y1="1.26" x2="0.635" y2="0.44" width="0.1524" layer="51"/>
-<wire x1="-0.635" y1="1.26" x2="-0.635" y2="0.44" width="0.1524" layer="51"/>
-<smd name="1" x="0" y="1.7" dx="1.3" dy="1.5" layer="1" rot="R270"/>
-<smd name="2" x="0" y="0" dx="1.3" dy="1.5" layer="1" rot="R270"/>
-<smd name="3" x="0" y="-1.7" dx="1.3" dy="1.5" layer="1" rot="R270"/>
-<text x="-0.762" y="2.716" size="1.27" layer="25">&gt;NAME</text>
-<text x="-0.762" y="-3.986" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.3235" y1="-0.5814" x2="0.3265" y2="0.8186" layer="51" rot="R270"/>
-<rectangle x1="-0.3235" y1="0.8918" x2="0.3265" y2="2.2918" layer="51" rot="R270"/>
-<rectangle x1="-0.1999" y1="-0.5001" x2="0.1999" y2="0.5001" layer="35"/>
-</package>
-<package name="B0R-JMP" urn="urn:adsk.eagle:footprint:15383/1" library_version="1">
-<description>&lt;b&gt;0R Jumper Variant B&lt;/b&gt;&lt;p&gt;
-chip 0805</description>
-<wire x1="-0.635" y1="-0.44" x2="-0.635" y2="-1.26" width="0.1524" layer="51"/>
-<wire x1="0.635" y1="-1.26" x2="0.635" y2="-0.44" width="0.1524" layer="51"/>
-<smd name="1" x="0" y="1.7" dx="1.3" dy="1.5" layer="1" rot="R270"/>
-<smd name="2" x="0" y="0" dx="1.3" dy="1.5" layer="1" rot="R270"/>
-<smd name="3" x="0" y="-1.7" dx="1.3" dy="1.5" layer="1" rot="R270"/>
-<text x="-0.762" y="2.716" size="1.27" layer="25">&gt;NAME</text>
-<text x="-0.762" y="-3.986" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.3235" y1="-2.2814" x2="0.3265" y2="-0.8814" layer="51" rot="R270"/>
-<rectangle x1="-0.3235" y1="-0.8082" x2="0.3265" y2="0.5918" layer="51" rot="R270"/>
-</package>
-<package name="C0R-JMP" urn="urn:adsk.eagle:footprint:15384/1" library_version="1">
-<description>&lt;b&gt;0R Jumper Variant C&lt;/b&gt;&lt;p&gt;
-Solder type</description>
-<wire x1="0.61" y1="0.66" x2="0.61" y2="0.34" width="0.1524" layer="51"/>
-<wire x1="-0.61" y1="0.66" x2="-0.61" y2="0.34" width="0.1524" layer="51"/>
-<smd name="1" x="0" y="0.938" dx="0.8" dy="1" layer="1" roundness="100"/>
-<smd name="2" x="0" y="0" dx="1" dy="0.8" layer="1" roundness="50"/>
-<smd name="3" x="0" y="-0.938" dx="0.8" dy="1" layer="1" roundness="100"/>
-<text x="-0.762" y="2.716" size="1.27" layer="25">&gt;NAME</text>
-<text x="-0.762" y="-3.986" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.3235" y1="-0.6814" x2="0.3265" y2="0.7186" layer="51" rot="R270"/>
-<rectangle x1="-0.3235" y1="0.2338" x2="0.3265" y2="1.6338" layer="51" rot="R270"/>
-</package>
-</packages>
-<packages3d>
-<package3d name="A0R-JMP" urn="urn:adsk.eagle:package:15385/1" type="box" library_version="1">
-<description>0R Jumper Variant A
-chip 0805</description>
-<packageinstances>
-<packageinstance name="A0R-JMP"/>
-</packageinstances>
-</package3d>
-<package3d name="B0R-JMP" urn="urn:adsk.eagle:package:15387/1" type="box" library_version="1">
-<description>0R Jumper Variant B
-chip 0805</description>
-<packageinstances>
-<packageinstance name="B0R-JMP"/>
-</packageinstances>
-</package3d>
-<package3d name="C0R-JMP" urn="urn:adsk.eagle:package:15386/1" type="box" library_version="1">
-<description>0R Jumper Variant C
-Solder type</description>
-<packageinstances>
-<packageinstance name="C0R-JMP"/>
-</packageinstances>
-</package3d>
-</packages3d>
-<symbols>
-<symbol name="0RJM" urn="urn:adsk.eagle:symbol:15380/1" library_version="1">
-<wire x1="0" y1="2.54" x2="0" y2="1.778" width="0.1524" layer="94"/>
-<wire x1="0" y1="0.508" x2="0" y2="-0.508" width="0.1524" layer="94"/>
-<wire x1="0" y1="-2.54" x2="0" y2="-1.778" width="0.1524" layer="94"/>
-<wire x1="-0.254" y1="1.524" x2="0.254" y2="1.524" width="0.508" layer="94" curve="-180" cap="flat"/>
-<wire x1="-0.254" y1="-1.016" x2="0.254" y2="-1.016" width="0.508" layer="94" curve="-180" cap="flat"/>
-<wire x1="0.254" y1="1.016" x2="-0.254" y2="1.016" width="0.508" layer="94" curve="-180" cap="flat"/>
-<wire x1="0.254" y1="-1.524" x2="-0.254" y2="-1.524" width="0.508" layer="94" curve="-180" cap="flat"/>
-<text x="2.54" y="1.27" size="1.778" layer="95">&gt;NAME</text>
-<pin name="2" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-<pin name="1" x="0" y="2.54" visible="off" length="point" direction="pas" rot="R270"/>
-<pin name="3" x="0" y="-2.54" visible="off" length="point" direction="pas" rot="R90"/>
-</symbol>
-<symbol name="JMP" urn="urn:adsk.eagle:symbol:15381/1" library_version="1">
-<wire x1="0.762" y1="-0.254" x2="0.508" y2="-0.254" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="0.254" y1="-0.254" x2="-0.254" y2="-0.254" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="-0.508" y1="-0.254" x2="-0.762" y2="-0.254" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="0.762" y1="-2.286" x2="0.508" y2="-2.286" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="0.254" y1="-2.286" x2="-0.254" y2="-2.286" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="-0.508" y1="-2.286" x2="-0.762" y2="-2.286" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="0.762" y1="-0.254" x2="0.762" y2="-0.508" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="0.762" y1="-0.762" x2="0.762" y2="-1.016" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="0.762" y1="-1.524" x2="0.762" y2="-1.778" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="0.762" y1="-2.032" x2="0.762" y2="-2.286" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="-0.762" y1="-2.286" x2="-0.762" y2="-2.032" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="-0.762" y1="-1.778" x2="-0.762" y2="-1.524" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="-0.762" y1="-1.016" x2="-0.762" y2="-0.762" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="-0.762" y1="-0.508" x2="-0.762" y2="-0.254" width="0.1524" layer="94" style="shortdash"/>
-<rectangle x1="-0.508" y1="-2.032" x2="0.508" y2="-0.508" layer="94" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="0R-JUMP" urn="urn:adsk.eagle:component:15388/1" prefix="JMP" library_version="1">
-<description>&lt;b&gt;SMD 0R 0805 Jumper&lt;/b&gt;&lt;p&gt;</description>
-<gates>
-<gate name="-0R" symbol="0RJM" x="0" y="0" addlevel="always"/>
-<gate name="G$2" symbol="JMP" x="-2.54" y="2.54" addlevel="always"/>
-</gates>
-<devices>
-<device name="A" package="A0R-JMP">
-<connects>
-<connect gate="-0R" pin="1" pad="1"/>
-<connect gate="-0R" pin="2" pad="2"/>
-<connect gate="-0R" pin="3" pad="3"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:15385/1"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="B" package="B0R-JMP">
-<connects>
-<connect gate="-0R" pin="1" pad="1"/>
-<connect gate="-0R" pin="2" pad="2"/>
-<connect gate="-0R" pin="3" pad="3"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:15387/1"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="C" package="C0R-JMP">
-<connects>
-<connect gate="-0R" pin="1" pad="1"/>
-<connect gate="-0R" pin="2" pad="2"/>
-<connect gate="-0R" pin="3" pad="3"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:15386/1"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="0402_inductor">
 <packages>
 <package name="C0402K" urn="urn:adsk.eagle:footprint:23186/1">
@@ -27089,28 +26939,12 @@ Source: &lt;a href="https://www.coilcraft.com/misc/lps3015d.html"&gt; Datasheet 
 <part name="TP14" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/1">
 <attribute name="TP_SIGNAL_NAME" value="TP_!MCLR"/>
 </part>
-<part name="JMP1" library="jump-0r-smd" library_urn="urn:adsk.eagle:library:251" deviceset="0R-JUMP" device="A" package3d_urn="urn:adsk.eagle:package:15385/1"/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="+3V1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
-<part name="JMP2" library="jump-0r-smd" library_urn="urn:adsk.eagle:library:251" deviceset="0R-JUMP" device="A" package3d_urn="urn:adsk.eagle:package:15385/1">
-<attribute name="SPICEPREFIX" value="X"/>
-</part>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device="">
 <attribute name="SPICEPREFIX" value="G"/>
 </part>
-<part name="+3V2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device="">
-<attribute name="SPICEPREFIX" value="G"/>
-</part>
-<part name="JMP3" library="jump-0r-smd" library_urn="urn:adsk.eagle:library:251" deviceset="0R-JUMP" device="A" package3d_urn="urn:adsk.eagle:package:15385/1"/>
 <part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="+3V3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
-<part name="JMP4" library="jump-0r-smd" library_urn="urn:adsk.eagle:library:251" deviceset="0R-JUMP" device="A" package3d_urn="urn:adsk.eagle:package:15385/1">
-<attribute name="SPICEPREFIX" value="X"/>
-</part>
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device="">
-<attribute name="SPICEPREFIX" value="G"/>
-</part>
-<part name="+3V4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device="">
 <attribute name="SPICEPREFIX" value="G"/>
 </part>
 <part name="Q3" library="transistor-npn" library_urn="urn:adsk.eagle:library:398" deviceset="BC817*" device="SMD" package3d_urn="urn:adsk.eagle:package:28990/2" technology="-16LT1" value="BC817"/>
@@ -29208,22 +29042,10 @@ https://github.com/gabbla/speedometer</text>
 <instance part="J7" gate="G$1" x="190.5" y="137.16" rot="R180"/>
 <instance part="J6" gate="G$1" x="172.72" y="45.72" rot="R180"/>
 <instance part="GND68" gate="1" x="177.8" y="40.64"/>
-<instance part="JMP1" gate="-0R" x="68.58" y="154.94" rot="R270"/>
-<instance part="JMP1" gate="G$2" x="68.58" y="157.48" rot="R270"/>
-<instance part="P+2" gate="1" x="60.96" y="165.1"/>
-<instance part="+3V1" gate="G$1" x="76.2" y="165.1"/>
-<instance part="JMP2" gate="-0R" x="193.04" y="154.94" rot="R270"/>
-<instance part="JMP2" gate="G$2" x="193.04" y="157.48" rot="R270"/>
-<instance part="P+3" gate="1" x="185.42" y="167.64"/>
-<instance part="+3V2" gate="G$1" x="200.66" y="167.64"/>
-<instance part="JMP3" gate="-0R" x="53.34" y="66.04" rot="R270"/>
-<instance part="JMP3" gate="G$2" x="53.34" y="68.58" rot="R270"/>
-<instance part="P+4" gate="1" x="45.72" y="76.2"/>
-<instance part="+3V3" gate="G$1" x="60.96" y="76.2"/>
-<instance part="JMP4" gate="-0R" x="177.8" y="66.04" rot="R270"/>
-<instance part="JMP4" gate="G$2" x="177.8" y="68.58" rot="R270"/>
-<instance part="P+5" gate="1" x="170.18" y="76.2"/>
-<instance part="+3V4" gate="G$1" x="185.42" y="76.2"/>
+<instance part="P+2" gate="1" x="68.58" y="160.02"/>
+<instance part="P+3" gate="1" x="193.04" y="160.02"/>
+<instance part="P+4" gate="1" x="53.34" y="71.12"/>
+<instance part="P+5" gate="1" x="177.8" y="71.12" rot="MR0"/>
 <instance part="Q3" gate="G$1" x="91.44" y="45.72"/>
 <instance part="GND71" gate="1" x="93.98" y="33.02"/>
 <instance part="R12" gate="G$1" x="71.12" y="45.72"/>
@@ -29334,30 +29156,6 @@ https://github.com/gabbla/speedometer</text>
 </net>
 <net name="+3V3" class="0">
 <segment>
-<pinref part="JMP1" gate="-0R" pin="1"/>
-<wire x1="71.12" y1="154.94" x2="76.2" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="154.94" x2="76.2" y2="162.56" width="0.1524" layer="91"/>
-<pinref part="+3V1" gate="G$1" pin="+3V3"/>
-</segment>
-<segment>
-<pinref part="JMP2" gate="-0R" pin="1"/>
-<wire x1="195.58" y1="154.94" x2="200.66" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="200.66" y1="154.94" x2="200.66" y2="165.1" width="0.1524" layer="91"/>
-<pinref part="+3V2" gate="G$1" pin="+3V3"/>
-</segment>
-<segment>
-<pinref part="JMP3" gate="-0R" pin="1"/>
-<wire x1="55.88" y1="66.04" x2="60.96" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="66.04" x2="60.96" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="+3V3" gate="G$1" pin="+3V3"/>
-</segment>
-<segment>
-<pinref part="JMP4" gate="-0R" pin="1"/>
-<wire x1="180.34" y1="66.04" x2="185.42" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="185.42" y1="66.04" x2="185.42" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="+3V4" gate="G$1" pin="+3V3"/>
-</segment>
-<segment>
 <pinref part="R20" gate="G$1" pin="2"/>
 <pinref part="+3V5" gate="G$1" pin="+3V3"/>
 <wire x1="93.98" y1="66.04" x2="93.98" y2="68.58" width="0.1524" layer="91"/>
@@ -29430,74 +29228,38 @@ https://github.com/gabbla/speedometer</text>
 </net>
 <net name="+5V" class="0">
 <segment>
-<pinref part="JMP1" gate="-0R" pin="3"/>
-<wire x1="66.04" y1="154.94" x2="60.96" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="154.94" x2="60.96" y2="162.56" width="0.1524" layer="91"/>
-<pinref part="P+2" gate="1" pin="+5V"/>
-</segment>
-<segment>
-<pinref part="JMP2" gate="-0R" pin="3"/>
-<wire x1="190.5" y1="154.94" x2="185.42" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="185.42" y1="154.94" x2="185.42" y2="165.1" width="0.1524" layer="91"/>
-<pinref part="P+3" gate="1" pin="+5V"/>
-</segment>
-<segment>
-<pinref part="JMP3" gate="-0R" pin="3"/>
-<wire x1="50.8" y1="66.04" x2="45.72" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="66.04" x2="45.72" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="P+4" gate="1" pin="+5V"/>
-</segment>
-<segment>
-<pinref part="JMP4" gate="-0R" pin="3"/>
-<wire x1="175.26" y1="66.04" x2="170.18" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="66.04" x2="170.18" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="P+5" gate="1" pin="+5V"/>
-</segment>
-</net>
-<net name="N$6" class="0">
-<segment>
 <pinref part="LED8" gate="G$1" pin="A"/>
 <wire x1="83.82" y1="144.78" x2="83.82" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="147.32" x2="68.58" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="147.32" x2="68.58" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="147.32" x2="68.58" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="147.32" x2="68.58" y2="157.48" width="0.1524" layer="91"/>
 <junction x="68.58" y="147.32"/>
 <pinref part="J5" gate="G$1" pin="2"/>
 <wire x1="66.04" y1="139.7" x2="68.58" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="139.7" x2="68.58" y2="144.78" width="0.1524" layer="91"/>
-<pinref part="JMP1" gate="-0R" pin="2"/>
+<wire x1="68.58" y1="139.7" x2="68.58" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="P+2" gate="1" pin="+5V"/>
 </segment>
-</net>
-<net name="N$16" class="0">
 <segment>
 <pinref part="LED9" gate="G$1" pin="A"/>
 <wire x1="208.28" y1="144.78" x2="208.28" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="208.28" y1="147.32" x2="193.04" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="147.32" x2="193.04" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="147.32" x2="193.04" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="147.32" x2="193.04" y2="157.48" width="0.1524" layer="91"/>
 <junction x="193.04" y="147.32"/>
 <pinref part="J7" gate="G$1" pin="2"/>
 <wire x1="190.5" y1="139.7" x2="193.04" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="139.7" x2="193.04" y2="144.78" width="0.1524" layer="91"/>
-<pinref part="JMP2" gate="-0R" pin="2"/>
+<wire x1="193.04" y1="139.7" x2="193.04" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="P+3" gate="1" pin="+5V"/>
 </segment>
-</net>
-<net name="N$21" class="0">
-<segment>
-<pinref part="J4" gate="G$1" pin="4"/>
-<wire x1="48.26" y1="53.34" x2="53.34" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="53.34" x2="53.34" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="JMP3" gate="-0R" pin="2"/>
-<wire x1="53.34" y1="63.5" x2="53.34" y2="58.42" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$11" class="0">
 <segment>
 <pinref part="J6" gate="G$1" pin="4"/>
 <wire x1="172.72" y1="53.34" x2="177.8" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="53.34" x2="177.8" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="JMP4" gate="-0R" pin="2"/>
-<wire x1="177.8" y1="63.5" x2="177.8" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="68.58" x2="177.8" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="P+5" gate="1" pin="+5V"/>
+</segment>
+<segment>
+<pinref part="J4" gate="G$1" pin="4"/>
+<wire x1="48.26" y1="53.34" x2="53.34" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="68.58" x2="53.34" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="P+4" gate="1" pin="+5V"/>
 </segment>
 </net>
 <net name="INT_RIGHT" class="0">
