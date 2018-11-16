@@ -11,11 +11,11 @@ where:
 - Master: CC2541 <==UART==> PIC <==SPI==> nRF24L01+
 - Slave:  PIC <==SPI==> nRF24L01+
 
-The client is a device with a custom application installed on it. It must be compatible with BLE (Bluetooth 4.x).
+The client is a device that must be compatible with BLE (Bluetooth 4.x).
 
-The CC2541 (aka NP, aka Network Processor) will run a standard firmware that is in charge of providing a virtual serial port to the PIC.
+The CC2541 (aka NP, aka Network Processor) will run a standard firmware that is in charge of providing a bluetooth connection to the PIC.
 
-Master and Slave will exchange messages over a custom light-weight protocol.
+Master and Slave will exchange messages over a custom, light-weight, protocol.
 
 ## Specifications
 
