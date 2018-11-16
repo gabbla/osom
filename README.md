@@ -20,7 +20,9 @@ Master and Slave will exchange messages over a custom, light-weight, protocol.
 ## Specifications
 
 - Microcontroller: PIC32MX274F256D @72MHz (TODO verify)
-- Bluetooth (master only): HM10 Bluetooth 4.2 Low Energy
+- Communication:
+	- Bluetooth (master only): HM10 Bluetooth 4.2 Low Energy
+	- Wireless: nRF24L01+ @2.4GHz
 - Power: 
 	- LiPo 1s Battery, 1200/2000 mAh (not choosen yet)
 	- 5V provided by micro USB, 500 mA MAX
