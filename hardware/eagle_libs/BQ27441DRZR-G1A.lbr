@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -132,7 +132,7 @@ Source: &lt;a href="http://www.ti.com/lit/gpn/bq27441-g1"&gt; Datasheet &lt;/a&g
 <connects>
 <connect gate="G$1" pin="BAT" pad="6"/>
 <connect gate="G$1" pin="BIN" pad="10"/>
-<connect gate="G$1" pin="EP" pad="13"/>
+<connect gate="G$1" pin="EP" pad="13 14 15"/>
 <connect gate="G$1" pin="GPOUT" pad="12"/>
 <connect gate="G$1" pin="SCL" pad="2"/>
 <connect gate="G$1" pin="SDA" pad="1"/>
