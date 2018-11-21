@@ -22587,6 +22587,8 @@ v 0.1-alpha
 https://github.com/gabbla/speedometer</text>
 <text x="20.32" y="86.36" size="1.778" layer="91" font="vector" rot="R90">ESR &lt;= 3 Ohm</text>
 <text x="129.54" y="38.1" size="3.81" layer="91" font="vector">5V Tolerant</text>
+<text x="73.66" y="38.1" size="3.81" layer="91">Short to boot in
+bootloader mode</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -22607,7 +22609,7 @@ https://github.com/gabbla/speedometer</text>
 <instance part="GND3" gate="1" x="198.12" y="55.88"/>
 <instance part="GND4" gate="1" x="63.5" y="55.88"/>
 <instance part="+3V4" gate="G$1" x="38.1" y="93.98" rot="R90"/>
-<instance part="+3V7" gate="G$1" x="38.1" y="73.66" rot="R90"/>
+<instance part="+3V7" gate="G$1" x="25.4" y="73.66" rot="R90"/>
 <instance part="+3V8" gate="G$1" x="231.14" y="106.68" rot="R270"/>
 <instance part="+3V9" gate="G$1" x="215.9" y="73.66" rot="R270"/>
 <instance part="J1" gate="G$1" x="114.3" y="162.56"/>
@@ -22643,10 +22645,10 @@ https://github.com/gabbla/speedometer</text>
 <instance part="GND17" gate="1" x="81.28" y="132.08"/>
 <instance part="JP2" gate="A" x="149.86" y="27.94"/>
 <instance part="GND19" gate="1" x="139.7" y="17.78"/>
-<instance part="JP3" gate="G$1" x="121.92" y="27.94"/>
-<instance part="+3V14" gate="G$1" x="111.76" y="40.64"/>
-<instance part="R14" gate="G$1" x="104.14" y="22.86"/>
-<instance part="GND20" gate="1" x="96.52" y="17.78"/>
+<instance part="JP3" gate="G$1" x="109.22" y="27.94"/>
+<instance part="+3V14" gate="G$1" x="99.06" y="35.56"/>
+<instance part="R14" gate="G$1" x="91.44" y="22.86"/>
+<instance part="GND20" gate="1" x="83.82" y="17.78"/>
 </instances>
 <busses>
 </busses>
@@ -22757,8 +22759,8 @@ https://github.com/gabbla/speedometer</text>
 </segment>
 <segment>
 <pinref part="R14" gate="G$1" pin="1"/>
-<wire x1="99.06" y1="22.86" x2="96.52" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="22.86" x2="96.52" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="22.86" x2="83.82" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="22.86" x2="83.82" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="GND20" gate="1" pin="GND"/>
 </segment>
 </net>
@@ -22781,7 +22783,7 @@ https://github.com/gabbla/speedometer</text>
 <segment>
 <pinref part="+3V7" gate="G$1" pin="+3V3"/>
 <pinref part="IC1" gate="G$1" pin="AVDD"/>
-<wire x1="40.64" y1="73.66" x2="66.04" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="73.66" x2="66.04" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="+3V4" gate="G$1" pin="+3V3"/>
@@ -22824,9 +22826,9 @@ https://github.com/gabbla/speedometer</text>
 </segment>
 <segment>
 <pinref part="JP3" gate="G$1" pin="1"/>
-<wire x1="119.38" y1="30.48" x2="114.3" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="30.48" x2="111.76" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="30.48" x2="111.76" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="30.48" x2="101.6" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="30.48" x2="99.06" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="30.48" x2="99.06" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="+3V14" gate="G$1" pin="+3V3"/>
 </segment>
 </net>
@@ -22900,8 +22902,6 @@ https://github.com/gabbla/speedometer</text>
 <wire x1="114.3" y1="154.94" x2="104.14" y2="154.94" width="0.1524" layer="91"/>
 <label x="104.14" y="154.94" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
-</net>
-<net name="UDB_ID" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="TMS/RPB5/USBID/RB5"/>
 <wire x1="195.58" y1="109.22" x2="210.82" y2="109.22" width="0.1524" layer="91"/>
@@ -23119,13 +23119,13 @@ https://github.com/gabbla/speedometer</text>
 </segment>
 <segment>
 <pinref part="JP3" gate="G$1" pin="2"/>
-<wire x1="119.38" y1="27.94" x2="111.76" y2="27.94" width="0.1524" layer="91"/>
-<label x="93.98" y="27.94" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<wire x1="106.68" y1="27.94" x2="99.06" y2="27.94" width="0.1524" layer="91"/>
+<label x="81.28" y="27.94" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 <pinref part="R14" gate="G$1" pin="2"/>
-<wire x1="111.76" y1="27.94" x2="93.98" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="22.86" x2="111.76" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="22.86" x2="111.76" y2="27.94" width="0.1524" layer="91"/>
-<junction x="111.76" y="27.94"/>
+<wire x1="99.06" y1="27.94" x2="81.28" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="22.86" x2="99.06" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="22.86" x2="99.06" y2="27.94" width="0.1524" layer="91"/>
+<junction x="99.06" y="27.94"/>
 </segment>
 </net>
 <net name="GAUGE_GP" class="0">

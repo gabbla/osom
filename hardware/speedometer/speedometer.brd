@@ -4519,9 +4519,8 @@ design rules under a new name.</description>
 </signal>
 <signal name="USB_ID">
 <contactref element="J1" pad="4"/>
-</signal>
-<signal name="UDB_ID">
 <contactref element="IC1" pad="41"/>
+<wire x1="-25.095" y1="-71.097" x2="-28.8875" y2="-87.075" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$21">
 <contactref element="IC1" pad="7"/>
