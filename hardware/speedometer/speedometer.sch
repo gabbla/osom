@@ -22191,6 +22191,84 @@ Source: &lt;a href="http://uk.rs-online.com/web/p/products/1622014"&gt; Datashee
 </deviceset>
 </devicesets>
 </library>
+<library name="SN74AHC1G08DBVR">
+<description>&lt;Texas Instruments SN74AHC1G08DBVR, 2-Input AND Logic Gate, 2  5.5 V, 5-Pin SOT-23&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
+<packages>
+<package name="SOT95P280X145-5N">
+<description>&lt;b&gt;DBV (R-PDSO-G5)&lt;/b&gt;&lt;br&gt;
+</description>
+<smd name="1" x="-1.25" y="0.95" dx="1.2" dy="0.6" layer="1"/>
+<smd name="2" x="-1.25" y="0" dx="1.2" dy="0.6" layer="1"/>
+<smd name="3" x="-1.25" y="-0.95" dx="1.2" dy="0.6" layer="1"/>
+<smd name="4" x="1.25" y="-0.95" dx="1.2" dy="0.6" layer="1"/>
+<smd name="5" x="1.25" y="0.95" dx="1.2" dy="0.6" layer="1"/>
+<text x="0" y="-2.54" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="2.54" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-2.1" y1="1.775" x2="2.1" y2="1.775" width="0.05" layer="51"/>
+<wire x1="2.1" y1="1.775" x2="2.1" y2="-1.775" width="0.05" layer="51"/>
+<wire x1="2.1" y1="-1.775" x2="-2.1" y2="-1.775" width="0.05" layer="51"/>
+<wire x1="-2.1" y1="-1.775" x2="-2.1" y2="1.775" width="0.05" layer="51"/>
+<wire x1="-0.8" y1="1.45" x2="0.8" y2="1.45" width="0.1" layer="51"/>
+<wire x1="0.8" y1="1.45" x2="0.8" y2="-1.45" width="0.1" layer="51"/>
+<wire x1="0.8" y1="-1.45" x2="-0.8" y2="-1.45" width="0.1" layer="51"/>
+<wire x1="-0.8" y1="-1.45" x2="-0.8" y2="1.45" width="0.1" layer="51"/>
+<wire x1="-0.8" y1="0.5" x2="0.15" y2="1.45" width="0.1" layer="51"/>
+<wire x1="-0.3" y1="1.45" x2="0.3" y2="1.45" width="0.2" layer="21"/>
+<wire x1="0.3" y1="1.45" x2="0.3" y2="-1.45" width="0.2" layer="21"/>
+<wire x1="0.3" y1="-1.45" x2="-0.3" y2="-1.45" width="0.2" layer="21"/>
+<wire x1="-0.3" y1="-1.45" x2="-0.3" y2="1.45" width="0.2" layer="21"/>
+<wire x1="-1.85" y1="1.5" x2="-0.65" y2="1.5" width="0.2" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="SN74AHC1G08DBVR">
+<wire x1="5.08" y1="2.54" x2="20.32" y2="2.54" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-7.62" x2="20.32" y2="2.54" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<text x="21.59" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="21.59" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="A" x="0" y="0" length="middle"/>
+<pin name="B" x="0" y="-2.54" length="middle"/>
+<pin name="GND" x="0" y="-5.08" length="middle"/>
+<pin name="Y" x="25.4" y="0" length="middle" rot="R180"/>
+<pin name="VCC" x="25.4" y="-5.08" length="middle" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="SN74AHC1G08DBVR" prefix="U">
+<description>&lt;b&gt;Texas Instruments SN74AHC1G08DBVR, 2-Input AND Logic Gate, 2  5.5 V, 5-Pin SOT-23&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="http://www.ti.com/general/docs/lit/getliterature.tsp?genericPartNumber=SN74AHC1G08&amp;&amp;fileType=pdf"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="SN74AHC1G08DBVR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT95P280X145-5N">
+<connects>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="B" pad="2"/>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="VCC" pad="5"/>
+<connect gate="G$1" pin="Y" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="ARROW_PART_NUMBER" value="SN74AHC1G08DBVR" constant="no"/>
+<attribute name="ARROW_PRICE-STOCK" value="https://www.arrow.com/en/products/sn74ahc1g08dbvr/texas-instruments" constant="no"/>
+<attribute name="DESCRIPTION" value="Texas Instruments SN74AHC1G08DBVR, 2-Input AND Logic Gate, 2  5.5 V, 5-Pin SOT-23" constant="no"/>
+<attribute name="HEIGHT" value="1.45mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="Texas Instruments" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="SN74AHC1G08DBVR" constant="no"/>
+<attribute name="RS_PART_NUMBER" value="1218343" constant="no"/>
+<attribute name="RS_PRICE-STOCK" value="http://uk.rs-online.com/web/p/products/1218343" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -22576,6 +22654,9 @@ Source: &lt;a href="http://uk.rs-online.com/web/p/products/1622014"&gt; Datashee
 <part name="+3V14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="R14" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="M0805" package3d_urn="urn:adsk.eagle:package:23556/1" value="10k"/>
 <part name="GND20" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="U1" library="SN74AHC1G08DBVR" deviceset="SN74AHC1G08DBVR" device=""/>
+<part name="GND21" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="+3V15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -23223,6 +23304,13 @@ bootloader mode</text>
 <wire x1="88.9" y1="142.24" x2="81.28" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="142.24" x2="81.28" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="147.32" x2="71.12" y2="147.32" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="LASER_MOD" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="RPC7/PMCS1/RC7"/>
+<wire x1="66.04" y1="111.76" x2="53.34" y2="111.76" width="0.1524" layer="91"/>
+<label x="53.34" y="111.76" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
@@ -24463,14 +24551,14 @@ https://github.com/gabbla/speedometer</text>
 </plain>
 <instances>
 <instance part="FRAME9" gate="G$1" x="0" y="0"/>
-<instance part="Q1" gate="G$1" x="66.04" y="114.3"/>
-<instance part="GND67" gate="1" x="68.58" y="101.6"/>
-<instance part="R38" gate="G$1" x="45.72" y="114.3"/>
-<instance part="R39" gate="G$1" x="60.96" y="106.68"/>
-<instance part="TP36" gate="G$1" x="53.34" y="127"/>
-<instance part="LED8" gate="G$1" x="83.82" y="142.24"/>
-<instance part="R40" gate="G$1" x="83.82" y="129.54" rot="R90"/>
-<instance part="J5" gate="G$1" x="66.04" y="137.16" rot="R180"/>
+<instance part="Q1" gate="G$1" x="109.22" y="119.38"/>
+<instance part="GND67" gate="1" x="111.76" y="106.68"/>
+<instance part="R38" gate="G$1" x="78.74" y="119.38"/>
+<instance part="R39" gate="G$1" x="104.14" y="111.76"/>
+<instance part="TP36" gate="G$1" x="96.52" y="132.08"/>
+<instance part="LED8" gate="G$1" x="127" y="147.32"/>
+<instance part="R40" gate="G$1" x="127" y="134.62" rot="R90"/>
+<instance part="J5" gate="G$1" x="109.22" y="142.24" rot="R180"/>
 <instance part="J4" gate="G$1" x="48.26" y="45.72" rot="R180"/>
 <instance part="GND66" gate="1" x="53.34" y="40.64"/>
 <instance part="Q2" gate="G$1" x="190.5" y="114.3"/>
@@ -24483,7 +24571,7 @@ https://github.com/gabbla/speedometer</text>
 <instance part="J7" gate="G$1" x="190.5" y="137.16" rot="R180"/>
 <instance part="J6" gate="G$1" x="172.72" y="45.72" rot="R180"/>
 <instance part="GND68" gate="1" x="177.8" y="40.64"/>
-<instance part="P+2" gate="1" x="68.58" y="160.02"/>
+<instance part="P+2" gate="1" x="111.76" y="165.1"/>
 <instance part="P+3" gate="1" x="193.04" y="160.02"/>
 <instance part="P+4" gate="1" x="53.34" y="71.12"/>
 <instance part="P+5" gate="1" x="177.8" y="71.12" rot="MR0"/>
@@ -24499,6 +24587,9 @@ https://github.com/gabbla/speedometer</text>
 <instance part="R23" gate="G$1" x="210.82" y="38.1"/>
 <instance part="R25" gate="G$1" x="218.44" y="60.96" rot="R90"/>
 <instance part="+3V6" gate="G$1" x="218.44" y="71.12"/>
+<instance part="U1" gate="G$1" x="38.1" y="119.38"/>
+<instance part="GND21" gate="1" x="35.56" y="109.22"/>
+<instance part="+3V15" gate="G$1" x="68.58" y="114.3" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -24506,26 +24597,26 @@ https://github.com/gabbla/speedometer</text>
 <net name="N$38" class="0">
 <segment>
 <pinref part="Q1" gate="G$1" pin="C"/>
-<wire x1="68.58" y1="119.38" x2="68.58" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="121.92" x2="68.58" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="121.92" x2="83.82" y2="121.92" width="0.1524" layer="91"/>
-<junction x="68.58" y="121.92"/>
+<wire x1="111.76" y1="124.46" x2="111.76" y2="127" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="127" x2="111.76" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="127" x2="127" y2="127" width="0.1524" layer="91"/>
+<junction x="111.76" y="127"/>
 <pinref part="R40" gate="G$1" pin="1"/>
-<wire x1="83.82" y1="121.92" x2="83.82" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="127" y1="127" x2="127" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="J5" gate="G$1" pin="1"/>
-<wire x1="66.04" y1="137.16" x2="68.58" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="137.16" x2="68.58" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="142.24" x2="111.76" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="142.24" x2="111.76" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
 <pinref part="Q1" gate="G$1" pin="E"/>
 <pinref part="GND67" gate="1" pin="GND"/>
-<wire x1="68.58" y1="109.22" x2="68.58" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="114.3" x2="111.76" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="R39" gate="G$1" pin="2"/>
-<wire x1="68.58" y1="106.68" x2="68.58" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="106.68" x2="68.58" y2="106.68" width="0.1524" layer="91"/>
-<junction x="68.58" y="106.68"/>
+<wire x1="111.76" y1="111.76" x2="111.76" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="111.76" x2="111.76" y2="111.76" width="0.1524" layer="91"/>
+<junction x="111.76" y="111.76"/>
 </segment>
 <segment>
 <pinref part="J4" gate="G$1" pin="1"/>
@@ -24566,33 +24657,32 @@ https://github.com/gabbla/speedometer</text>
 <wire x1="215.9" y1="38.1" x2="218.44" y2="38.1" width="0.1524" layer="91"/>
 <junction x="218.44" y="38.1"/>
 </segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="GND"/>
+<wire x1="38.1" y1="114.3" x2="35.56" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="114.3" x2="35.56" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="GND21" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="N$39" class="0">
 <segment>
 <pinref part="R39" gate="G$1" pin="1"/>
-<wire x1="55.88" y1="106.68" x2="53.34" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="106.68" x2="53.34" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="111.76" x2="96.52" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="111.76" x2="96.52" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="R38" gate="G$1" pin="2"/>
-<wire x1="53.34" y1="114.3" x2="50.8" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="119.38" x2="83.82" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="Q1" gate="G$1" pin="B"/>
-<wire x1="53.34" y1="114.3" x2="63.5" y2="114.3" width="0.1524" layer="91"/>
-<junction x="53.34" y="114.3"/>
+<wire x1="96.52" y1="119.38" x2="106.68" y2="119.38" width="0.1524" layer="91"/>
+<junction x="96.52" y="119.38"/>
 <pinref part="TP36" gate="G$1" pin="TP"/>
-<wire x1="53.34" y1="124.46" x2="53.34" y2="114.3" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="LASER_RIGHT_CTL" class="0">
-<segment>
-<pinref part="R38" gate="G$1" pin="1"/>
-<wire x1="40.64" y1="114.3" x2="35.56" y2="114.3" width="0.1524" layer="91"/>
-<label x="35.56" y="114.3" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="96.52" y1="129.54" x2="96.52" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$40" class="0">
 <segment>
 <pinref part="LED8" gate="G$1" pin="C"/>
 <pinref part="R40" gate="G$1" pin="2"/>
-<wire x1="83.82" y1="137.16" x2="83.82" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="127" y1="142.24" x2="127" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -24605,6 +24695,11 @@ https://github.com/gabbla/speedometer</text>
 <pinref part="R25" gate="G$1" pin="2"/>
 <pinref part="+3V6" gate="G$1" pin="+3V3"/>
 <wire x1="218.44" y1="66.04" x2="218.44" y2="68.58" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="VCC"/>
+<wire x1="63.5" y1="114.3" x2="66.04" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="+3V15" gate="G$1" pin="+3V3"/>
 </segment>
 </net>
 <net name="RIGHT_STS" class="0">
@@ -24670,13 +24765,13 @@ https://github.com/gabbla/speedometer</text>
 <net name="+5V" class="0">
 <segment>
 <pinref part="LED8" gate="G$1" pin="A"/>
-<wire x1="83.82" y1="144.78" x2="83.82" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="147.32" x2="68.58" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="147.32" x2="68.58" y2="157.48" width="0.1524" layer="91"/>
-<junction x="68.58" y="147.32"/>
+<wire x1="127" y1="149.86" x2="127" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="127" y1="152.4" x2="111.76" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="152.4" x2="111.76" y2="162.56" width="0.1524" layer="91"/>
+<junction x="111.76" y="152.4"/>
 <pinref part="J5" gate="G$1" pin="2"/>
-<wire x1="66.04" y1="139.7" x2="68.58" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="139.7" x2="68.58" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="144.78" x2="111.76" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="144.78" x2="111.76" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="P+2" gate="1" pin="+5V"/>
 </segment>
 <segment>
@@ -24765,6 +24860,27 @@ https://github.com/gabbla/speedometer</text>
 <wire x1="218.44" y1="53.34" x2="226.06" y2="53.34" width="0.1524" layer="91"/>
 <junction x="218.44" y="53.34"/>
 <label x="226.06" y="53.34" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="LASER_MOD" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="A"/>
+<wire x1="38.1" y1="119.38" x2="30.48" y2="119.38" width="0.1524" layer="91"/>
+<label x="30.48" y="119.38" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="CTL_R" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="B"/>
+<wire x1="38.1" y1="116.84" x2="30.48" y2="116.84" width="0.1524" layer="91"/>
+<label x="30.48" y="116.84" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="N$42" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="Y"/>
+<pinref part="R38" gate="G$1" pin="1"/>
+<wire x1="63.5" y1="119.38" x2="73.66" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

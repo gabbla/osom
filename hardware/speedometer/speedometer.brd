@@ -2340,6 +2340,37 @@ Metric Code Size 1005</description>
 </package3d>
 </packages3d>
 </library>
+<library name="SN74AHC1G08DBVR">
+<description>&lt;Texas Instruments SN74AHC1G08DBVR, 2-Input AND Logic Gate, 2  5.5 V, 5-Pin SOT-23&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
+<packages>
+<package name="SOT95P280X145-5N">
+<description>&lt;b&gt;DBV (R-PDSO-G5)&lt;/b&gt;&lt;br&gt;
+</description>
+<smd name="1" x="-1.25" y="0.95" dx="1.2" dy="0.6" layer="1"/>
+<smd name="2" x="-1.25" y="0" dx="1.2" dy="0.6" layer="1"/>
+<smd name="3" x="-1.25" y="-0.95" dx="1.2" dy="0.6" layer="1"/>
+<smd name="4" x="1.25" y="-0.95" dx="1.2" dy="0.6" layer="1"/>
+<smd name="5" x="1.25" y="0.95" dx="1.2" dy="0.6" layer="1"/>
+<text x="0" y="-2.54" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="2.54" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-2.1" y1="1.775" x2="2.1" y2="1.775" width="0.05" layer="51"/>
+<wire x1="2.1" y1="1.775" x2="2.1" y2="-1.775" width="0.05" layer="51"/>
+<wire x1="2.1" y1="-1.775" x2="-2.1" y2="-1.775" width="0.05" layer="51"/>
+<wire x1="-2.1" y1="-1.775" x2="-2.1" y2="1.775" width="0.05" layer="51"/>
+<wire x1="-0.8" y1="1.45" x2="0.8" y2="1.45" width="0.1" layer="51"/>
+<wire x1="0.8" y1="1.45" x2="0.8" y2="-1.45" width="0.1" layer="51"/>
+<wire x1="0.8" y1="-1.45" x2="-0.8" y2="-1.45" width="0.1" layer="51"/>
+<wire x1="-0.8" y1="-1.45" x2="-0.8" y2="1.45" width="0.1" layer="51"/>
+<wire x1="-0.8" y1="0.5" x2="0.15" y2="1.45" width="0.1" layer="51"/>
+<wire x1="-0.3" y1="1.45" x2="0.3" y2="1.45" width="0.2" layer="21"/>
+<wire x1="0.3" y1="1.45" x2="0.3" y2="-1.45" width="0.2" layer="21"/>
+<wire x1="0.3" y1="-1.45" x2="-0.3" y2="-1.45" width="0.2" layer="21"/>
+<wire x1="-0.3" y1="-1.45" x2="-0.3" y2="1.45" width="0.2" layer="21"/>
+<wire x1="-1.85" y1="1.5" x2="-0.65" y2="1.5" width="0.2" layer="21"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -3177,6 +3208,16 @@ design rules under a new name.</description>
 <element name="R14" library="rcl" library_urn="urn:adsk.eagle:library:334" package="M0805" package3d_urn="urn:adsk.eagle:package:23556/1" value="10k" x="-41.275" y="-200.025">
 <attribute name="SPICEPREFIX" value="R" x="-41.275" y="-200.025" size="1.778" layer="27" display="off"/>
 </element>
+<element name="U1" library="SN74AHC1G08DBVR" package="SOT95P280X145-5N" value="SN74AHC1G08DBVR" x="-39.37" y="-205.105">
+<attribute name="ARROW_PART_NUMBER" value="SN74AHC1G08DBVR" x="-39.37" y="-205.105" size="1.778" layer="27" display="off"/>
+<attribute name="ARROW_PRICE-STOCK" value="https://www.arrow.com/en/products/sn74ahc1g08dbvr/texas-instruments" x="-39.37" y="-205.105" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value="Texas Instruments SN74AHC1G08DBVR, 2-Input AND Logic Gate, 2  5.5 V, 5-Pin SOT-23" x="-39.37" y="-205.105" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="1.45mm" x="-39.37" y="-205.105" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Texas Instruments" x="-39.37" y="-205.105" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="SN74AHC1G08DBVR" x="-39.37" y="-205.105" size="1.778" layer="27" display="off"/>
+<attribute name="RS_PART_NUMBER" value="1218343" x="-39.37" y="-205.105" size="1.778" layer="27" display="off"/>
+<attribute name="RS_PRICE-STOCK" value="http://uk.rs-online.com/web/p/products/1218343" x="-39.37" y="-205.105" size="1.778" layer="27" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -3385,6 +3426,8 @@ design rules under a new name.</description>
 <contactref element="JP1" pad="2"/>
 <contactref element="JP2" pad="3"/>
 <contactref element="R14" pad="1"/>
+<contactref element="U1" pad="3"/>
+<wire x1="-42.225" y1="-200.025" x2="-40.62" y2="-206.055" width="0" layer="19" extent="1-1"/>
 <wire x1="-36.195" y1="-189.5475" x2="-42.225" y2="-200.025" width="0" layer="19" extent="1-1"/>
 <wire x1="-38.735" y1="-184.15" x2="-36.195" y2="-189.5475" width="0" layer="19" extent="1-1"/>
 <wire x1="-41.06" y1="-171.45" x2="-38.735" y2="-184.15" width="0" layer="19" extent="1-1"/>
@@ -3728,6 +3771,8 @@ design rules under a new name.</description>
 <contactref element="R5" pad="2"/>
 <contactref element="R7" pad="2"/>
 <contactref element="JP3" pad="1"/>
+<contactref element="U1" pad="5"/>
+<wire x1="-41.275" y1="-194.945" x2="-38.12" y2="-204.155" width="0" layer="19" extent="1-1"/>
 <wire x1="-40.325" y1="-165.735" x2="-41.275" y2="-194.945" width="0" layer="19" extent="1-1"/>
 <wire x1="-40.325" y1="-149.86" x2="-40.325" y2="-165.735" width="0" layer="19" extent="1-1"/>
 <wire x1="-40.325" y1="-143.51" x2="-40.325" y2="-149.86" width="0" layer="19" extent="1-1"/>
@@ -3926,13 +3971,6 @@ design rules under a new name.</description>
 <vertex x="107.6325" y="19.685"/>
 <vertex x="107.6325" y="24.765"/>
 </polygon>
-</signal>
-<signal name="LASER_RIGHT_CTL">
-<contactref element="R38" pad="1"/>
-<wire x1="40.005" y1="20.32" x2="40.3225" y2="20.0025" width="0.254" layer="1"/>
-<wire x1="39.685" y1="36.515" x2="40.005" y2="36.195" width="0.254" layer="1"/>
-<wire x1="40.005" y1="36.195" x2="40.005" y2="20.32" width="0.254" layer="1"/>
-<wire x1="33.655" y1="36.515" x2="39.685" y2="36.515" width="0.254" layer="1"/>
 </signal>
 <signal name="LASER_LEFT_CTL">
 <contactref element="R41" pad="1"/>
@@ -4633,6 +4671,8 @@ design rules under a new name.</description>
 </signal>
 <signal name="CTL_R">
 <contactref element="IC1" pad="27"/>
+<contactref element="U1" pad="2"/>
+<wire x1="-17.757" y1="-77.635" x2="-40.62" y2="-205.105" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="IN_L">
 <contactref element="IC1" pad="32"/>
@@ -4725,6 +4765,16 @@ design rules under a new name.</description>
 <wire x1="-40.325" y1="-177.165" x2="-41.275" y2="-184.15" width="0" layer="19" extent="1-1"/>
 <wire x1="-42.76" y1="-171.45" x2="-40.325" y2="-177.165" width="0" layer="19" extent="1-1"/>
 <wire x1="-42.225" y1="-165.735" x2="-42.76" y2="-171.45" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="LASER_MOD">
+<contactref element="IC1" pad="3"/>
+<contactref element="U1" pad="1"/>
+<wire x1="-29.233" y1="-74.435" x2="-40.62" y2="-204.155" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$42">
+<contactref element="U1" pad="4"/>
+<contactref element="R38" pad="1"/>
+<wire x1="33.655" y1="36.515" x2="-38.12" y2="-206.055" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

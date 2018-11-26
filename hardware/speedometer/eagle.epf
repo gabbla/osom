@@ -352,6 +352,7 @@ UsedLibrary="/home/italia.texa.org/gzampieri/projects/speedometer/hardware/eagle
 UsedLibrary="/home/italia.texa.org/gzampieri/projects/speedometer/hardware/eagle_libs/BQ27441DRZR-G1A.lbr"
 UsedLibrary="/home/italia.texa.org/gzampieri/projects/speedometer/hardware/eagle_libs/HM11.lbr"
 UsedLibrary="/home/italia.texa.org/gzampieri/projects/speedometer/hardware/eagle_libs/PIC32MX274F256DT-I_PT.lbr"
+UsedLibrary="/home/italia.texa.org/gzampieri/projects/speedometer/hardware/eagle_libs/SN74AHC1G08DBVR.lbr"
 
 [Win_1]
 Type="Control Panel"
