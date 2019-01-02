@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -22307,7 +22307,7 @@ Source: &lt;a href="http://www.ti.com/general/docs/lit/getliterature.tsp?generic
 <part name="GND17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2" value="100n"/>
 <part name="GND22" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="LED3" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="3MM" package3d_urn="urn:adsk.eagle:package:15797/1"/>
+<part name="CHG" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="3MM" package3d_urn="urn:adsk.eagle:package:15797/1"/>
 <part name="R16" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="1k5"/>
 <part name="TP15" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/1" value="TPB1,27">
 <attribute name="TP_SIGNAL_NAME" value="TP_VUSB"/>
@@ -22584,7 +22584,7 @@ Source: &lt;a href="http://www.ti.com/general/docs/lit/getliterature.tsp?generic
 <attribute name="TP_SIGNAL_NAME" value="BT_KEY"/>
 </part>
 <part name="R10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="M0805" package3d_urn="urn:adsk.eagle:package:23556/1" value="470"/>
-<part name="LED2" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="3MM" package3d_urn="urn:adsk.eagle:package:15797/1"/>
+<part name="BT" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="3MM" package3d_urn="urn:adsk.eagle:package:15797/1"/>
 <part name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="M0805" package3d_urn="urn:adsk.eagle:package:23556/1" value="470"/>
 <part name="GND15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="IC1" library="PIC32MX274F256DT-I_PT" deviceset="PIC32MX274F256DT-I_PT" device=""/>
@@ -22650,6 +22650,9 @@ Source: &lt;a href="http://www.ti.com/general/docs/lit/getliterature.tsp?generic
 <part name="VDD2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VDD" device=""/>
 <part name="C10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805K" package3d_urn="urn:adsk.eagle:package:23681/2" value="10u"/>
 <part name="VCC1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCCINT" device=""/>
+<part name="STATUS" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="3MM" package3d_urn="urn:adsk.eagle:package:15797/1"/>
+<part name="R35" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="M0805" package3d_urn="urn:adsk.eagle:package:23556/1" value="1k5"/>
+<part name="TP25" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -22857,6 +22860,14 @@ bootloader mode</text>
 <instance part="VDD2" gate="G$1" x="236.22" y="111.76" smashed="yes" rot="R270">
 <attribute name="VALUE" x="233.68" y="114.3" size="1.778" layer="96"/>
 </instance>
+<instance part="STATUS" gate="G$1" x="22.86" y="53.34" smashed="yes" rot="R90">
+<attribute name="NAME" x="27.432" y="56.896" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="27.432" y="59.055" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="R35" gate="G$1" x="38.1" y="53.34" smashed="yes">
+<attribute name="NAME" x="34.29" y="54.8386" size="1.778" layer="95"/>
+<attribute name="VALUE" x="34.29" y="50.038" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -22947,6 +22958,10 @@ bootloader mode</text>
 <wire x1="43.18" y1="45.72" x2="45.72" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="45.72" x2="45.72" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="GND4" gate="1" pin="GND"/>
+<pinref part="R35" gate="G$1" pin="2"/>
+<wire x1="43.18" y1="53.34" x2="45.72" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="53.34" x2="45.72" y2="45.72" width="0.1524" layer="91"/>
+<junction x="45.72" y="45.72"/>
 </segment>
 <segment>
 <pinref part="C6" gate="G$1" pin="2"/>
@@ -23408,6 +23423,11 @@ bootloader mode</text>
 <wire x1="66.04" y1="116.84" x2="53.34" y2="116.84" width="0.1524" layer="91"/>
 <label x="53.34" y="116.84" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="STATUS" gate="G$1" pin="A"/>
+<wire x1="20.32" y1="53.34" x2="15.24" y2="53.34" width="0.1524" layer="91"/>
+<label x="15.24" y="53.34" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="N$29" class="0">
 <segment>
@@ -23443,6 +23463,13 @@ bootloader mode</text>
 <pinref part="IC1" gate="G$1" pin="RPC7/PMCS1/RC7"/>
 <wire x1="66.04" y1="111.76" x2="53.34" y2="111.76" width="0.1524" layer="91"/>
 <label x="53.34" y="111.76" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="STATUS" gate="G$1" pin="C"/>
+<pinref part="R35" gate="G$1" pin="1"/>
+<wire x1="27.94" y1="53.34" x2="33.02" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -23509,7 +23536,7 @@ https://github.com/gabbla/speedometer</text>
 <attribute name="NAME" x="163.83" y="95.4786" size="1.778" layer="95"/>
 <attribute name="VALUE" x="163.83" y="90.678" size="1.778" layer="96"/>
 </instance>
-<instance part="LED2" gate="G$1" x="175.26" y="83.82" smashed="yes" rot="R90">
+<instance part="BT" gate="G$1" x="175.26" y="83.82" smashed="yes" rot="R90">
 <attribute name="NAME" x="179.832" y="87.376" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="179.832" y="89.535" size="1.778" layer="96" rot="R180"/>
 </instance>
@@ -23553,7 +23580,7 @@ https://github.com/gabbla/speedometer</text>
 <wire x1="149.86" y1="81.28" x2="149.86" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LED2" gate="G$1" pin="C"/>
+<pinref part="BT" gate="G$1" pin="C"/>
 <wire x1="180.34" y1="83.82" x2="185.42" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="GND15" gate="1" pin="GND"/>
 <wire x1="185.42" y1="83.82" x2="185.42" y2="76.2" width="0.1524" layer="91"/>
@@ -23633,7 +23660,7 @@ https://github.com/gabbla/speedometer</text>
 <net name="N$6" class="0">
 <segment>
 <pinref part="R9" gate="G$1" pin="2"/>
-<pinref part="LED2" gate="G$1" pin="A"/>
+<pinref part="BT" gate="G$1" pin="A"/>
 <wire x1="167.64" y1="83.82" x2="172.72" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -23724,7 +23751,7 @@ limited to 1A</text>
 <instance part="GND22" gate="1" x="142.24" y="104.14" smashed="yes">
 <attribute name="VALUE" x="139.7" y="101.6" size="1.778" layer="96"/>
 </instance>
-<instance part="LED3" gate="G$1" x="190.5" y="121.92" smashed="yes" rot="R270">
+<instance part="CHG" gate="G$1" x="190.5" y="121.92" smashed="yes" rot="R270">
 <attribute name="NAME" x="185.928" y="118.364" size="1.778" layer="95"/>
 <attribute name="VALUE" x="185.928" y="116.205" size="1.778" layer="96"/>
 </instance>
@@ -24007,7 +24034,7 @@ limited to 1A</text>
 <segment>
 <pinref part="IC5" gate="G$1" pin="!CHG"/>
 <wire x1="180.34" y1="121.92" x2="180.34" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="LED3" gate="G$1" pin="C"/>
+<pinref part="CHG" gate="G$1" pin="C"/>
 <wire x1="185.42" y1="121.92" x2="180.34" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="TP17" gate="G$1" pin="TP"/>
 <wire x1="180.34" y1="132.08" x2="180.34" y2="121.92" width="0.1524" layer="91"/>
@@ -24016,7 +24043,7 @@ limited to 1A</text>
 </net>
 <net name="N$12" class="0">
 <segment>
-<pinref part="LED3" gate="G$1" pin="A"/>
+<pinref part="CHG" gate="G$1" pin="A"/>
 <pinref part="R16" gate="G$1" pin="2"/>
 <wire x1="193.04" y1="121.92" x2="198.12" y2="121.92" width="0.1524" layer="91"/>
 </segment>
@@ -24135,8 +24162,6 @@ limited to 1A</text>
 <sheet>
 <description>nRF24L01+</description>
 <plain>
-<text x="132.08" y="63.5" size="1.778" layer="91">TEST NEEDED
-ON R33</text>
 <text x="163.83" y="7.62" size="2.032" layer="94">Zampieri Gabriele
 Speed'o'Meter 
 v 0.1-alpha
@@ -24246,6 +24271,10 @@ https://github.com/gabbla/speedometer</text>
 </instance>
 <instance part="GND32" gate="1" x="116.84" y="137.16" smashed="yes">
 <attribute name="VALUE" x="114.3" y="134.62" size="1.778" layer="96"/>
+</instance>
+<instance part="TP25" gate="G$1" x="144.78" y="76.2" smashed="yes">
+<attribute name="NAME" x="143.51" y="77.47" size="1.778" layer="95"/>
+<attribute name="TP_SIGNAL_NAME" x="146.05" y="74.93" size="1.778" layer="97"/>
 </instance>
 </instances>
 <busses>
@@ -24459,6 +24488,10 @@ https://github.com/gabbla/speedometer</text>
 <wire x1="134.62" y1="71.12" x2="116.84" y2="71.12" width="0.1524" layer="91"/>
 <junction x="134.62" y="71.12"/>
 <label x="116.84" y="71.12" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<wire x1="139.7" y1="71.12" x2="144.78" y2="71.12" width="0.1524" layer="91"/>
+<junction x="139.7" y="71.12"/>
+<pinref part="TP25" gate="G$1" pin="TP"/>
+<wire x1="144.78" y1="71.12" x2="144.78" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="NRF_CE" class="0">
