@@ -22309,16 +22309,6 @@ Source: &lt;a href="http://www.ti.com/general/docs/lit/getliterature.tsp?generic
 <part name="GND33" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="LED7" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="3MM" package3d_urn="urn:adsk.eagle:package:15797/1"/>
 <part name="R26" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="1k5"/>
-<part name="R28" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="TBD">
-<spice>
-<pinmapping spiceprefix="R">
-<pinmap gate="G$1" pin="1" pinorder="1"/>
-<pinmap gate="G$1" pin="2" pinorder="2"/>
-</pinmapping>
-</spice>
-<attribute name="RS" value="708-6111"/>
-</part>
-<part name="GND39" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="TP25" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/1" value="TPB1,27">
 <attribute name="TP_SIGNAL_NAME" value="TP_VUSB"/>
 </part>
@@ -22658,6 +22648,8 @@ Source: &lt;a href="http://www.ti.com/general/docs/lit/getliterature.tsp?generic
 <part name="GND21" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="+3V15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="VDD2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VDD" device=""/>
+<part name="C10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2" value="10u"/>
+<part name="VCC5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCCINT" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -23650,16 +23642,19 @@ https://github.com/gabbla/speedometer</text>
 <sheet>
 <description>Battery Managment</description>
 <plain>
-<text x="172.72" y="149.86" size="1.778" layer="91">CHG LED exposed to user</text>
+<text x="172.72" y="149.86" size="1.778" layer="97" font="vector">CHG LED exposed to user</text>
 <text x="163.83" y="7.62" size="2.032" layer="94">Zampieri Gabriele
 Speed'o'Meter 
 v 0.1-alpha
 https://github.com/gabbla/speedometer</text>
-<text x="160.02" y="48.26" size="3.81" layer="91" font="vector">500 mA</text>
-<text x="218.44" y="121.92" size="3.81" layer="91" font="vector">To Vss when a 
+<text x="160.02" y="48.26" size="3.81" layer="97" font="vector">500 mA</text>
+<text x="218.44" y="121.92" size="3.81" layer="97" font="vector">To Vss when a 
 valid input source
 is detected</text>
-<text x="88.9" y="48.26" size="3.81" layer="91" font="vector">Indicates low battery</text>
+<text x="88.9" y="48.26" size="3.81" layer="97" font="vector">Indicates low battery</text>
+<text x="220.98" y="66.04" size="1.778" layer="97" font="vector">Fast charge
+limited to 1A</text>
+<text x="220.98" y="60.96" size="1.778" layer="97" font="vector">RIlim = 1550/Imax</text>
 </plain>
 <instances>
 <instance part="FRAME5" gate="G$1" x="0" y="0" smashed="yes">
@@ -23671,8 +23666,8 @@ is detected</text>
 <attribute name="NAME" x="163.83" y="109.22" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="163.83" y="106.68" size="1.778" layer="96" align="center-left"/>
 </instance>
-<instance part="+3V314" gate="G$1" x="215.9" y="149.86" smashed="yes">
-<attribute name="VALUE" x="213.36" y="144.78" size="1.778" layer="96" rot="R90"/>
+<instance part="+3V314" gate="G$1" x="205.74" y="139.7" smashed="yes">
+<attribute name="VALUE" x="203.2" y="134.62" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="GND36" gate="1" x="177.8" y="55.88" smashed="yes">
 <attribute name="VALUE" x="175.26" y="53.34" size="1.778" layer="96"/>
@@ -23687,20 +23682,20 @@ is detected</text>
 <instance part="GND34" gate="1" x="147.32" y="55.88" smashed="yes">
 <attribute name="VALUE" x="144.78" y="53.34" size="1.778" layer="96"/>
 </instance>
-<instance part="R24" gate="G$1" x="200.66" y="68.58" smashed="yes" rot="R90">
-<attribute name="NAME" x="199.1614" y="64.77" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="203.962" y="64.77" size="1.778" layer="96" rot="R90"/>
+<instance part="R24" gate="G$1" x="205.74" y="68.58" smashed="yes" rot="R90">
+<attribute name="NAME" x="204.2414" y="64.77" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="209.042" y="64.77" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R27" gate="G$1" x="208.28" y="68.58" smashed="yes" rot="R90">
-<attribute name="RS" x="208.28" y="68.58" size="1.778" layer="96" rot="R90" display="off"/>
-<attribute name="NAME" x="206.7814" y="64.77" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="211.582" y="64.77" size="1.778" layer="96" rot="R90"/>
+<instance part="R27" gate="G$1" x="213.36" y="68.58" smashed="yes" rot="R90">
+<attribute name="RS" x="213.36" y="68.58" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="NAME" x="211.8614" y="64.77" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="216.662" y="64.77" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="GND37" gate="1" x="200.66" y="55.88" smashed="yes">
-<attribute name="VALUE" x="198.12" y="53.34" size="1.778" layer="96"/>
+<instance part="GND37" gate="1" x="205.74" y="55.88" smashed="yes">
+<attribute name="VALUE" x="203.2" y="53.34" size="1.778" layer="96"/>
 </instance>
-<instance part="GND38" gate="1" x="208.28" y="55.88" smashed="yes">
-<attribute name="VALUE" x="205.74" y="53.34" size="1.778" layer="96"/>
+<instance part="GND38" gate="1" x="213.36" y="55.88" smashed="yes">
+<attribute name="VALUE" x="210.82" y="53.34" size="1.778" layer="96"/>
 </instance>
 <instance part="C13" gate="G$1" x="226.06" y="96.52" smashed="yes">
 <attribute name="NAME" x="227.203" y="97.0026" size="1.778" layer="95"/>
@@ -23736,14 +23731,6 @@ is detected</text>
 <instance part="R26" gate="G$1" x="203.2" y="121.92" smashed="yes" rot="R180">
 <attribute name="NAME" x="207.01" y="120.4214" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="207.01" y="125.222" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="R28" gate="G$1" x="215.9" y="68.58" smashed="yes" rot="R90">
-<attribute name="RS" x="215.9" y="68.58" size="1.778" layer="96" rot="R90" display="off"/>
-<attribute name="NAME" x="214.4014" y="64.77" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="219.202" y="64.77" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="GND39" gate="1" x="215.9" y="55.88" smashed="yes">
-<attribute name="VALUE" x="213.36" y="53.34" size="1.778" layer="96"/>
 </instance>
 <instance part="TP25" gate="G$1" x="142.24" y="132.08" smashed="yes">
 <attribute name="NAME" x="140.97" y="133.35" size="1.778" layer="95"/>
@@ -23820,23 +23807,23 @@ is detected</text>
 <attribute name="NAME" x="49.53" y="118.11" size="1.778" layer="95"/>
 <attribute name="TP_SIGNAL_NAME" x="52.07" y="115.57" size="1.778" layer="97"/>
 </instance>
+<instance part="C10" gate="G$1" x="139.7" y="91.44" smashed="yes">
+<attribute name="NAME" x="141.224" y="91.821" size="1.778" layer="95"/>
+<attribute name="VALUE" x="141.224" y="86.741" size="1.778" layer="96"/>
+</instance>
+<instance part="VCC5" gate="G$1" x="213.36" y="129.54" smashed="yes">
+<attribute name="VALUE" x="210.82" y="127" size="1.778" layer="96" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="+3V3" class="0">
 <segment>
-<wire x1="215.9" y1="139.7" x2="215.9" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="215.9" y1="127" x2="215.9" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="215.9" y1="129.54" x2="215.9" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="215.9" y1="139.7" x2="215.9" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="129.54" x2="205.74" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="+3V314" gate="G$1" pin="+3V3"/>
-<pinref part="R26" gate="G$1" pin="1"/>
-<wire x1="208.28" y1="121.92" x2="215.9" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="215.9" y1="121.92" x2="215.9" y2="127" width="0.1524" layer="91"/>
 <pinref part="R22" gate="G$1" pin="1"/>
-<wire x1="200.66" y1="129.54" x2="215.9" y2="129.54" width="0.1524" layer="91"/>
-<junction x="215.9" y="129.54"/>
+<wire x1="200.66" y1="129.54" x2="205.74" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC7" gate="G$1" pin="EN1"/>
@@ -23885,12 +23872,12 @@ is detected</text>
 <segment>
 <pinref part="GND37" gate="1" pin="GND"/>
 <pinref part="R24" gate="G$1" pin="1"/>
-<wire x1="200.66" y1="58.42" x2="200.66" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="58.42" x2="205.74" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND38" gate="1" pin="GND"/>
 <pinref part="R27" gate="G$1" pin="1"/>
-<wire x1="208.28" y1="58.42" x2="208.28" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="58.42" x2="213.36" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND40" gate="1" pin="GND"/>
@@ -23903,16 +23890,13 @@ is detected</text>
 <wire x1="142.24" y1="109.22" x2="142.24" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R28" gate="G$1" pin="1"/>
-<wire x1="215.9" y1="63.5" x2="215.9" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="GND39" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="IC7" gate="G$1" pin="SYSOFF"/>
 <wire x1="139.7" y1="83.82" x2="157.48" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="83.82" x2="139.7" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="83.82" x2="139.7" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="GND43" gate="1" pin="GND"/>
-<wire x1="139.7" y1="68.58" x2="139.7" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="C10" gate="G$1" pin="2"/>
+<wire x1="139.7" y1="86.36" x2="139.7" y2="83.82" width="0.1524" layer="91"/>
+<junction x="139.7" y="83.82"/>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="1"/>
@@ -23955,16 +23939,16 @@ is detected</text>
 <net name="N$8" class="0">
 <segment>
 <pinref part="IC7" gate="G$1" pin="ILIM"/>
-<wire x1="198.12" y1="78.74" x2="200.66" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="200.66" y1="78.74" x2="200.66" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="78.74" x2="205.74" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="78.74" x2="205.74" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="R24" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$9" class="0">
 <segment>
 <pinref part="IC7" gate="G$1" pin="ISET"/>
-<wire x1="198.12" y1="81.28" x2="208.28" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="81.28" x2="208.28" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="81.28" x2="213.36" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="81.28" x2="213.36" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="R27" gate="G$1" pin="2"/>
 </segment>
 </net>
@@ -23984,6 +23968,12 @@ is detected</text>
 <pinref part="VCC1" gate="G$1" pin="VCCINT"/>
 <pinref part="TP30" gate="G$1" pin="TP"/>
 <wire x1="226.06" y1="104.14" x2="226.06" y2="101.6" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R26" gate="G$1" pin="1"/>
+<wire x1="208.28" y1="121.92" x2="213.36" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="VCC5" gate="G$1" pin="VCCINT"/>
+<wire x1="213.36" y1="121.92" x2="213.36" y2="127" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VDD" class="0">
@@ -24033,14 +24023,6 @@ is detected</text>
 <pinref part="LED7" gate="G$1" pin="A"/>
 <pinref part="R26" gate="G$1" pin="2"/>
 <wire x1="193.04" y1="121.92" x2="198.12" y2="121.92" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$14" class="0">
-<segment>
-<pinref part="IC7" gate="G$1" pin="TMR"/>
-<pinref part="R28" gate="G$1" pin="2"/>
-<wire x1="198.12" y1="83.82" x2="215.9" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="215.9" y1="83.82" x2="215.9" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -24105,7 +24087,8 @@ is detected</text>
 <pinref part="IC7" gate="G$1" pin="BAT_1"/>
 <wire x1="157.48" y1="96.52" x2="154.94" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="IC7" gate="G$1" pin="BAT_2"/>
-<wire x1="154.94" y1="96.52" x2="132.08" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="96.52" x2="139.7" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="96.52" x2="132.08" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="93.98" x2="154.94" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="93.98" x2="154.94" y2="96.52" width="0.1524" layer="91"/>
 <junction x="154.94" y="96.52"/>
@@ -24114,6 +24097,9 @@ is detected</text>
 <pinref part="TP2" gate="G$1" pin="TP"/>
 <wire x1="50.8" y1="114.3" x2="50.8" y2="109.22" width="0.1524" layer="91"/>
 <junction x="50.8" y="109.22"/>
+<pinref part="C10" gate="G$1" pin="1"/>
+<wire x1="139.7" y1="93.98" x2="139.7" y2="96.52" width="0.1524" layer="91"/>
+<junction x="139.7" y="96.52"/>
 </segment>
 </net>
 <net name="N$30" class="0">
