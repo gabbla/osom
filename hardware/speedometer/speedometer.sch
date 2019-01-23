@@ -12419,10 +12419,10 @@ I2C</description>
 <wire x1="-1.5" y1="-1.5" x2="-1.5" y2="1.5" width="0.1" layer="51"/>
 <wire x1="-1.5" y1="0.75" x2="-0.75" y2="1.5" width="0.1" layer="51"/>
 <circle x="-1.925" y="1.65" radius="0.125" width="0.25" layer="25"/>
-<smd name="P$1" x="-0.25" y="1.3" dx="1" dy="0.3" layer="1" rot="R90"/>
-<smd name="P$2" x="0.25" y="1.3" dx="1" dy="0.3" layer="1" rot="R90"/>
-<smd name="P$3" x="-0.25" y="-1.3" dx="1" dy="0.3" layer="1" rot="R90"/>
-<smd name="P$4" x="0.25" y="-1.3" dx="1" dy="0.3" layer="1" rot="R90"/>
+<smd name="EP1" x="-0.25" y="1.3" dx="1" dy="0.3" layer="1" rot="R90"/>
+<smd name="EP2" x="0.25" y="1.3" dx="1" dy="0.3" layer="1" rot="R90"/>
+<smd name="EP3" x="-0.25" y="-1.3" dx="1" dy="0.3" layer="1" rot="R90"/>
+<smd name="EP4" x="0.25" y="-1.3" dx="1" dy="0.3" layer="1" rot="R90"/>
 </package>
 </packages>
 <symbols>
@@ -12460,7 +12460,7 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/tps63000.pdf"&gt; Datasheet
 <connect gate="G$1" pin="GND" pad="9"/>
 <connect gate="G$1" pin="L1" pad="4"/>
 <connect gate="G$1" pin="L2" pad="2"/>
-<connect gate="G$1" pin="PGND" pad="3 11 P$1 P$2 P$3 P$4"/>
+<connect gate="G$1" pin="PGND" pad="3 11 EP1 EP2 EP3 EP4"/>
 <connect gate="G$1" pin="PS/SYNC" pad="7"/>
 <connect gate="G$1" pin="VIN" pad="5"/>
 <connect gate="G$1" pin="VINA" pad="8"/>
@@ -13747,7 +13747,7 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/sn75240.pdf"&gt; Datasheet 
 <wire x1="1.55" y1="-0.9" x2="1.55" y2="0.9" width="0.0762" layer="21"/>
 <wire x1="1.55" y1="0.9" x2="-1.55" y2="0.9" width="0.0762" layer="21"/>
 <circle x="-1.8" y="0" radius="0.070709375" width="0.0762" layer="21"/>
-<polygon width="0.0762" layer="39">
+<polygon width="0.0762" layer="41">
 <vertex x="-3" y="0.85"/>
 <vertex x="4" y="0.85"/>
 <vertex x="4" y="-3.15"/>
