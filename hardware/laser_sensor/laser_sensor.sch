@@ -2165,15 +2165,15 @@ Source: www.kingbright.com</description>
 <package name="SFH2440L">
 <description>&lt;b&gt;SFH-2430&lt;/b&gt;&lt;br&gt;
 </description>
-<smd name="1" x="-3.5" y="0" dx="1.3" dy="0.6" layer="1" rot="R90"/>
-<smd name="2" x="3.5" y="0" dx="2.1" dy="0.6" layer="1" rot="R90"/>
+<smd name="1" x="-3.7" y="0" dx="1.3" dy="0.6" layer="1" rot="R90"/>
+<smd name="2" x="3.7" y="0" dx="2.1" dy="0.6" layer="1" rot="R90"/>
 <text x="-0.337" y="3.81" size="1.27" layer="25" align="center">&gt;NAME</text>
 <text x="-0.337" y="-3.81" size="1.27" layer="27" align="center">&gt;VALUE</text>
 <circle x="-4.421" y="-0.016" radius="0.017" width="0.2" layer="25"/>
-<wire x1="-3.1" y1="-2.3" x2="-3.1" y2="2.3" width="0.127" layer="20"/>
-<wire x1="-3.1" y1="2.3" x2="3.1" y2="2.3" width="0.127" layer="20"/>
-<wire x1="3.1" y1="-2.3" x2="-3.1" y2="-2.3" width="0.127" layer="20"/>
-<wire x1="3.1" y1="2.3" x2="3.1" y2="-2.3" width="0.127" layer="20"/>
+<wire x1="-3.1" y1="-2.3" x2="-3.1" y2="2.3" width="0.1" layer="20"/>
+<wire x1="-3.1" y1="2.3" x2="3.1" y2="2.3" width="0.1" layer="20"/>
+<wire x1="3.1" y1="-2.3" x2="-3.1" y2="-2.3" width="0.1" layer="20"/>
+<wire x1="3.1" y1="2.3" x2="3.1" y2="-2.3" width="0.1" layer="20"/>
 </package>
 </packages>
 <symbols>
