@@ -21,7 +21,7 @@
                         "PTH": true,
                         "VIA": true
                     },
-                    "filename_format": "outputs/drills.xln",
+                    "filename_format": "drills.xln",
                     "layers": {
                         "from": 1,
                         "to": 16
