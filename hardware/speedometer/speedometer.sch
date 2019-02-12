@@ -14259,7 +14259,7 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/sn75240.pdf"&gt; Datasheet 
 <plain>
 <text x="163.83" y="7.62" size="2.032" layer="94">Zampieri Gabriele
 Speed'o'Meter 
-v 0.1-alpha
+v 1.0
 https://github.com/gabbla/speedometer</text>
 <text x="20.32" y="86.36" size="1.778" layer="91" font="vector" rot="R90">ESR &lt;= 3 Ohm</text>
 <text x="129.54" y="38.1" size="3.81" layer="91" font="vector">5V Tolerant</text>
@@ -15105,7 +15105,7 @@ bootloader mode</text>
 <plain>
 <text x="163.83" y="7.62" size="2.032" layer="94">Zampieri Gabriele
 Speed'o'Meter 
-v 0.1-alpha
+v 1.0
 https://github.com/gabbla/speedometer</text>
 </plain>
 <instances>
@@ -15284,7 +15284,7 @@ https://github.com/gabbla/speedometer</text>
 <text x="172.72" y="149.86" size="1.778" layer="97" font="vector">CHG LED exposed to user</text>
 <text x="163.83" y="7.62" size="2.032" layer="94">Zampieri Gabriele
 Speed'o'Meter 
-v 0.1-alpha
+v 1.0
 https://github.com/gabbla/speedometer</text>
 <text x="160.02" y="48.26" size="3.81" layer="97" font="vector">500 mA</text>
 <text x="218.44" y="121.92" size="3.81" layer="97" font="vector">To Vss when a 
@@ -15780,7 +15780,7 @@ limited to 1A</text>
 <plain>
 <text x="163.83" y="7.62" size="2.032" layer="94">Zampieri Gabriele
 Speed'o'Meter 
-v 0.1-alpha
+v 1.0
 https://github.com/gabbla/speedometer</text>
 </plain>
 <instances>
@@ -16242,7 +16242,7 @@ https://github.com/gabbla/speedometer</text>
 <text x="116.84" y="63.5" size="1.778" layer="91">I2C address: 1010000x</text>
 <text x="163.83" y="7.62" size="2.032" layer="94">Zampieri Gabriele
 Speed'o'Meter 
-v 0.1-alpha
+v 1.0
 https://github.com/gabbla/speedometer</text>
 </plain>
 <instances>
@@ -16342,7 +16342,7 @@ https://github.com/gabbla/speedometer</text>
 <plain>
 <text x="163.83" y="7.62" size="2.032" layer="94">Zampieri Gabriele
 Speed'o'Meter 
-v 0.1-alpha
+v 1.0
 https://github.com/gabbla/speedometer</text>
 </plain>
 <instances>
@@ -16816,7 +16816,7 @@ https://github.com/gabbla/speedometer</text>
 <plain>
 <text x="163.83" y="7.62" size="2.032" layer="94">Zampieri Gabriele
 Speed'o'Meter 
-v 0.1-alpha
+v 1.0
 https://github.com/gabbla/speedometer</text>
 </plain>
 <instances>
