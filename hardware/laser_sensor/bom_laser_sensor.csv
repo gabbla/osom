@@ -1,0 +1,9 @@
+"Part";"Value";"Device";"Package";"Description";"ARROW_PART_NUMBER";"ARROW_PRICE/STOCK";"DESCRIPTION";"HEIGHT";"MANUFACTURER_NAME";"MANUFACTURER_PART_NUMBER";"MOUSER_PART_NUMBER";"MOUSER_PRICE-STOCK";"RS_PART_NUMBER";"RS_PRICE-STOCK";"RS_PRICE/STOCK";"SPICEPREFIX";
+"D1";"SFH_2440_L";"SFH_2440_L";"SFH2440L";"Silicon Photodiode, Human Eye Sensitive";"";"";"Silicon Photodiode, Human Eye Sensitive";"mm";"OSRAM Opto Semiconductors";"SFH 2440 L";"720-SFH2440L";"https://www.mouser.com/Search/Refine.aspx?Keyword=720-SFH2440L";"1243361P";"http://uk.rs-online.com/web/p/products/1243361P";"";"";
+"J1";"B4B-XH-A(LF)(SN)";"B4B-XH-A(LF)(SN)";"SHDR4W64P0X250_1X4_1240X575X70";"XH-2.5mm Header top entry 4 way JST XH Series, Series Number B4B, 2.5mm Pitch 4 Way 1 Row Straight PCB Header, Solder Termination, 3A";"B4B-XH-A(LF)(SN)";"https://www.arrow.com/en/products/b4b-xh-a-lf-sn/jst-manufacturing";"XH-2.5mm Header top entry 4 way JST XH Series, Series Number B4B, 2.5mm Pitch 4 Way 1 Row Straight PCB Header, Solder Termination, 3A";"7mm";"JST (JAPAN SOLDERLESS TERMINALS)";"B4B-XH-A(LF)(SN)";"";"";"1724913";"";"http://uk.rs-online.com/web/p/products/1724913";"";
+"LED1";"";"LED3MM";"LED3MM";"LED";"";"";"";"";"";"";"";"";"";"";"";"";
+"Q1";"BC817-16LT1SMD";"BC817-16LT1SMD";"SOT23-BEC";"NPN Transistor";"";"";"";"";"";"";"";"";"";"";"";"";
+"R1";"100k";"R-US_R0603";"R0603";"RESISTOR, American symbol";"";"";"";"";"";"";"";"";"";"";"";"R";
+"R2";"100k";"R-US_R0603";"R0603";"RESISTOR, American symbol";"";"";"";"";"";"";"";"";"";"";"";"R";
+"R3";"10k";"R-US_R0603";"R0603";"RESISTOR, American symbol";"";"";"";"";"";"";"";"";"";"";"";"R";
+"R4";"560";"R-US_R0603";"R0603";"RESISTOR, American symbol";"";"";"";"";"";"";"";"";"";"";"";"R";
