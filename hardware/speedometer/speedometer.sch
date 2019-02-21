@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -11189,83 +11189,6 @@ Source: &lt;a href="https://linxtechnologies.com/wp/product/mhf-rf-connectors/"&
 </deviceset>
 </devicesets>
 </library>
-<library name="transistor-npn" urn="urn:adsk.eagle:library:398">
-<description>&lt;b&gt;NPN Transistors&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="SOT23-BEC" urn="urn:adsk.eagle:footprint:28939/1" library_version="2">
-<description>TO-236 ITT Intermetall</description>
-<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.127" layer="51"/>
-<wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.127" layer="51"/>
-<wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.127" layer="51"/>
-<wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.127" layer="51"/>
-<smd name="C" x="0" y="1.1" dx="1" dy="1.4" layer="1"/>
-<smd name="E" x="0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
-<smd name="B" x="-0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
-<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.2286" y1="0.7112" x2="0.2286" y2="1.2954" layer="51"/>
-<rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
-<rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
-</package>
-</packages>
-<packages3d>
-<package3d name="SOT23-BEC" urn="urn:adsk.eagle:package:28990/2" type="model" library_version="2">
-<description>TO-236 ITT Intermetall</description>
-<packageinstances>
-<packageinstance name="SOT23-BEC"/>
-</packageinstances>
-</package3d>
-</packages3d>
-<symbols>
-<symbol name="NPN" urn="urn:adsk.eagle:symbol:28915/1" library_version="2">
-<wire x1="2.54" y1="2.54" x2="0.508" y2="1.524" width="0.1524" layer="94"/>
-<wire x1="1.778" y1="-1.524" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-2.54" x2="1.27" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="1.27" y1="-2.54" x2="1.778" y2="-1.524" width="0.1524" layer="94"/>
-<wire x1="1.54" y1="-2.04" x2="0.308" y2="-1.424" width="0.1524" layer="94"/>
-<wire x1="1.524" y1="-2.413" x2="2.286" y2="-2.413" width="0.254" layer="94"/>
-<wire x1="2.286" y1="-2.413" x2="1.778" y2="-1.778" width="0.254" layer="94"/>
-<wire x1="1.778" y1="-1.778" x2="1.524" y2="-2.286" width="0.254" layer="94"/>
-<wire x1="1.524" y1="-2.286" x2="1.905" y2="-2.286" width="0.254" layer="94"/>
-<wire x1="1.905" y1="-2.286" x2="1.778" y2="-2.032" width="0.254" layer="94"/>
-<text x="-10.16" y="7.62" size="1.778" layer="95">&gt;NAME</text>
-<text x="-10.16" y="5.08" size="1.778" layer="96">&gt;VALUE</text>
-<rectangle x1="-0.254" y1="-2.54" x2="0.508" y2="2.54" layer="94"/>
-<pin name="B" x="-2.54" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
-<pin name="E" x="2.54" y="-5.08" visible="off" length="short" direction="pas" swaplevel="3" rot="R90"/>
-<pin name="C" x="2.54" y="5.08" visible="off" length="short" direction="pas" swaplevel="2" rot="R270"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="BC817*" urn="urn:adsk.eagle:component:29121/2" prefix="Q" library_version="2">
-<description>&lt;b&gt;NPN Transistor&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="NPN" x="0" y="0"/>
-</gates>
-<devices>
-<device name="SMD" package="SOT23-BEC">
-<connects>
-<connect gate="G$1" pin="B" pad="B"/>
-<connect gate="G$1" pin="C" pad="C"/>
-<connect gate="G$1" pin="E" pad="E"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:28990/2"/>
-</package3dinstances>
-<technologies>
-<technology name="-16"/>
-<technology name="-16LT1"/>
-<technology name="-25"/>
-<technology name="-25LT1"/>
-<technology name="-40"/>
-<technology name="-40LT1"/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="CSTCE12M0G15L99-R0">
 <description>&lt;CSTCE12M0G15L99-R0, Ceramic Resonator, 12MHz Shear 33pF, 3-Pin SMT, 3.2 x 1.3 x 0.7mm&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
@@ -13851,6 +13774,102 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/sn75240.pdf"&gt; Datasheet 
 </deviceset>
 </devicesets>
 </library>
+<library name="transistor" urn="urn:adsk.eagle:library:402">
+<description>&lt;b&gt;Transistors&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="SC59-BEC" urn="urn:adsk.eagle:footprint:29862/1" library_version="2">
+<description>SC59 (SOT23) Motorola</description>
+<wire x1="1.4224" y1="0.8604" x2="1.4224" y2="-0.8604" width="0.127" layer="51"/>
+<wire x1="1.4224" y1="-0.8604" x2="-1.4224" y2="-0.8604" width="0.127" layer="51"/>
+<wire x1="-1.4224" y1="-0.8604" x2="-1.4224" y2="0.8604" width="0.127" layer="51"/>
+<wire x1="-1.4224" y1="0.8604" x2="1.4224" y2="0.8604" width="0.127" layer="51"/>
+<smd name="C" x="0" y="1.2" dx="1" dy="1.4" layer="1"/>
+<smd name="E" x="0.95" y="-1.2" dx="1" dy="1.4" layer="1"/>
+<smd name="B" x="-0.95" y="-1.2" dx="1" dy="1.4" layer="1"/>
+<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.2286" y1="0.9112" x2="0.2286" y2="1.4954" layer="51"/>
+<rectangle x1="0.7112" y1="-1.4954" x2="1.1684" y2="-0.9112" layer="51"/>
+<rectangle x1="-1.1684" y1="-1.4954" x2="-0.7112" y2="-0.9112" layer="51"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="SC59-BEC" urn="urn:adsk.eagle:package:29926/2" type="model" library_version="2">
+<description>SC59 (SOT23) Motorola</description>
+<packageinstances>
+<packageinstance name="SC59-BEC"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="NPN-DRIVER" urn="urn:adsk.eagle:symbol:29870/1" library_version="2">
+<wire x1="2.54" y1="2.54" x2="0.508" y2="1.524" width="0.1524" layer="94"/>
+<wire x1="1.778" y1="-1.524" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="1.27" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="1.778" y2="-1.524" width="0.1524" layer="94"/>
+<wire x1="1.54" y1="-2.04" x2="0.308" y2="-1.424" width="0.1524" layer="94"/>
+<wire x1="1.524" y1="-2.413" x2="2.286" y2="-2.413" width="0.254" layer="94"/>
+<wire x1="2.286" y1="-2.413" x2="1.778" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="1.778" y1="-1.778" x2="1.524" y2="-2.286" width="0.254" layer="94"/>
+<wire x1="1.524" y1="-2.286" x2="1.905" y2="-2.286" width="0.254" layer="94"/>
+<wire x1="1.905" y1="-2.286" x2="1.778" y2="-2.032" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-4.826" y2="0.762" width="0.1524" layer="94"/>
+<wire x1="-4.826" y1="0.762" x2="-4.572" y2="-0.508" width="0.1524" layer="94"/>
+<wire x1="-4.572" y1="-0.508" x2="-4.318" y2="0.762" width="0.1524" layer="94"/>
+<wire x1="-4.318" y1="0.762" x2="-4.064" y2="-0.508" width="0.1524" layer="94"/>
+<wire x1="-4.064" y1="-0.508" x2="-3.81" y2="0.762" width="0.1524" layer="94"/>
+<wire x1="-3.81" y1="0.762" x2="-3.556" y2="-0.508" width="0.1524" layer="94"/>
+<wire x1="-3.556" y1="-0.508" x2="-3.302" y2="0" width="0.1524" layer="94"/>
+<wire x1="-3.302" y1="0" x2="-2.286" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.286" y1="0" x2="-0.254" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.286" y1="0" x2="-2.286" y2="-0.762" width="0.1524" layer="94"/>
+<wire x1="-2.286" y1="-0.762" x2="-1.778" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="-1.778" y1="-1.016" x2="-2.794" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="-2.794" y1="-1.27" x2="-1.778" y2="-1.524" width="0.1524" layer="94"/>
+<wire x1="-1.778" y1="-1.524" x2="-2.794" y2="-1.778" width="0.1524" layer="94"/>
+<wire x1="-2.794" y1="-1.778" x2="-1.778" y2="-2.032" width="0.1524" layer="94"/>
+<wire x1="-1.778" y1="-2.032" x2="-2.794" y2="-2.286" width="0.1524" layer="94"/>
+<wire x1="-2.794" y1="-2.286" x2="-2.286" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-2.286" y1="-2.54" x2="-2.286" y2="-3.556" width="0.1524" layer="94"/>
+<wire x1="-2.286" y1="-3.556" x2="2.54" y2="-3.556" width="0.1524" layer="94"/>
+<circle x="-2.286" y="0" radius="0.254" width="0.3048" layer="94"/>
+<circle x="2.54" y="-3.556" radius="0.254" width="0.3048" layer="94"/>
+<text x="-10.16" y="7.62" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="5.08" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-0.254" y1="-2.54" x2="0.508" y2="2.54" layer="94"/>
+<pin name="B" x="-7.62" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="E" x="2.54" y="-5.08" visible="off" length="short" direction="pas" swaplevel="3" rot="R90"/>
+<pin name="C" x="2.54" y="5.08" visible="off" length="short" direction="pas" swaplevel="2" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="*-NPN_DRIVER-" urn="urn:adsk.eagle:component:30064/2" prefix="T" uservalue="yes" library_version="2">
+<description>NPN Bias Resistor Transistor</description>
+<gates>
+<gate name="G$1" symbol="NPN-DRIVER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SC59-BEC" package="SC59-BEC">
+<connects>
+<connect gate="G$1" pin="B" pad="B"/>
+<connect gate="G$1" pin="C" pad="C"/>
+<connect gate="G$1" pin="E" pad="E"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:29926/2"/>
+</package3dinstances>
+<technologies>
+<technology name="MUN2211T1"/>
+<technology name="MUN2212T1"/>
+<technology name="MUN2213T1"/>
+<technology name="MUN2214T1"/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -13952,28 +13971,11 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/sn75240.pdf"&gt; Datasheet 
 </part>
 <part name="+3V319" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="FRAME7" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
-<part name="Q2" library="transistor-npn" library_urn="urn:adsk.eagle:library:398" deviceset="BC817*" device="SMD" package3d_urn="urn:adsk.eagle:package:28990/2" technology="-16LT1" value="BC817"/>
 <part name="GND65" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R26" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" value="10k">
-<spice>
-<pinmapping spiceprefix="R">
-<pinmap gate="G$1" pin="1" pinorder="1"/>
-<pinmap gate="G$1" pin="2" pinorder="2"/>
-</pinmapping>
-</spice>
-</part>
-<part name="R29" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" value="100k">
-<spice>
-<pinmapping spiceprefix="R">
-<pinmap gate="G$1" pin="1" pinorder="1"/>
-<pinmap gate="G$1" pin="2" pinorder="2"/>
-</pinmapping>
-</spice>
-</part>
 <part name="TP25" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/1" value="TPB1,27">
 <attribute name="TP_SIGNAL_NAME" value="TP_L_DX"/>
 </part>
-<part name="LED5" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIPLED_1206" package3d_urn="urn:adsk.eagle:package:15823/2"/>
+<part name="LED5" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIP-LED0805" package3d_urn="urn:adsk.eagle:package:15818/2"/>
 <part name="R30" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" value="1k5">
 <spice>
 <pinmapping spiceprefix="R">
@@ -14100,20 +14102,12 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/sn75240.pdf"&gt; Datasheet 
 <part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device="">
 <attribute name="SPICEPREFIX" value="G"/>
 </part>
-<part name="Q1" library="transistor-npn" library_urn="urn:adsk.eagle:library:398" deviceset="BC817*" device="SMD" package3d_urn="urn:adsk.eagle:package:28990/2" technology="-16LT1" value="BC817"/>
 <part name="GND64" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R25" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" value="10k"/>
-<part name="R27" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" value="100k"/>
 <part name="R28" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" value="10k"/>
 <part name="+3V324" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
-<part name="Q4" library="transistor-npn" library_urn="urn:adsk.eagle:library:398" deviceset="BC817*" device="SMD" package3d_urn="urn:adsk.eagle:package:28990/2" technology="-16LT1" value="BC817">
-<attribute name="SPICEPREFIX" value="Q"/>
-</part>
 <part name="GND69" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device="">
 <attribute name="SPICEPREFIX" value="G"/>
 </part>
-<part name="R32" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" value="10k"/>
-<part name="R34" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" value="100k"/>
 <part name="R35" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" value="10k"/>
 <part name="+3V326" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device="">
 <attribute name="SPICEPREFIX" value="G"/>
@@ -14211,14 +14205,11 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/sn75240.pdf"&gt; Datasheet 
 <part name="VCC1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCCINT" device=""/>
 <part name="LED1" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="3MM" package3d_urn="urn:adsk.eagle:package:15797/1"/>
 <part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" value="1k5"/>
-<part name="Q3" library="transistor-npn" library_urn="urn:adsk.eagle:library:398" deviceset="BC817*" device="SMD" package3d_urn="urn:adsk.eagle:package:28990/2" technology="-16LT1" value="BC817"/>
 <part name="GND68" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R31" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" value="10k"/>
-<part name="R33" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" value="100k"/>
 <part name="TP26" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/1" value="TPB1,27">
 <attribute name="TP_SIGNAL_NAME" value="TP_L_DX"/>
 </part>
-<part name="LED6" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIPLED_1206" package3d_urn="urn:adsk.eagle:package:15823/2"/>
+<part name="LED6" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIP-LED0805" package3d_urn="urn:adsk.eagle:package:15818/2"/>
 <part name="R36" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" value="1k5"/>
 <part name="J7" library="B2B-XH-A(LF)(SN)" deviceset="B2B-XH-A(LF)(SN)" device="" value="Left"/>
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
@@ -14252,6 +14243,10 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/sn75240.pdf"&gt; Datasheet 
 <part name="TP20" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/1">
 <attribute name="TP_SIGNAL_NAME" value="TP_SYS_EN_PIC"/>
 </part>
+<part name="T1" library="transistor" library_urn="urn:adsk.eagle:library:402" deviceset="*-NPN_DRIVER-" device="SC59-BEC" package3d_urn="urn:adsk.eagle:package:29926/2" technology="MUN2214T1"/>
+<part name="T2" library="transistor" library_urn="urn:adsk.eagle:library:402" deviceset="*-NPN_DRIVER-" device="SC59-BEC" package3d_urn="urn:adsk.eagle:package:29926/2" technology="MUN2214T1"/>
+<part name="T3" library="transistor" library_urn="urn:adsk.eagle:library:402" deviceset="*-NPN_DRIVER-" device="SC59-BEC" package3d_urn="urn:adsk.eagle:package:29926/2" technology="MUN2214T1"/>
+<part name="T4" library="transistor" library_urn="urn:adsk.eagle:library:402" deviceset="*-NPN_DRIVER-" device="SC59-BEC" package3d_urn="urn:adsk.eagle:package:29926/2" technology="MUN2214T1"/>
 </parts>
 <sheets>
 <sheet>
@@ -16825,20 +16820,8 @@ https://github.com/gabbla/speedometer</text>
 <attribute name="LAST_DATE_TIME" x="217.17" y="10.16" size="2.286" layer="94"/>
 <attribute name="SHEET" x="230.505" y="5.08" size="2.54" layer="94"/>
 </instance>
-<instance part="Q2" gate="G$1" x="109.22" y="119.38" smashed="yes">
-<attribute name="NAME" x="99.06" y="127" size="1.778" layer="95"/>
-<attribute name="VALUE" x="99.06" y="124.46" size="1.778" layer="96"/>
-</instance>
 <instance part="GND65" gate="1" x="111.76" y="106.68" smashed="yes">
 <attribute name="VALUE" x="109.22" y="104.14" size="1.778" layer="96"/>
-</instance>
-<instance part="R26" gate="G$1" x="78.74" y="119.38" smashed="yes">
-<attribute name="NAME" x="74.93" y="120.8786" size="1.778" layer="95"/>
-<attribute name="VALUE" x="74.93" y="116.078" size="1.778" layer="96"/>
-</instance>
-<instance part="R29" gate="G$1" x="104.14" y="111.76" smashed="yes">
-<attribute name="NAME" x="100.33" y="113.2586" size="1.778" layer="95"/>
-<attribute name="VALUE" x="100.33" y="108.458" size="1.778" layer="96"/>
 </instance>
 <instance part="TP25" gate="G$1" x="96.52" y="132.08" smashed="yes">
 <attribute name="NAME" x="95.25" y="133.35" size="1.778" layer="95"/>
@@ -16879,20 +16862,8 @@ https://github.com/gabbla/speedometer</text>
 <instance part="P+4" gate="1" x="177.8" y="71.12" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="180.34" y="66.04" size="1.778" layer="96" rot="MR90"/>
 </instance>
-<instance part="Q1" gate="G$1" x="91.44" y="45.72" smashed="yes">
-<attribute name="NAME" x="81.28" y="53.34" size="1.778" layer="95"/>
-<attribute name="VALUE" x="81.28" y="50.8" size="1.778" layer="96"/>
-</instance>
 <instance part="GND64" gate="1" x="93.98" y="33.02" smashed="yes">
 <attribute name="VALUE" x="91.44" y="30.48" size="1.778" layer="96"/>
-</instance>
-<instance part="R25" gate="G$1" x="71.12" y="45.72" smashed="yes">
-<attribute name="NAME" x="67.31" y="47.2186" size="1.778" layer="95"/>
-<attribute name="VALUE" x="67.31" y="42.418" size="1.778" layer="96"/>
-</instance>
-<instance part="R27" gate="G$1" x="86.36" y="38.1" smashed="yes">
-<attribute name="NAME" x="82.55" y="39.5986" size="1.778" layer="95"/>
-<attribute name="VALUE" x="82.55" y="34.798" size="1.778" layer="96"/>
 </instance>
 <instance part="R28" gate="G$1" x="93.98" y="60.96" smashed="yes" rot="R90">
 <attribute name="NAME" x="92.4814" y="57.15" size="1.778" layer="95" rot="R90"/>
@@ -16901,20 +16872,8 @@ https://github.com/gabbla/speedometer</text>
 <instance part="+3V324" gate="G$1" x="93.98" y="71.12" smashed="yes">
 <attribute name="VALUE" x="91.44" y="66.04" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="Q4" gate="G$1" x="215.9" y="45.72" smashed="yes">
-<attribute name="NAME" x="205.74" y="53.34" size="1.778" layer="95"/>
-<attribute name="VALUE" x="205.74" y="50.8" size="1.778" layer="96"/>
-</instance>
 <instance part="GND69" gate="1" x="218.44" y="33.02" smashed="yes">
 <attribute name="VALUE" x="215.9" y="30.48" size="1.778" layer="96"/>
-</instance>
-<instance part="R32" gate="G$1" x="195.58" y="45.72" smashed="yes">
-<attribute name="NAME" x="191.77" y="47.2186" size="1.778" layer="95"/>
-<attribute name="VALUE" x="191.77" y="42.418" size="1.778" layer="96"/>
-</instance>
-<instance part="R34" gate="G$1" x="210.82" y="38.1" smashed="yes">
-<attribute name="NAME" x="207.01" y="39.5986" size="1.778" layer="95"/>
-<attribute name="VALUE" x="207.01" y="34.798" size="1.778" layer="96"/>
 </instance>
 <instance part="R35" gate="G$1" x="218.44" y="60.96" smashed="yes" rot="R90">
 <attribute name="NAME" x="216.9414" y="57.15" size="1.778" layer="95" rot="R90"/>
@@ -16933,20 +16892,8 @@ https://github.com/gabbla/speedometer</text>
 <instance part="+3V323" gate="G$1" x="68.58" y="114.3" smashed="yes" rot="R270">
 <attribute name="VALUE" x="63.5" y="116.84" size="1.778" layer="96"/>
 </instance>
-<instance part="Q3" gate="G$1" x="215.9" y="119.38" smashed="yes">
-<attribute name="NAME" x="205.74" y="127" size="1.778" layer="95"/>
-<attribute name="VALUE" x="205.74" y="124.46" size="1.778" layer="96"/>
-</instance>
 <instance part="GND68" gate="1" x="218.44" y="106.68" smashed="yes">
 <attribute name="VALUE" x="215.9" y="104.14" size="1.778" layer="96"/>
-</instance>
-<instance part="R31" gate="G$1" x="185.42" y="119.38" smashed="yes">
-<attribute name="NAME" x="181.61" y="120.8786" size="1.778" layer="95"/>
-<attribute name="VALUE" x="181.61" y="116.078" size="1.778" layer="96"/>
-</instance>
-<instance part="R33" gate="G$1" x="210.82" y="111.76" smashed="yes">
-<attribute name="NAME" x="207.01" y="113.2586" size="1.778" layer="95"/>
-<attribute name="VALUE" x="207.01" y="108.458" size="1.778" layer="96"/>
 </instance>
 <instance part="TP26" gate="G$1" x="203.2" y="132.08" smashed="yes">
 <attribute name="NAME" x="201.93" y="133.35" size="1.778" layer="95"/>
@@ -16977,34 +16924,28 @@ https://github.com/gabbla/speedometer</text>
 <instance part="+3V325" gate="G$1" x="175.26" y="114.3" smashed="yes" rot="R270">
 <attribute name="VALUE" x="170.18" y="116.84" size="1.778" layer="96"/>
 </instance>
+<instance part="T1" gate="G$1" x="109.22" y="119.38"/>
+<instance part="T2" gate="G$1" x="91.44" y="45.72"/>
+<instance part="T3" gate="G$1" x="215.9" y="119.38"/>
+<instance part="T4" gate="G$1" x="215.9" y="45.72"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="N$38" class="0">
 <segment>
-<pinref part="Q2" gate="G$1" pin="C"/>
-<wire x1="111.76" y1="124.46" x2="111.76" y2="127" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="127" x2="111.76" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="127" x2="127" y2="127" width="0.1524" layer="91"/>
-<junction x="111.76" y="127"/>
 <pinref part="R30" gate="G$1" pin="1"/>
 <wire x1="127" y1="127" x2="127" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="J5" gate="G$1" pin="1"/>
 <wire x1="109.22" y1="142.24" x2="111.76" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="142.24" x2="111.76" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="142.24" x2="111.76" y2="127" width="0.1524" layer="91"/>
+<pinref part="T1" gate="G$1" pin="C"/>
+<wire x1="111.76" y1="124.46" x2="111.76" y2="127" width="0.1524" layer="91"/>
+<junction x="111.76" y="127"/>
 </segment>
 </net>
 <net name="GND" class="0">
-<segment>
-<pinref part="Q2" gate="G$1" pin="E"/>
-<pinref part="GND65" gate="1" pin="GND"/>
-<wire x1="111.76" y1="114.3" x2="111.76" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="R29" gate="G$1" pin="2"/>
-<wire x1="111.76" y1="111.76" x2="111.76" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="111.76" x2="111.76" y2="111.76" width="0.1524" layer="91"/>
-<junction x="111.76" y="111.76"/>
-</segment>
 <segment>
 <pinref part="J4" gate="G$1" pin="1"/>
 <pinref part="GND63" gate="1" pin="GND"/>
@@ -17018,37 +16959,10 @@ https://github.com/gabbla/speedometer</text>
 <wire x1="177.8" y1="45.72" x2="177.8" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="Q1" gate="G$1" pin="E"/>
-<pinref part="GND64" gate="1" pin="GND"/>
-<wire x1="93.98" y1="40.64" x2="93.98" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="R27" gate="G$1" pin="2"/>
-<wire x1="93.98" y1="38.1" x2="93.98" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="38.1" x2="93.98" y2="38.1" width="0.1524" layer="91"/>
-<junction x="93.98" y="38.1"/>
-</segment>
-<segment>
-<pinref part="Q4" gate="G$1" pin="E"/>
-<pinref part="GND69" gate="1" pin="GND"/>
-<wire x1="218.44" y1="40.64" x2="218.44" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="R34" gate="G$1" pin="2"/>
-<wire x1="218.44" y1="38.1" x2="218.44" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="215.9" y1="38.1" x2="218.44" y2="38.1" width="0.1524" layer="91"/>
-<junction x="218.44" y="38.1"/>
-</segment>
-<segment>
 <pinref part="U1" gate="G$1" pin="GND"/>
 <wire x1="38.1" y1="114.3" x2="35.56" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="114.3" x2="35.56" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="GND62" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="Q3" gate="G$1" pin="E"/>
-<pinref part="GND68" gate="1" pin="GND"/>
-<wire x1="218.44" y1="114.3" x2="218.44" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="R33" gate="G$1" pin="2"/>
-<wire x1="218.44" y1="111.76" x2="218.44" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="215.9" y1="111.76" x2="218.44" y2="111.76" width="0.1524" layer="91"/>
-<junction x="218.44" y="111.76"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="GND"/>
@@ -17056,19 +16970,25 @@ https://github.com/gabbla/speedometer</text>
 <wire x1="142.24" y1="114.3" x2="142.24" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="GND66" gate="1" pin="GND"/>
 </segment>
-</net>
-<net name="N$39" class="0">
 <segment>
-<pinref part="R29" gate="G$1" pin="1"/>
-<wire x1="99.06" y1="111.76" x2="96.52" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="111.76" x2="96.52" y2="119.38" width="0.1524" layer="91"/>
-<pinref part="R26" gate="G$1" pin="2"/>
-<wire x1="96.52" y1="119.38" x2="83.82" y2="119.38" width="0.1524" layer="91"/>
-<pinref part="Q2" gate="G$1" pin="B"/>
-<wire x1="96.52" y1="119.38" x2="106.68" y2="119.38" width="0.1524" layer="91"/>
-<junction x="96.52" y="119.38"/>
-<pinref part="TP25" gate="G$1" pin="TP"/>
-<wire x1="96.52" y1="129.54" x2="96.52" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="T1" gate="G$1" pin="E"/>
+<pinref part="GND65" gate="1" pin="GND"/>
+<wire x1="111.76" y1="114.3" x2="111.76" y2="109.22" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="T2" gate="G$1" pin="E"/>
+<pinref part="GND64" gate="1" pin="GND"/>
+<wire x1="93.98" y1="40.64" x2="93.98" y2="35.56" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="T3" gate="G$1" pin="E"/>
+<pinref part="GND68" gate="1" pin="GND"/>
+<wire x1="218.44" y1="114.3" x2="218.44" y2="109.22" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="T4" gate="G$1" pin="E"/>
+<pinref part="GND69" gate="1" pin="GND"/>
+<wire x1="218.44" y1="40.64" x2="218.44" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$40" class="0">
@@ -17156,25 +17076,13 @@ https://github.com/gabbla/speedometer</text>
 </net>
 <net name="IN_R" class="0">
 <segment>
-<pinref part="Q1" gate="G$1" pin="C"/>
-<wire x1="93.98" y1="50.8" x2="93.98" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="R28" gate="G$1" pin="1"/>
 <wire x1="93.98" y1="53.34" x2="93.98" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="53.34" x2="101.6" y2="53.34" width="0.1524" layer="91"/>
-<junction x="93.98" y="53.34"/>
 <label x="101.6" y="53.34" size="1.778" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="N$26" class="0">
-<segment>
-<pinref part="R27" gate="G$1" pin="1"/>
-<wire x1="81.28" y1="38.1" x2="78.74" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="38.1" x2="78.74" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="R25" gate="G$1" pin="2"/>
-<wire x1="78.74" y1="45.72" x2="76.2" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="Q1" gate="G$1" pin="B"/>
-<wire x1="78.74" y1="45.72" x2="88.9" y2="45.72" width="0.1524" layer="91"/>
-<junction x="78.74" y="45.72"/>
+<pinref part="T2" gate="G$1" pin="C"/>
+<wire x1="93.98" y1="50.8" x2="93.98" y2="53.34" width="0.1524" layer="91"/>
+<junction x="93.98" y="53.34"/>
 </segment>
 </net>
 <net name="N$27" class="0">
@@ -17182,20 +17090,8 @@ https://github.com/gabbla/speedometer</text>
 <pinref part="J4" gate="G$1" pin="2"/>
 <wire x1="48.26" y1="48.26" x2="60.96" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="48.26" x2="60.96" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="R25" gate="G$1" pin="1"/>
-<wire x1="60.96" y1="45.72" x2="66.04" y2="45.72" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$13" class="0">
-<segment>
-<pinref part="R34" gate="G$1" pin="1"/>
-<wire x1="205.74" y1="38.1" x2="203.2" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="203.2" y1="38.1" x2="203.2" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="R32" gate="G$1" pin="2"/>
-<wire x1="203.2" y1="45.72" x2="200.66" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="Q4" gate="G$1" pin="B"/>
-<wire x1="203.2" y1="45.72" x2="213.36" y2="45.72" width="0.1524" layer="91"/>
-<junction x="203.2" y="45.72"/>
+<pinref part="T2" gate="G$1" pin="B"/>
+<wire x1="60.96" y1="45.72" x2="83.82" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$28" class="0">
@@ -17203,19 +17099,19 @@ https://github.com/gabbla/speedometer</text>
 <pinref part="J6" gate="G$1" pin="2"/>
 <wire x1="172.72" y1="48.26" x2="185.42" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="48.26" x2="185.42" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="R32" gate="G$1" pin="1"/>
-<wire x1="185.42" y1="45.72" x2="190.5" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="T4" gate="G$1" pin="B"/>
+<wire x1="185.42" y1="45.72" x2="208.28" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="IN_L" class="0">
 <segment>
-<pinref part="Q4" gate="G$1" pin="C"/>
-<wire x1="218.44" y1="50.8" x2="218.44" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="R35" gate="G$1" pin="1"/>
 <wire x1="218.44" y1="53.34" x2="218.44" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="218.44" y1="53.34" x2="226.06" y2="53.34" width="0.1524" layer="91"/>
-<junction x="218.44" y="53.34"/>
 <label x="226.06" y="53.34" size="1.778" layer="95" xref="yes"/>
+<pinref part="T4" gate="G$1" pin="C"/>
+<wire x1="218.44" y1="50.8" x2="218.44" y2="53.34" width="0.1524" layer="91"/>
+<junction x="218.44" y="53.34"/>
 </segment>
 </net>
 <net name="LASER_MOD" class="0">
@@ -17240,36 +17136,25 @@ https://github.com/gabbla/speedometer</text>
 <net name="N$42" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="Y"/>
-<pinref part="R26" gate="G$1" pin="1"/>
-<wire x1="63.5" y1="119.38" x2="73.66" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="T1" gate="G$1" pin="B"/>
+<wire x1="63.5" y1="119.38" x2="96.52" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="TP25" gate="G$1" pin="TP"/>
+<wire x1="96.52" y1="119.38" x2="101.6" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="129.54" x2="96.52" y2="119.38" width="0.1524" layer="91"/>
+<junction x="96.52" y="119.38"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="Q3" gate="G$1" pin="C"/>
-<wire x1="218.44" y1="124.46" x2="218.44" y2="127" width="0.1524" layer="91"/>
-<wire x1="218.44" y1="127" x2="218.44" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="218.44" y1="127" x2="233.68" y2="127" width="0.1524" layer="91"/>
-<junction x="218.44" y="127"/>
 <pinref part="R36" gate="G$1" pin="1"/>
 <wire x1="233.68" y1="127" x2="233.68" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="J7" gate="G$1" pin="1"/>
 <wire x1="215.9" y1="142.24" x2="218.44" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="218.44" y1="142.24" x2="218.44" y2="129.54" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$14" class="0">
-<segment>
-<pinref part="R33" gate="G$1" pin="1"/>
-<wire x1="205.74" y1="111.76" x2="203.2" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="203.2" y1="111.76" x2="203.2" y2="119.38" width="0.1524" layer="91"/>
-<pinref part="R31" gate="G$1" pin="2"/>
-<wire x1="203.2" y1="119.38" x2="190.5" y2="119.38" width="0.1524" layer="91"/>
-<pinref part="Q3" gate="G$1" pin="B"/>
-<wire x1="203.2" y1="119.38" x2="213.36" y2="119.38" width="0.1524" layer="91"/>
-<junction x="203.2" y="119.38"/>
-<pinref part="TP26" gate="G$1" pin="TP"/>
-<wire x1="203.2" y1="129.54" x2="203.2" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="142.24" x2="218.44" y2="127" width="0.1524" layer="91"/>
+<pinref part="T3" gate="G$1" pin="C"/>
+<wire x1="218.44" y1="124.46" x2="218.44" y2="127" width="0.1524" layer="91"/>
+<junction x="218.44" y="127"/>
 </segment>
 </net>
 <net name="N$15" class="0">
@@ -17282,8 +17167,8 @@ https://github.com/gabbla/speedometer</text>
 <net name="N$16" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="Y"/>
-<pinref part="R31" gate="G$1" pin="1"/>
-<wire x1="170.18" y1="119.38" x2="180.34" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="T3" gate="G$1" pin="B"/>
+<wire x1="170.18" y1="119.38" x2="208.28" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CTL_L" class="0">
