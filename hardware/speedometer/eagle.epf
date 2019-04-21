@@ -264,6 +264,7 @@ UsedLibraryUrn="urn:adsk.eagle:library:196"
 UsedLibraryUrn="urn:adsk.eagle:library:197"
 UsedLibraryUrn="urn:adsk.eagle:library:198"
 UsedLibraryUrn="urn:adsk.eagle:library:199"
+UsedLibrary="/home/gabbla/projects/speedometer/hardware/eagle_libs/74LVC1G32SE.lbr"
 UsedLibrary="/home/gabbla/projects/speedometer/hardware/eagle_libs/SFH_2440_L.lbr"
 UsedLibrary="/home/gabbla/projects/speedometer/hardware/eagle_libs/SN65220DBVRG4.lbr"
 UsedLibrary="/home/gabbla/projects/speedometer/hardware/eagle_libs/m310210.lbr"
@@ -352,5 +353,10 @@ UsedLibraryUrn="urn:adsk.eagle:library:142"
 UsedLibraryUrn="urn:adsk.eagle:library:146"
 UsedLibraryUrn="urn:adsk.eagle:library:168"
 
+[Win_1]
+Type="Control Panel"
+Number=0
+
 [Desktop]
-Screen="1920 1080"
+Screen="3840 1080"
+Window="Win_1"
