@@ -1,12 +1,12 @@
 {
     "author": {
-        "email": "zampierigabriele.ist@gmail.com",
-        "name": "Gabriele Zampieri"
+        "email": "support.eagle@autodesk.com",
+        "name": "Autodesk EAGLE"
     },
     "description": {
-        "EN": "EAGLE default 2 layer CAM job."
+        "EN": "Cam job to export gerber for JLCPCB"
     },
-    "output_type": "directory",
+    "output_type": "zip",
     "outputs": [
         {
             "format_specifier": {
@@ -21,7 +21,7 @@
                         "PTH": true,
                         "VIA": true
                     },
-                    "filename_format": "outputs/drills.xln",
+                    "filename_format": "drills.xln",
                     "layers": {
                         "from": 1,
                         "to": 16
@@ -32,7 +32,7 @@
             ]
         },
         {
-            "filename_prefix": "outputs",
+            "filename_prefix": "",
             "format_specifier": {
                 "decimal": 4,
                 "integer": 3
@@ -48,7 +48,7 @@
                         "layer_details": "mixed",
                         "layer_type": "top"
                     },
-                    "filename_format": "%PREFIX/copper_top.gbr",
+                    "filename_format": "%PREFIX/copper_top_l1.gbr",
                     "layers": [
                         1,
                         18,
@@ -64,9 +64,45 @@
                         "file_function": "Copper",
                         "layer": 2,
                         "layer_details": "mixed",
+                        "layer_type": "Inner"
+                    },
+                    "filename_format": "%PREFIX/copper_inner_l2.gl2",
+                    "layers": [
+                        2,
+                        17,
+                        18
+                    ],
+                    "name": "EAGLE Copper Layer 2",
+                    "polarity": "positive",
+                    "type": "gerber_layer"
+                },
+                {
+                    "board_outline": false,
+                    "config": {
+                        "file_function": "Copper",
+                        "layer": 3,
+                        "layer_details": "mixed",
+                        "layer_type": "Inner"
+                    },
+                    "filename_format": "%PREFIX/copper_inner_l3.gl3",
+                    "layers": [
+                        15,
+                        17,
+                        18
+                    ],
+                    "name": "EAGLE Copper Layer 15",
+                    "polarity": "positive",
+                    "type": "gerber_layer"
+                },
+                {
+                    "board_outline": false,
+                    "config": {
+                        "file_function": "Copper",
+                        "layer": 4,
+                        "layer_details": "mixed",
                         "layer_type": "bottom"
                     },
-                    "filename_format": "%PREFIX/copper_bottom.gbr",
+                    "filename_format": "%PREFIX/copper_bottom_l4.gbr",
                     "layers": [
                         16,
                         17,
@@ -187,7 +223,7 @@
             "version": "RS274X"
         }
     ],
-    "timestamp": "2018-08-16T12:36:14",
+    "timestamp": "2018-01-17T14:14:34",
     "type": "EAGLE CAM job",
     "units": "metric",
     "version": "8.6.1"

@@ -1,12 +1,12 @@
 {
     "author": {
-        "email": "zampierigabriele.ist@gmail.com",
-        "name": "Gabriele Zampieri"
+        "email": "support.eagle@autodesk.com",
+        "name": "Autodesk EAGLE"
     },
     "description": {
-        "EN": "EAGLE default 2 layer CAM job."
+        "EN": "Cam job for jlc pcb"
     },
-    "output_type": "directory",
+    "output_type": "zip",
     "outputs": [
         {
             "format_specifier": {
@@ -21,7 +21,7 @@
                         "PTH": true,
                         "VIA": true
                     },
-                    "filename_format": "outputs/drills.xln",
+                    "filename_format": "drills.xln",
                     "layers": {
                         "from": 1,
                         "to": 16
@@ -32,7 +32,7 @@
             ]
         },
         {
-            "filename_prefix": "outputs",
+            "filename_prefix": "",
             "format_specifier": {
                 "decimal": 4,
                 "integer": 3
@@ -184,10 +184,10 @@
                     "type": "gerber_layer"
                 }
             ],
-            "version": "RS274X"
+            "version": "X2"
         }
     ],
-    "timestamp": "2018-08-16T14:57:45",
+    "timestamp": "2018-01-17T13:57:10",
     "type": "EAGLE CAM job",
     "units": "metric",
     "version": "8.6.1"
