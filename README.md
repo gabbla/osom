@@ -1,6 +1,6 @@
-# **Speedometer** **WIP**
+# **Open speedomenter** **WIP**
 
-Due to the very un-user friendly TI's SDK for CC2541 (based on IAR only), I decided to change the architecture on board: master and slave will still share the same HW, while the second will have less components mounted on it.
+**OSOM** (read as _ˈôsəm_) is the acronym of Open Speedometer.
 
 ## Architecture
 The new architecture is the following:
